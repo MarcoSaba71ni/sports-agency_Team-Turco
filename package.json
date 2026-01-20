@@ -1,0 +1,25 @@
+{
+  "name": "sports-agency_team-turco",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./css/input.css -o ./css/style.css --watch",
+    "build": "tailwindcss -i ./css/input.css -o ./css/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoSaba71ni/sports-agency_Team-Turco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoSaba71ni/sports-agency_Team-Turco/issues"
+  },
+  "homepage": "https://github.com/MarcoSaba71ni/sports-agency_Team-Turco#readme",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}
