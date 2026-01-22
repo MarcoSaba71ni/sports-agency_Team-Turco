@@ -8,38 +8,44 @@
         <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-        <header class="bg-black text-white p-3 flex flex-row items-center justify-evenly">
+        <header class="bg-black text-white p-3 flex items-center justify-evenly relative">
             <div>
                 <a href="../index.html">
-                    <img src="../images/Team-Turco-Logo-Header.jpg" alt="Team Turco Logo"
-                    class="w-12 h-12 object-cover cursor-pointer hover:transform hover:scale-120 transition-transform duration-300">
+                    <img src="../images/Team-Turco-Logo-Header.jpg"
+                        alt="Team Turco Logo"
+                        class="w-12 h-12 object-cover cursor-pointer hover:scale-110 transition-transform duration-300">
                 </a>
-             
             </div>
-            <nav>
-                <ul class="flex flex-row gap-2 space-x-4">
-                    <li>
-                        <a href="../index.html"
-                        class="pb-1 hover:border-b-2 hover:border-white">Home</a>
-                    </li>
-                    <li>
-                        <a href="../athletes.html" 
-                        class="pb-1 hover:border-b-2 hover:border-white">Athletes</a>
-                    </li>
-                    <li>
-                        <a href="../coaches.html" 
-                        class="pb-1 hover:border-b-2 hover:border-white">Coaches</a>
-                    </li>
-                    <li>
-                        <a href="../about.html"
-                        class="pb-1 hover:border-b-2 hover:border-white">About</a>
-                    </li>
 
+            <nav>
+                <ul class="hidden md:flex gap-6">
+                    <li><a href="../index.html" class="pb-1 hover:border-b-2 hover:border-white">Home</a></li>
+                    <li><a href="../about.html" class="pb-1 hover:border-b-2 hover:border-white">About</a></li>
+                    <li><a href="../contact.html" class="pb-1 hover:border-b-2 hover:border-white">Contact</a></li>
                 </ul>
             </nav>
-            <div>
-                <button class="bg-white text-black px-3 py-1 rounded">Sign Up</button>
-            </div>
+
+            <button class="bg-white text-black px-3 py-1 rounded hidden md:block">
+                Sign Up
+            </button>
+
+            <!-- Mobile button -->
+            <button
+                id="dropdown-btn"
+                class="md:hidden text-3xl cursor-pointer">
+                ☰
+            </button>
+
+            <!-- Mobile dropdown (INSIDE header) -->
+            <nav
+                id="mobile-nav"
+                class="hidden flex flex-col absolute top-full right-3 w-40 bg-black text-white p-4 gap-3 z-50 border border-gray-700 rounded mt-1">
+                <a href="../index.html" class="hover:border-b-2 hover:border-white">Home</a>
+                <a href="../about.html" class="hover:border-b-2 hover:border-white">About</a>
+                <a href="../contact.html" class="hover:border-b-2 hover:border-white">Contact</a>
+            </nav>
         </header>
+
+        <script src="../main.js"></script>
     </body>
 </html>
