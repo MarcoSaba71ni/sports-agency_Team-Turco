@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Home Page || Team Turco </title>
+        <link rel="stylesheet" href="css/style.css">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+
+    <header class="bg-black text-white px-6 py-3 relative">
+        <!-- MOBILE HEADER DIV-->
+        <div class="flex items-center justify-between md:hidden">
+            <button id="lang-btn" class="text-3xl cursor-pointer">
+                <i class="fa-solid fa-language"></i>
+            </button>
+            <a href="../index.html">
+                <img src="../images/Team-Turco-Logo-Header.jpg"
+                class="w-12 h-12 object-cover" />
+            </a>
+            <button id="dropdown-btn" class="text-3xl cursor-pointer">☰</button>
+        </div>
+
+        <!-- DESKTOP HEADER DIV-->
+
+        <div class="hidden md:flex mx-4 md:mx-14 items-center justify-between">
+            <a href="../index.html">
+                <img src="../images/Team-Turco-Logo-Header.jpg"
+                class="w-12 h-12 object-cover" />
+            </a>
+            <nav>
+                <ul class="flex gap-8">
+                <li><a href="../index.html" class="hover:border-b-2">Home</a></li>
+                <li><a href="../about.html" class="hover:border-b-2">About</a></li>
+                <li><a href="../contact.html" class="hover:border-b-2">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="bg-white text-black px-4 py-1 rounded">
+                Sign Up
+            </button>
+        </div>
+
+        <!-- LANGUAGE NAV -->
+        <nav class="hidden md:hidden absolute top-full left-4 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
+        id="lang-nav">
+            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
+            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
+            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+        </nav>
+
+        <nav
+        id="mobile-nav"
+        class="hidden md:hidden absolute top-full right-1 w-30 bg-black text-white z-50 border border-gray-700 rounded flex flex-col">
+            <a href="../index.html"
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Home</a>
+            <a href="../about.html"
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">About</a>
+            <a href="../contact.html" 
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="relative h-[80vh] overflow-hidden">
+
+            <!-- SLIDES -->
+             
+            <!-- STATIC OVERLAY -->
+            <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white">
+                <h1 class="font-redwing text-3xl text-black md:text-5xl uppercase mb-4">
+                Limitation is a state of mind
+                </h1>
+
+                <a
+                href="./about.html"
+                class="font-redwing uppercase bg-black px-6 py-2 rounded
+                        hover:bg-white hover:text-black transition">
+                About Us
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+    <script type="module" src="main.js"></script>
+    </body>
+</html>

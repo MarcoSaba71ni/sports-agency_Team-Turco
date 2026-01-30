@@ -35,3 +35,4 @@ document.addEventListener("click", (e) => {
     languageNav.classList.add("hidden");
   }
 });
+

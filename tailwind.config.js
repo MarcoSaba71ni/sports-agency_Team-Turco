@@ -10,7 +10,10 @@ export default {
         secondary: 'white',
         tertiary: '#959595',
         quaternary: '#0D6868',
-      }
+      },
+      fontFamily: {
+        redwing: ['Redwing'],
+      },
     },
   },
   plugins: [],
