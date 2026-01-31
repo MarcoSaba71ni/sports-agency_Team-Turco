@@ -1,17 +1,28 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: 'Redwing';
-  src: url('/fonts/Redwing/Redwing-Medium.woff2') format('woff2'); /* Adjust path and filename */
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+  font-family: Redwing;
+  src: url("../fonts/Redwing-Light.otf");
 }
 
-@font-face {
-  font-family: 'Redwing';
-  src: url('/fonts/Redwing/Redwing-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+.font-redwing {
+  font-family: Redwing , sans-serif;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-img.active {
+  opacity: 1;
 }

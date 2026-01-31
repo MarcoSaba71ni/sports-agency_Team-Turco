@@ -36,3 +36,6 @@ document.addEventListener("click", (e) => {
   }
 });
 
+
+// FadeIn functionality
+
