@@ -36,6 +36,26 @@ document.addEventListener("click", (e) => {
   }
 });
 
+const images = [
+  "images/Trainers-TeamTurco/Diogo-img1.jpeg",
+  "images/Trainers-TeamTurco/Diogo-img4-Copy.jpeg",
+  "images/Trainers-TeamTurco/Diogo-img6-Copy.jpeg"
+];
 
-// FadeIn functionality
+const heroImg = document.getElementById("hero-img");
+let currentIndex = 0;
 
+setInterval(() => {
+  // fade out
+  heroImg.classList.remove("opacity-100");
+  heroImg.classList.add("opacity-0");
+
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    heroImg.src = images[currentIndex];
+
+    // fade in
+    heroImg.classList.remove("opacity-0");
+    heroImg.classList.add("opacity-100");
+  }, 300);
+}, 4000);

@@ -41,10 +41,10 @@
                 class="w-12 h-12 object-cover" />
             </a>
             <nav>
-                <ul class="flex gap-8">
-                <li><a href="../index.html" class="hover:border-b-2">Home</a></li>
-                <li><a href="../about.html" class="hover:border-b-2">About</a></li>
-                <li><a href="../contact.html" class="hover:border-b-2">Contact</a></li>
+                <ul class="font-redwing flex gap-8">
+                    <li><a href="#" class="hover:border-b-2 p-2">Home</a></li>
+                    <li><a href="#" class="hover:border-b-2 p-2">About</a></li>
+                    <li><a href="#" class="hover:border-b-2 p-2">Contact</a></li>
                 </ul>
             </nav>
             <button class="bg-white text-black px-4 py-1 rounded">
@@ -63,11 +63,11 @@
         <nav
         id="mobile-nav"
         class="hidden md:hidden absolute top-full right-1 w-30 bg-black text-white z-50 border border-gray-700 rounded flex flex-col">
-            <a href="../index.html"
+            <a href="#"
             class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Home</a>
-            <a href="../about.html"
+            <a href="#"
             class="p-2 pl-2 hover:bg-white hover:text-black text-sm">About</a>
-            <a href="../contact.html" 
+            <a href="#" 
             class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Contact</a>
         </nav>
     </header>
@@ -75,11 +75,12 @@
 
         <section class="relative h-[80vh] overflow-hidden">
 
-            <!-- SLIDES -->
+            <!-- SLIDES DIV -->
             <div class="absolute inset-0">
                 <img 
+                id="hero-img"
                 src="images/Trainers-TeamTurco/Diogo-img1.jpeg"
-                class="w-full h-full object-cover object-[center_65%] animate-fadeIn">
+                class="w-full h-full object-cover object-[center_65%] transition-opacity duration-1000 opacity-100">
             </div> 
 
 
@@ -88,10 +89,8 @@
                 <h1 class="font-redwing font-bold text-2xl text-black md:text-3xl uppercase mb-4">
                 Limitation is a state of mind
                 </h1>
- 
-
                 <a
-                href="./about.html"
+                href="#"
                 class="font-redwing font-sm uppercase bg-black px-3 py-2 rounded
                         hover:bg-white hover:text-black transition">
                 About Us
@@ -100,7 +99,7 @@
         </section>
         
         <!-- Breath Section -->
-         <section class=" flex flex-col text-5xl items-center justify-center mx-auto my-50 gap-1">
+         <section class=" flex flex-col text-4xl items-center justify-center mx-auto my-40 gap-1">
             <h2 class="font-[Orbitron]">Beyond athletes management</h2>
             <h2 class="font-[Orbitron]">We boost humans</h2>
          </section>
@@ -111,30 +110,44 @@
                 <h2 class="font-[Orbitron] text-center text-4xl text-white">Our Athletes</h2>
             </div>
             <div class="flex flex-row gap-3 justify-center mx-auto">
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
                     <img src="images/Trainers-TeamTurco/Diogo-img1.jpeg" class="w-50 h-60 object-cover">
-                    <p class="text-white">Diogo Turco</p>
+                    <p class="text-white">Diogo Turco (34)</p>
+                    <p class="text-white opacity-70">Football</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
                     <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-50 h-60 object-cover">   
-                    <p class="text-white">Diogo Turco</p>
+                    <p class="text-white">Diogo Turco (34)</p>
+                    <p class="text-white opacity-70">Football</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
                     <img src="images/Trainers-TeamTurco/Diogo-img3.jpeg" class="w-50 h-60 object-cover">
-                    <p class="text-white">Diogo Turco</p>
+                    <p class="text-white">Diogo Turco (34)</p>
+                    <p class="text-white opacity-70">Football</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
                     <img src="images/Trainers-TeamTurco/Diogo-img1.jpeg" class="w-50 h-60 object-cover">
-                    <p class="text-white">Diogo Turco</p>
+                    <p class="text-white">Diogo Turco (34)</p>
+                    <p class="text-white opacity-70">Football</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
                     <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-50 h-60 object-cover">   
-                    <p class="text-white">Diogo Turco</p>
+                    <p class="text-white">Diogo Turco (34)</p>
+                    <p class="text-white opacity-70">Football</p>
                 </div>
-                <div class="flex flex-col items-center">
+                <div class="flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
                     <img src="images/Trainers-TeamTurco/Diogo-img3.jpeg" class="w-50 h-60 object-cover">
-                    <p class="text-white">Diogo Turco</p>
+                    <p class="text-white">Diogo Turco (34)</p>
+                    <p class="text-white opacity-70">Football</p>
                 </div>
+            </div>
+            <div class="flex justify-center mx-auto">
+                <a
+                href="#"
+                class="font-redwing font-sm uppercase bg-white px-3 py-2 rounded
+                        hover:bg-black hover:text-white transition">
+                Meet our Athletes
+                </a>
             </div>
         </section>
 
@@ -148,7 +161,7 @@
                 <h2 class="font-[Orbitron] text-4xl text-center">Our Coaches</h2>
                 <p class="font-redwing text-white ">10+ years competitive training.</p>
                 <p class="font-redwing text-white pb-2">We coach more than 50 athletes all over the globe</p>
-                <a href="pages/coaches.html" class="font-redwing w-auto uppercase bg-black px-3 py-2 rounded
+                <a href="#" class="font-redwing w-auto uppercase bg-black px-3 py-2 rounded
                         hover:bg-white hover:text-black transition">View Coaches</a>
             </div>
         </section>
@@ -157,7 +170,7 @@
             <div class="flex flex-col items-center justify-center my-20 gap-4">
                 <h2 class="font-[Orbitron] text-4xl">Join Team Turco</h2>
                 <a
-                href="./contact.html"
+                href="#"
                 class="font-redwing uppercase bg-black text-white px-6 py-2 rounded
                         hover:bg-white hover:text-black transition">
                 Contact Us
@@ -165,6 +178,11 @@
             </div>
         </section>
 
+        <section class=" py-6 text-[#6a1c54] flex flex-col items-center justify-center my-20 text-center">
+            <h1 class="font-redwing font-bold text-9xl">MASL</h1>
+            <p>Website Development & Digital Services</p>
+        </section>
+        
     </main>
     <script type="module" src="main.js"></script>
     </body>
