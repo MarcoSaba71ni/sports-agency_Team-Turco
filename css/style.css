@@ -213,6 +213,9 @@
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
   }
+  .mx-6 {
+    margin-inline: calc(var(--spacing) * 6);
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -221,6 +224,9 @@
   }
   .my-30 {
     margin-block: calc(var(--spacing) * 30);
+  }
+  .mr-12 {
+    margin-right: calc(var(--spacing) * 12);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -391,6 +397,9 @@
   .pr-3 {
     padding-right: calc(var(--spacing) * 3);
   }
+  .pr-6 {
+    padding-right: calc(var(--spacing) * 6);
+  }
   .pb-2 {
     padding-bottom: calc(var(--spacing) * 2);
   }
@@ -399,6 +408,9 @@
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
+  }
+  .pl-6 {
+    padding-left: calc(var(--spacing) * 6);
   }
   .text-center {
     text-align: center;
@@ -538,11 +550,6 @@
       }
     }
   }
-  .sm\:mx-auto {
-    @media (width >= 40rem) {
-      margin-inline: auto;
-    }
-  }
   .sm\:block {
     @media (width >= 40rem) {
       display: block;
@@ -561,11 +568,6 @@
   .sm\:w-50 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 50);
-    }
-  }
-  .sm\:justify-center {
-    @media (width >= 40rem) {
-      justify-content: center;
     }
   }
   .sm\:object-\[center_40\%\] {
@@ -597,6 +599,11 @@
   .md\:my-40 {
     @media (width >= 48rem) {
       margin-block: calc(var(--spacing) * 40);
+    }
+  }
+  .md\:block {
+    @media (width >= 48rem) {
+      display: block;
     }
   }
   .md\:flex {
@@ -653,6 +660,9 @@
 .no-scrollbar {
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+html, body {
+  overflow-x: hidden;
 }
 @font-face {
   font-family: Redwing;
