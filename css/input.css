@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+
 @font-face {
   font-family: Redwing;
   src: url("../fonts/Redwing-Light.otf");

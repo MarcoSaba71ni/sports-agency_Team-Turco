@@ -129,38 +129,77 @@
             <div>
                 <h2 class="font-[Orbitron] text-center text-2xl sm:text-4xl text-white">Our Athletes</h2>
             </div>
-            <div class="flex flex-col md:flex-row gap-3 justify-center mx-auto">
-                <div class="flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                    <img src="images/Trainers-TeamTurco/Diogo-img1.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">
-                    <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
-                    <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+            <!-- Scrollable Carousel-->
+            <div class="flex flex-row gap-12 justify-between mx-auto">
+                <button
+                id="prev-btn"
+                class="hidden lg:block cursor-pointer pl-3">
+                    <i class="fa-solid fa-chevron-left text-xl md:text-3xl text-gray-500 hover:text-white"></i>     
+                </button>
+                
+                <div
+                id="athletes-carousel"
+                class="flex flex-nowrap overflow-x-auto lg:overflow-hidden scroll-smooth
+                    no-scrollbar gap-3 py-8">
+                    <div class=" flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 sm:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img3.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img1.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img1.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col sm:hidden items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    
                 </div>
-                <div class="flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                    <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 sm:h-60 object-cover">   
-                    <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
-                    <p class="text-white opacity-70 text-xs md:text-md">Football</p>
-                </div>
-                <div class="flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                    <img src="images/Trainers-TeamTurco/Diogo-img3.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">
-                    <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
-                    <p class="text-white opacity-70 text-xs md:text-md">Football</p>
-                </div>
-                <div class="hidden sm:flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                    <img src="images/Trainers-TeamTurco/Diogo-img1.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">
-                    <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
-                    <p class="text-white opacity-70 text-xs md:text-md">Football</p>
-                </div>
-                <div class="hidden sm:flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                    <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">   
-                    <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
-                    <p class="text-white opacity-70 text-xs md:text-md">Football</p>
-                </div>
-                <div class="hidden sm:flex flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                    <img src="images/Trainers-TeamTurco/Diogo-img3.jpeg" class="w-40 h-50 sm:w-50 sm:h-60 object-cover">
-                    <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
-                    <p class="text-white opacity-70 text-xs md:text-md">Football</p>
-                </div>
+                <button
+                id="next-btn"
+                class="hidden lg:block cursor-pointer pr-3">
+                    <i class="fa-solid fa-chevron-right text-3xl text-gray-500 hover:text-white"></i>                        
+                </button>
             </div>
+
             <div class="flex justify-center mx-auto">
                 <a
                 href="#"
