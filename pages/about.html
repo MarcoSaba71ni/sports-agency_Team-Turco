@@ -81,7 +81,7 @@
             <div>
                 <div class="flex flex-col justify-center px-8 md:px-20 w-full font-[Orbitron]">
                     <div class="flex gap-2 text-3xl md:text-6xl text-center font-bold text-white">
-                        <h1 id="dynamic-text">YOUR</h1>
+                        <h1 id="dynamic-text">YOUR COMPLEXITY</h1>
                         <h1 id="text-two" class="hidden">Individuality</h1>
                         <h1 id="text-three" class="hidden">Performance</h1>
                     </div>
@@ -91,61 +91,164 @@
                 </div>
             </div>
         </section>
-        <section class="flex flex-col items-center justify-center py-12 bg-gray-100">
-            <div class="flex flex-col items-center">
-                <h2 class="text-black font-bold font-redwing text-5xl">OUR MISSION</h2>
-                <h3 class="text-black font-bold font-redwing">We empower humans</h3>
+
+        <!-- AGENCY DESCRIPTION-->
+        <section class="bg-gray-100 w-full h-auto flex flex-col justify-center gap-2 border-t-1 py-24 border-gray-300">
+            <h2 class="flex justify-center text-4xl text-black mx-12 font-redwing">Team Turco is a high-performance sports agency built to develop complete athletes — physically, mentally, and strategically:</h2>
+            <ul class="flex flex-col gap-2 text-2xl text-black mx-20 pt-6 font-redwing list-disc">
+                <li>Strategic training</li>
+                <li>Mindset development</li>
+                <li>Long-term career management</li>
+            </ul>
+        </section>
+
+        <!-- AGENCY HISTORY-->
+        <section class="flex flex-row mx-12 py-24">
+            <div class="w-7/12 h-auto object-cover">
+                <img src="../images/Athletes-TeamTurco/Diogo-with-grandmas.jpeg">                
             </div>
-            <div class="flex flex-row gap-4 mx-10 mt-8">
-                <div>
-                    <img src="../images/Trainers-TeamTurco/Diogo-img1.jpeg" class="w-160 h-80 object-cover rounded-sm mt-8">
-                </div>
-                <div class="flex flex-col justify-center items-center px-8text-black font-bold font-redwing">
-                    <h3>Our trainers are dedicated to helping athletes reach their full potential.</h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                </div>
+            <div class="w-5/12 ml-12">
+                <h3 class="font-redwing text-4xl text-black">Everything started in the tropical city of Rio de Janeiro</h3>
+                <p class="pt-6 leading-relaxed text-lg">
+                    Team Turco was founded by Diogo Turco with a clear vision: to build a 
+                    performance-driven community centered on: mindset, discipline, and 
+                    long-term well-being through sport. 
+                </p>
+                <p class="pt-6 leading-relaxed text-lg">
+                    What started as a local initiative in Brazil has grown into an 
+                    international team of experienced trainers operating in Brazil and Spain, 
+                    supporting athletes and clients across the globe.
+                </p>
             </div>
         </section>
-                <section class="flex flex-col items-center justify-center py-12 bg-gray-100">
-            <div class="flex flex-col items-center">
-                <h2 class="text-black font-bold font-redwing text-5xl">OUR GOALS</h2>
-                <h3 class="text-black font-bold font-redwing">We empower humans</h3>
+
+        <!-- TRAINERS SECTION-->
+        <section class="relative h-[60vh] md:h-[80vh] overflow-hidden mt-20 ">
+            <div class="absolute inset-0 brightness-50">
+                <img src="../images/Athletes-TeamTurco/resting-traction-diogo-athlete.jpeg"
+                class="w-full h-[80vh] object-cover object-[30%_65%] sm:object-[center_40%]">
             </div>
-            <div class="flex flex-row-reverse gap-4 mx-10 mt-8">
-                <div>
-                    <img src="../images/Trainers-TeamTurco/Diogo-img1.jpeg" class="w-160 h-80 object-cover rounded-sm mt-8">
-                </div>
-                <div class="flex flex-col justify-center items-center px-8text-black font-bold font-redwing">
-                    <h3>Our trainers are dedicated to helping athletes reach their full potential.</h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                </div>
+            <div class="absolute inset-0 flex flex-col items-center justify-end z-20 text-center pb-5 text-white">
+                <h2 class="font-[Orbitron] text-2xl sm:text-4xl text-center">Meet Our Team</h2>
+                <p class="font-redwing hidden sm:block text-white">Professional that assists our clients in their athletic journey.</p>
+                <button class=" p-2 rounded-md mx-auto flex flex-col gap-1 text-xs py-2 text-white
+                transform transition-transform duration-300 ease-out hover:scale-110 cursor-pointer"
+                id="show-more-btn_profile">
+                    <p>Show More</p>
+                    <i class="fa-solid fa-chevron-down fa-xl" style="color: grey;"></i>
+                </button>
             </div>
+
         </section>
-                <section class="flex flex-col items-center justify-center py-12 bg-gray-100">
-            <div class="flex flex-col items-center">
-                <h2 class="text-black font-bold font-redwing text-5xl">OUR VALUES</h2>
-                <h3 class="text-black font-bold font-redwing">We empower humans</h3>
-            </div>
-            <div class="flex flex-row gap-4 mx-10 mt-8">
-                <div>
-                    <img src="../images/Trainers-TeamTurco/Diogo-img1.jpeg" class="w-160 h-80 object-cover rounded-sm mt-8">
+
+        <!-- hidden TRAINERS PROFILES-->
+        <div class="bg-black flex flex-col gap-12 px-24  pt-24 rounded-md hidden" id="trainers-profiles">
+            <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer flex gap-6 
+            transition-all duration-300 hover:scale-[1.02] 
+            hover:shadow-2xl hover:shadow-green-500/20">
+                <img src="../images/Trainers-TeamTurco/Diogo-img6-Copy.jpeg" class="w-55 h-70 object-cover rounded-md flex-shrink-0">
+                <div class="text-white flex flex-col gap-4 pt-4">
+                    <div>
+                        <h3 class=" font-redwing text-3xl">Diogo Turco</h3>
+                        <p class="text-gray-400 text-xl">Barcelona</p>
+                        <p class="font-redwing text-xl">Trainer & CEO</p>                                                                              
+                    </div>
+                    <div>
+                        <p class="font-redwing text-md">With over 10 years of experience working with clients across different 
+                            ages, backgrounds, and performance levels, Diogo has developed a 
+                            distinctive approach to human development and athletic performance. 
+                            From professional athletes to individuals training in various modalities, 
+                            he combines technical expertise with a deep understanding of mindset, 
+                            discipline, and long-term progression. 
+                        </p>
+                        <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
+                            <li>Former Professional Football Player</li>
+                            <li>10+ Years in Elite Competitive Environments</li>
+                            <li>International Fitness Training Experience</li>
+                            <li>Specialist in Athletic Performance Development</li>
+                        </ul>                     
+                        </div> 
                 </div>
-                <div class="flex flex-col justify-center items-center px-8text-black font-bold font-redwing">
-                    <h3>Our trainers are dedicated to helping athletes reach their full potential.</h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
-                    <h3>Having a methodology developed for a very experienced team of trainers. </h3>
+            </div>
+            <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer flex gap-6 
+            transition-all duration-300 hover:scale-[1.02] 
+            hover:shadow-2xl hover:shadow-green-500/20">
+                <img src="../images/Trainers-TeamTurco/Marcelo-running.jpeg" class="w-55 h-70 object-cover rounded-md flex-shrink-0">
+                <div class="text-white flex flex-col gap-4 pt-4">
+                    <div>
+                        <h3 class=" font-redwing text-3xl">Marcelo Cabral</h3>
+                        <p class="text-xl text-gray-400">Rio de Janeiro, Brazil</p>
+                        <p class="font-redwing text-xl">Trainer</p>                                
+                    </div>
+                    <div>
+                        <p class="font-redwing text-md">Specialized in working with football players, backed by a successful 
+                        professional career across multiple countries. With over 15 years of 
+                        elite competitive experience, Marcelo understands the physical and 
+                        mental demands of high-performance sport. After being mentored by 
+                        Team Turco during his athletic career, he now brings his expertise 
+                        and leadership to our professional team.</p>
+                        <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
+                            <li>Former Professional Football Player</li>
+                            <li>10+ Years in Elite Competitive Environments</li>
+                            <li>International Playing Experience</li>
+                            <li>Specialist in Athletic Performance Development</li>
+                        </ul>                       
+                    </div>
                 </div>
             </div>
-        </section>
+            <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer flex gap-6 
+            transition-all duration-300 hover:scale-[1.02] 
+            hover:shadow-2xl hover:shadow-green-500/20">
+                <img src="../images/Trainers-TeamTurco/nelson-turco-barcelona-stadium.jpeg" class="w-55 h-70 object-[center_20%] rounded-md">
+                <div class="text-white flex flex-col gap-4 pt-4">
+                    <div>
+                        <h3 class=" font-redwing text-3xl">Nelson Correa</h3>
+                        <p class="text-xl text-gray-400">Brazil</p>        
+                    </div>
+                    <div>
+                        <p class="font-redwing text-xl">Trainer</p>
+                    </div>
+                </div>
+                
+            </div>
+            <button class=" p-2 rounded-md mx-auto flex flex-col justify-end gap-1 text-xs
+            transform transition-transform duration-300 ease-out hover:scale-110 cursor-pointer"
+            id="show-less-btn_profile">
+                <i class="fa-solid fa-chevron-up fa-xl" style="color: grey;"></i>            
+                <p class="text-white">Show Less</p>
+            </button>
+        </div>
     </main>
+    <section class="flex mx-10 justify-evenly gap-2 pt-24">
+        <!-- Our Mission -->
+        <div class="flex flex-col gap-4 flex-shrink-0 w-1/3 bg-zinc-900 p-12 text-white">
+            <h3 class="font-redwing text-2xl sm:text-4xl text-center">OUR MISSION</h3>
+            <p>To develop high-performing individuals through elite training, discipline, and mindset — building stronger bodies, stronger minds, and stronger character.</p>
+        </div>
+
+        <!-- Our Values -->
+        <div class="flex flex-col gap-4 flex-shrink-0 w-1/3 bg-zinc-900 p-12 text-white">
+            <h3 class="font-redwing text-2xl sm:text-4xl text-center">OUR VALUES</h3>
+            <ul class="text-center">
+                <li>Displine</li>
+                <li>Performance</li>
+                <li>Community</li>
+                <li>Intregrity</li>
+                <li>Growth</li>
+            </ul>
+        </div>
+
+        <!-- Our Goals -->
+         <div class="flex flex-col gap-4 flex-shrink-0 w-1/3 bg-zinc-900 p-12 text-white">
+            <h3 class="font-redwing text-2xl sm:text-4xl text-center ">OUR GOALS</h3>
+            <p>To expand Team Turco across Brazil, Spain, Sweden, and beyond — building a global network of elite trainers and transforming 10,000+ lives through performance-based training.</p>
+         </div>
+
+    </section>
+    <section class=" py-6 text-[#6a1c54] flex flex-col items-center justify-center my-20 text-center">
+        <h1 class="font-redwing font-bold text-9xl">MASL</h1>
+        <p>Website Development & Digital Services</p>
+    </section>
     <script type="module" src="../js/about.js"></script>
     </body>
 </html>
