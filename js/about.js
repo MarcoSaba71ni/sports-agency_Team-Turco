@@ -24,5 +24,6 @@ showMoreBtn.addEventListener("click", () => {
 
 showLessBtn.addEventListener("click", () => {
     teamSection.classList.add("hidden");
+    teamSection.scrollIntoView({behavior:"smooth"}, 2000);
     showMoreBtn.classList.remove("hidden");
 });
