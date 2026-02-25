@@ -154,7 +154,7 @@
             <!-- Our Goals -->
             <div class="flex flex-col gap-4 flex-shrink-0 w-full md:w-1/3 bg-zinc-900 p-12 text-white">
                 <h3 class="font-redwing text-2xl sm:text-4xl text-center ">OUR GOALS</h3>
-                <p>To expand Team Turco across Brazil, Spain, Sweden, and beyond — building a global network of elite trainers and transforming 10,000+ lives through performance-based training.</p>
+                <p>To expand Team Turco across Brazil, Spain, Sweden, and beyond — building a global network of elite trainers and transform lives through sports.</p>
             </div>
 
         </section>
@@ -164,18 +164,48 @@
         <section class="relative h-[60vh] md:h-[80vh] overflow-hidden my-20">
             <div class="absolute inset-0">
                 <img src="../images/Trainers-TeamTurco/diogo-marcelo-kids.jpeg"
-                class="w-full h-[80vh] object-cover object-[30%_65%] sm:object-[center_40%]">
+                class="w-full h-[80vh] object-cover object-[30%_65%] sm:object-[center_40%] brightness-50 sm:brightness-100">
             </div>
             <div class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center text-white">
-                <h2 class="font-[Orbitron] text-2xl sm:text-4xl text-center">Our Coaches</h2>
-                <p class="font-redwing text-white">We coach more than 50 athletes all over the globe</p>
-                <a href="#" class="font-redwing w-auto uppercase bg-black px-3 py-2 rounded
-                        hover:bg-white hover:text-black transition">View Coaches</a>
+                <h2 class="font-[Orbitron] text-2xl sm:text-4xl text-center">What makes us different</h2>
+                <p class="font-redwing text-white">Envolve. Overcome. Structure.</p>
+                <a href="contact.html" class="font-redwing w-auto uppercase bg-black px-3 py-2 rounded
+                        hover:bg-white hover:text-black text-sm sm:text-xl transition">You as an individual</a>
             </div>
         </section>
+        <div
+            id="athletes-carousel"
+            class="flex flex-wrap overflow-x-auto mx-auto justify-center lg:overflow-hidden scroll-smooth
+                no-scrollbar gap-6 py-8">
+                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                    <img src="../images/Athletes-TeamTurco/athlete-proception-diogo.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50 shadow-xl shadow-gray-500">
+                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">High Performance Individuals</p>
+                </div>
+                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
+                    shadow-xl shadow-gray-500">
+                    <img src="../images/Athletes-TeamTurco/girls-swimmers-medal-fluminense.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition rounded-md duration-300 brightness-50 sm:brightness-100 hover:brightness-50
+                    ">
+                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">Varied target groups</p>
+                </div>
+                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
+                    shadow-xl shadow-gray-500">
+                    <img src="../images/Trainers-TeamTurco/Nelson-turco-kids.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50">
+                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">Integration</p>
+                </div>
+                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
+                    shadow-xl shadow-gray-500">
+                    <img src="../images/Trainers-TeamTurco/Marcelo-with-kid.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50">
+                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">Community</p>
+                </div>
+            </div>
+        </div>
 
         <!-- TRAINERS SECTION-->
-        <section class="relative h-[60vh] md:h-[80vh] overflow-hidden mt-20 ">
+        <section class="hidden relative h-[60vh] md:h-[80vh] overflow-hidden mt-20 ">
             <div class="absolute inset-0 brightness-50">
                 <img src="../images/Athletes-TeamTurco/resting-traction-diogo-athlete.jpeg"
                 class="w-full h-[80vh] object-cover object-[30%_65%] sm:object-[center_40%]">
@@ -197,7 +227,7 @@
 
 
         <!-- hidden TRAINERS PROFILES-->
-        <div class="bg-black flex flex-col gap-12 px-12 md:px-24  pt-24 rounded-md hidden" id="trainers-profiles">
+        <div class=" bg-black flex flex-col gap-12 px-12 md:px-24  pt-24 rounded-md hidden" id="trainers-profiles">
             <!-- Trainer Card -->
             <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer flex flex-col sm:flex-row gap-6 
             transition-all duration-300 hover:scale-[1.02] 
