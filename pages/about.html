@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> About us || Team Turco </title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/svg+xml" href="../images/Team-Turco-Logo-Header.jpg" />
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+     <header class="bg-black text-white px-6 py-3 relative">
+        <!-- MOBILE HEADER DIV-->
+        <div class="flex items-center justify-between md:hidden">
+            <button id="lang-btn" class="text-3xl cursor-pointer transition-transform duration-300 ease-in-out 
+               transform hover:scale-110 ">
+                <i class="fa-solid fa-language"></i>
+            </button>
+            <a href="../index.html">
+                <img src="../images/Team-Turco-Logo-Header.jpg"
+                class="w-12 h-12 object-cover transition-transform duration-300 ease-in-out 
+               transform hover:scale-110" />
+            </a>
+            <button id="dropdown-btn" class="text-3xl cursor-pointer">☰</button>
+        </div>
+
+        <!-- DESKTOP HEADER DIV-->
+
+        <div class="hidden md:flex mx-4 md:mx-14 items-center justify-between">
+            <a href="../index.html">
+                <img src="../images/Team-Turco-Logo-Header.jpg"
+                class="w-12 h-12 object-cover transition-transform duration-300 ease-in-out 
+               transform hover:scale-110" />
+            </a>
+            <nav>
+                <ul class="font-redwing flex gap-8">
+                    <li><a href="../index.html" class="hover:border-b-2 p-2">Home</a></li>
+                    <li><a href="about.html" class="hover:border-b-2 p-2">About</a></li>
+                    <li><a href="#" class="hover:border-b-2 p-2">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="bg-white text-black px-4 py-1 rounded">
+                Sign Up
+            </button>
+        </div>
+
+        <!-- LANGUAGE NAV -->
+        <nav class="hidden md:hidden absolute top-full left-4 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
+        id="lang-nav">
+            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
+            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
+            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+        </nav>
+
+        <nav
+        id="mobile-nav"
+        class="hidden md:hidden absolute top-full right-1 w-30 bg-black text-white z-50 border border-gray-700 rounded flex flex-col">
+            <a href="../index.html"
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Home</a>
+            <a href="about.html"
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">About</a>
+            <a href="#" 
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <!-- HERO SECTION -->
+        <section class="bg-black w-full h-[60vh] md:h-[90vh] flex flex-col justify-center gap-2 border-t-1 border-white">
+            <div>
+                <h2 class="font-redwing text-white px-8 md:px-20 w-full">ABOUT US</h2>
+            </div>
+            <div>
+                <div class="flex flex-col justify-center px-8 md:px-20 w-full font-[Orbitron]">
+                    <div class="flex gap-2 text-2xl md:text-3xl md:text-6xl text-center font-bold text-white">
+                        <h1 id="dynamic-text">YOUR COMPLEXITY</h1>
+                        <h1 id="text-two" class="hidden">Individuality</h1>
+                        <h1 id="text-three" class="hidden">Performance</h1>
+                    </div>
+                    <div class="pl-2">
+                        <h1 class="text-2xl md:text-4xl font-bold text-white">IS OUR STRENGTH</h1>
+                    </div>                
+                </div>
+            </div>
+        </section>
+
+        <!-- AGENCY DESCRIPTION-->
+        <section class="bg-gray-100 w-full h-auto flex flex-col justify-center gap-2 border-t-1 py-24 border-gray-300">
+            <h2 class="flex justify-center text-2xl md:text-4xl text-black mx-12 font-redwing">Team Turco is a high-performance sports agency built to develop complete athletes — physically, mentally, and strategically:</h2>
+            <ul class="flex flex-col gap-2 text-xl md:text-2xl text-black mx-20 pt-6 font-redwing list-disc">
+                <li>Strategic training</li>
+                <li>Mindset development</li>
+                <li>Long-term career management</li>
+            </ul>
+        </section>
+
+        <!-- AGENCY HISTORY-->
+        <section class="bg-white w-full py-16 md:py-24 border-t border-gray-300">
+            <div class="max-w-7xl mx-auto px-8 md:px-20 flex flex-col md:flex-row items-center gap-12">
+                <!-- Image -->
+                <div class="w-full md:w-7/12">
+                    <img 
+                        src="../images/Athletes-TeamTurco/Diogo-with-grandmas.jpeg" 
+                        class="w-full h-[400px] md:h-[500px] object-cover rounded-md shadow-xl shadow-gray-500
+                        transition-transform duration-300 hover:scale-105 cursor-pointer"
+                        alt="Diogo Turco in Rio de Janeiro"
+                    >
+                </div>
+                <!-- Text -->
+                <div class="w-full md:w-5/12">
+                    <h3 class="font-redwing text-2xl md:text-4xl text-black">
+                        Everything started in the tropical city of Rio de Janeiro
+                    </h3>
+                    <p class="pt-6 leading-relaxed text-lg text-gray-700">
+                        Team Turco was founded by Diogo Turco with a clear vision: to build a 
+                        performance-driven community centered on mindset, discipline, and 
+                        long-term well-being through sport.
+                    </p>
+                    <p class="pt-6 leading-relaxed text-lg text-gray-700">
+                        What started as a local initiative in Brazil has grown into an 
+                        international team of experienced trainers operating in Brazil and Spain, 
+                        supporting athletes and clients across the globe.
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="flex flex-col md:flex-row mx-10 justify-evenly gap-2 pt-24">
+            <!-- Our Mission -->
+            <div class="flex flex-col gap-4 flex-shrink-0 w-full md:w-1/3 bg-zinc-900 p-12 text-white">
+                <h3 class="font-redwing text-2xl sm:text-4xl text-center">OUR MISSION</h3>
+                <p>To develop high-performing individuals through elite training, discipline, and mindset — building stronger bodies, stronger minds, and stronger character.</p>
+            </div>
+
+            <!-- Our Values -->
+            <div class="flex flex-col gap-4 flex-shrink-0 w-full md:w-1/3 bg-zinc-900 p-12 text-white">
+                <h3 class="font-redwing text-2xl sm:text-4xl text-center">OUR VALUES</h3>
+                <ul class="text-center">
+                    <li>Displine</li>
+                    <li>Performance</li>
+                    <li>Community</li>
+                    <li>Intregrity</li>
+                    <li>Growth</li>
+                </ul>
+            </div>
+
+            <!-- Our Goals -->
+            <div class="flex flex-col gap-4 flex-shrink-0 w-full md:w-1/3 bg-zinc-900 p-12 text-white">
+                <h3 class="font-redwing text-2xl sm:text-4xl text-center ">OUR GOALS</h3>
+                <p>To expand Team Turco across Brazil, Spain, Sweden, and beyond — building a global network of elite trainers and transform lives through sports.</p>
+            </div>
+
+        </section>
+
+
+                <!-- Coaches Section -->
+        <section class="relative h-[60vh] md:h-[80vh] overflow-hidden my-20">
+            <div class="absolute inset-0">
+                <img src="../images/Trainers-TeamTurco/diogo-marcelo-kids.jpeg"
+                class="w-full h-[80vh] object-cover object-[30%_65%] sm:object-[center_40%] brightness-50 sm:brightness-100">
+            </div>
+            <div class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center text-white">
+                <h2 class="font-[Orbitron] text-2xl sm:text-4xl text-center">What makes us different</h2>
+                <p class="font-redwing text-white">Envolve. Overcome. Structure.</p>
+                <a href="#" class="font-redwing w-auto uppercase bg-black px-3 py-2 rounded
+                        hover:bg-white hover:text-black text-sm sm:text-md transition">You as an individual</a>
+            </div>
+        </section>
+        <div
+            id="athletes-carousel"
+            class="flex flex-wrap overflow-x-auto mx-auto justify-center lg:overflow-hidden scroll-smooth
+                no-scrollbar gap-6 py-8">
+                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                    <img src="../images/Athletes-TeamTurco/athlete-proception-diogo.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50 shadow-xl shadow-gray-500">
+                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">High Performance Individuals</p>
+                </div>
+                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
+                    shadow-xl shadow-gray-500">
+                    <img src="../images/Athletes-TeamTurco/girls-swimmers-medal-fluminense.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition rounded-md duration-300 brightness-50 sm:brightness-100 hover:brightness-50
+                    ">
+                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">Varied target groups</p>
+                </div>
+                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
+                    shadow-xl shadow-gray-500">
+                    <img src="../images/Trainers-TeamTurco/Nelson-turco-kids.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50">
+                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">Integration</p>
+                </div>
+                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
+                    shadow-xl shadow-gray-500">
+                    <img src="../images/Trainers-TeamTurco/Marcelo-with-kid.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50">
+                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">Community</p>
+                </div>
+            </div>
+        </div>
+    </main>
+        <!-- Goals, Values and mission -->
+
+
+    <section class=" py-6 text-[#6a1c54] flex flex-col items-center justify-center my-20 text-center">
+        <h1 class="font-redwing font-bold text-9xl">MASL</h1>
+        <p>Website Development & Digital Services</p>
+    </section>
+    <script type="module" src="../js/about.js"></script>
+    </body>
+</html>

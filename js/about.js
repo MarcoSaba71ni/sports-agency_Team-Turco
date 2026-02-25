@@ -36,52 +36,20 @@ document.addEventListener("click", (e) => {
   }
 });
 
-const images = [
-  "images/Trainers-TeamTurco/Diogo-img1.jpeg",
-  "images/Trainers-TeamTurco/Diogo-img4-Copy.jpeg",
-  "images/Trainers-TeamTurco/Diogo-img6-Copy.jpeg"
-];
 
-const heroImg = document.getElementById("hero-img");
-let currentIndex = 0;
+const dynamicText = document.getElementById("dynamic-text");
+const words = ['COMPLEXITY', 'INDIVIDUALITY', 'EXCELLENCE'];
+let index = 0;
 
 setInterval(() => {
-  // fade out
-  heroImg.classList.remove("opacity-100");
-  heroImg.classList.add("opacity-0");
+    index++;
 
-  setTimeout(() => {
-    currentIndex = (currentIndex + 1) % images.length;
-    heroImg.src = images[currentIndex];
+    if(index >= words.length) {
+        index = 0;
+    }
 
-    // fade in
-    heroImg.classList.remove("opacity-0");
-    heroImg.classList.add("opacity-100");
-  }, 300);
-}, 4000);
-
-document.addEventListener("DOMContentLoaded", () => {
-  const carousel = document.getElementById("athletes-carousel");
-  const nextBtn = document.getElementById("next-btn");
-  const prevBtn = document.getElementById("prev-btn");
-
-  const scrollAmount = 300;
-
-  nextBtn.addEventListener("click", () => {
-    carousel.scrollBy({
-      left: scrollAmount,
-      behavior: "smooth"
-    });
-  });
-
-  prevBtn.addEventListener("click", () => {
-    carousel.scrollBy({
-      left: -scrollAmount,
-      behavior: "smooth"
-    });
-  });
-});
-
+    dynamicText.textContent = "YOUR " + words[index];
+}  , 1000);
 
 const teamSection = document.getElementById("trainers-profiles");
 const showMoreBtn = document.getElementById("show-more-btn_profile");
