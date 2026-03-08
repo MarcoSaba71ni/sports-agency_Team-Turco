@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Athletes || Team Turco </title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/svg+xml" href="../images/Team-Turco-Logo-Header.jpg" />
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-black text-white px-6 py-3 relative">
+            <!-- MOBILE HEADER DIV-->
+            <div class="flex items-center justify-between md:hidden">
+                <button id="lang-btn" class="text-3xl cursor-pointer transition-transform duration-300 ease-in-out 
+                transform hover:scale-110 ">
+                    <i class="fa-solid fa-language"></i>
+                </button>
+                <a href="../index.html">
+                    <img src="../images/Team-Turco-Logo-Header.jpg"
+                    class="w-12 h-12 object-cover transition-transform duration-300 ease-in-out 
+                transform hover:scale-110" />
+                </a>
+                <button id="dropdown-btn" class="text-3xl cursor-pointer">☰</button>
+            </div>
+
+            <!-- DESKTOP HEADER DIV-->
+
+            <div class="hidden md:flex mx-4 md:mx-14 items-center justify-between">
+                <a href="../index.html">
+                    <img src="../images/Team-Turco-Logo-Header.jpg"
+                    class="w-12 h-12 object-cover transition-transform duration-300 ease-in-out 
+                transform hover:scale-110" />
+                </a>
+                <nav>
+                    <ul class="font-redwing flex gap-8">
+                        <li><a href="../index.html" class="hover:border-b-2 p-2">Home</a></li>
+                        <li><a href="about.html" class="hover:border-b-2 p-2">About</a></li>
+                        <li><a href="#" class="hover:border-b-2 p-2">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="bg-white text-black px-4 py-1 rounded">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- LANGUAGE NAV -->
+            <nav class="hidden md:hidden absolute top-full left-4 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
+            id="lang-nav">
+                <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
+                <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
+                <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+            </nav>
+
+            <nav
+            id="mobile-nav"
+            class="hidden md:hidden absolute top-full right-1 w-30 bg-black text-white z-50 border border-gray-700 rounded flex flex-col">
+                <a href="../index.html"
+                class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Home</a>
+                <a href="about.html"
+                class="p-2 pl-2 hover:bg-white hover:text-black text-sm">About</a>
+                <a href="#" 
+                class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Contact</a>
+            </nav>
+        </header>
+    </body>
+        <section class="bg-black w-full h-[60vh] md:h-[90vh] flex flex-col gap-6 justify-center gap-2 border-t-1 border-white">
+            <div>
+                <h2 class="font-redwing text-white px-8 md:px-20 w-full">Our Athletes</h2>
+            </div>
+            <div>
+                <div class="flex flex-col justify-center px-8 gap-4 md:px-20 w-full font-[Orbitron]">
+                    <div class=" flex flex-col text-2xl md:text-3xl md:text-6xl text-center font-bold text-white">
+                        <h1 id="dynamic-text">WE DELIVER</h1>
+                        <h1>RESULTS</h1>
+                    </div>
+                    <div class="flex justify-center pl-2">
+                        <h1 class="text-2xl md:text-3xl font-bold text-white">YOU TRUST THE PROCESS</h1>
+                    </div>                
+                </div>
+            </div>
+        </section>
+        <main 
+        class="flex flex-col justify-center gap-6">
+            <h2 class="font-redwing text-4xl mx-auto mt-6">Athletes</h2>
+
+            <!-- Search Bar -->
+            <div class="w-full flex justify-center">
+                <input
+                class="border-2 pl-2 py-2 rounded-md flex justify-center w-full mx-16"
+                type="text"
+                placeholder="Search for Athletes"/>
+            </div>
+            <!-- Carousel Section -->
+                <div
+                id="athletes-carousel"
+                class="flex flex-nowrap overflow-x-auto lg:overflow-hidden scroll-smooth
+                    no-scrollbar gap-3 py-8">
+                    <div class=" flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Athletes-TeamTurco/jaime-ironman.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Jaime (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Tri-Athlete</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Athletes-TeamTurco/lukas-brazilian-nationalteam.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Lukas(27)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Athletes-TeamTurco/victor-fluminense-flag.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Victor (20)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Swimming</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Players-TeamTurco/gean_img00.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Gean Miller (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Athletes-TeamTurco/diogo-fatherinlaw - Copy.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Paddle</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Athletes-TeamTurco/jaime-cycling.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Jaime (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Cycling</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Players-TeamTurco/sabatini_img02.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Marco Sabatini (26)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Players-TeamTurco/swimming_img01.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Swimming</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col sm:hidden items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="images/Trainers-TeamTurco/Diogo-img2.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Diogo Turco (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                </div>
+        </main>
+</html>
