@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Athletes | Team Turco </title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/svg+xml" href="../images/Team-Turco-Logo-Header.jpg" />
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..."
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="bg-black text-white px-6 py-3 relative">
+            <!-- MOBILE HEADER DIV-->
+            <div class="flex items-center justify-between md:hidden">
+                <button id="lang-btn" class="text-3xl cursor-pointer transition-transform duration-300 ease-in-out 
+                transform hover:scale-110 ">
+                    <i class="fa-solid fa-language"></i>
+                </button>
+                <a href="../index.html">
+                    <img src="../images/Team-Turco-Logo-Header.jpg"
+                    class="w-12 h-12 object-cover transition-transform duration-300 ease-in-out 
+                transform hover:scale-110" />
+                </a>
+                <button id="dropdown-btn" class="text-3xl cursor-pointer">☰</button>
+            </div>
+
+            <!-- DESKTOP HEADER DIV-->
+
+            <div class="hidden md:flex mx-4 md:mx-14 items-center justify-between">
+                <a href="../index.html">
+                    <img src="../images/Team-Turco-Logo-Header.jpg"
+                    class="w-12 h-12 object-cover transition-transform duration-300 ease-in-out 
+                transform hover:scale-110" />
+                </a>
+                <nav>
+                    <ul class="font-redwing flex gap-8">
+                        <li><a href="../index.html" class="hover:border-b-2 p-2">Home</a></li>
+                        <li><a href="about.html" class="hover:border-b-2 p-2">About</a></li>
+                        <li><a href="#" class="hover:border-b-2 p-2">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="bg-white text-black px-4 py-1 rounded">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- LANGUAGE NAV -->
+            <nav class="hidden md:hidden absolute top-full left-4 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
+            id="lang-nav">
+                <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
+                <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
+                <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+            </nav>
+
+            <nav
+            id="mobile-nav"
+            class="hidden md:hidden absolute top-full right-1 w-30 bg-black text-white z-50 border border-gray-700 rounded flex flex-col">
+                <a href="../index.html"
+                class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Home</a>
+                <a href="about.html"
+                class="p-2 pl-2 hover:bg-white hover:text-black text-sm">About</a>
+                <a href="#" 
+                class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Contact</a>
+            </nav>
+        </header>
+        <!-- Hero Section -->
+        <section class="bg-black w-full h-[60vh] md:h-[90vh] flex flex-col gap-6 justify-center gap-2 border-t-1 border-white">
+            <div>
+                <div class="flex flex-col justify-center px-8 gap-4 md:px-20 w-full font-[Orbitron]">
+                    <div class=" flex flex-col text-2xl md:text-3xl md:text-6xl text-center font-bold text-white">
+                        <h1 id="dynamic-text">WE DELIVER</h1>
+                        <h1>RESULTS</h1>
+                    </div>
+                    <div class="flex justify-center pl-2">
+                        <h1 class="text-2xl md:text-3xl font-bold text-center text-white">YOU TRUST THE PROCESS</h1>
+                    </div>                
+                </div>
+            </div>
+        </section>
+        <!-- Athletes Section -->
+        <main 
+        class="flex flex-col justify-center py-10 gap-10">
+            <h2 class="font-redwing text-4xl mx-auto mt-6">Athletes</h2>
+            <!-- Search Bar -->
+            <div class="w-full flex justify-center">
+                <input
+                class="border-2 pl-4 py-2 rounded-md flex justify-center w-full mx-16 sm:mx-32"
+                type="text"
+                placeholder="Search for Athletes"/>
+            </div>
+            <!-- Carousel Section -->
+            <div class="py-10">
+                <div
+                class="flex flex-wrap justify-center lg:overflow-hidden py-10 gap-12">
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                </div>
+                <div
+                class="flex flex-wrap justify-center lg:overflow-hidden py-10 gap-12">
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                </div>             
+            </div>
+            <section class="relative py-30 mx-10 rounded-2xl px-20 flex flex-col md:flex-row gap-12 justify-between overflow-hidden">
+
+                <!-- Background Image -->
+                <div class="absolute inset-0 
+                bg-[url('../images/team-turco-bigger-logo.png')] 
+                bg-no-repeat bg-center bg-cover opacity-20">
+                </div>
+
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-br from-black via-black/80 to-blue-500/70"></div>
+
+                <!-- Content -->
+                <div class="relative z-10 text-white w-full md:w-1/2 flex-1">
+                    <div class="w-full flex flex-col gap-6">
+                        <p class="self-start inline-block p-2 text-sm md:text-md bg-blue-700/70 rounded-lg">
+                            High Performance Athletes ⚡
+                        </p>
+
+                        <h3 class="font-redwing text-4xl sm:text-5xl leading-tight">
+                            WHERE PERFORMANCE 
+                            <span class="text-blue-400">COMES FIRST</span>
+                        </h3>
+                    </div>
+
+                    <p class="text-gray-300 max-w-lg mt-4">
+                        Our high-performance division with world wide athletes where we provide 
+                        training, prevention, and career management for highest level competitors
+                    </p>
+                </div>
+
+                <div class="relative z-10 flex items-center justify-center w-full md:w-1/2 flex-1">
+
+                    <button id="explore-btn"
+                    class="px-6 md:px-10 py-4 bg-white text-black font-[Orbitron] rounded-lg 
+                    font-bold tracking-wide cursor-pointer
+                    hover:scale-105 hover:bg-blue-500 hover:text-white
+                    transition duration-300 shadow-lg">
+
+                    Explore More
+
+                    </button>
+
+                </div>
+
+            </section>
+            <section class="flex flex-col gap-12 px-10 max-w-6xl mx-auto w-full">
+
+                <h2 class="font-redwing text-4xl mx-auto mt-6">Our Approach</h2>
+
+                <!-- Athlete Representation -->
+                <div class="text-center mx-auto max-w-2xl">
+                    <p>
+                        We provide comprehensive representation services, including contract negotiation, 
+                        endorsement deals, and career management to ensure our athletes' success on and off the field.
+                    </p>
+                </div>
+                <div class="flex flex-col gap-10 w-full">
+                    <!-- Row 1 -->
+                    <div class="flex flex-row gap-6 flex-wrap">
+                        <!-- Performance Training -->
+                        <div class="flex-1 min-w-[280px] relative bg-[url('../images/Players-TeamTurco/miguel_img02.jpeg')] bg-cover bg-center rounded-lg overflow-hidden group">
+
+                            <div class="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition"></div>
+
+                            <div class="relative text-white py-20 px-6">
+                                <h3 class="font-redwing text-3xl mb-4">Performance Training</h3>
+                                <p class="max-w-lg">
+                                    Our performance training programs are designed to enhance athletic abilities, 
+                                    focusing on strength, speed, agility, and endurance.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- Injury Prevention -->
+                        <div class="flex-1 min-w-[280px] relative bg-[url('../images/Athletes-TeamTurco/jaime-cycling.jpeg')] bg-cover bg-center rounded-lg overflow-hidden group">
+
+                            <div class="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition"></div>
+
+                            <div class="relative text-white py-20 px-6">
+                                <h3 class="font-redwing text-3xl mb-4">Injury Prevention</h3>
+                                <p class="max-w-lg">
+                                    We implement strategies and exercises to minimize the risk of injuries, 
+                                    ensuring athletes maintain peak performance levels.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="flex flex-row gap-6 flex-wrap">
+
+                        <!-- Career Development -->
+                        <div class="flex-1 min-w-[280px] relative bg-[url('../images/Athletes-TeamTurco/Diogo-with-grandmas.jpeg')] bg-cover bg-center rounded-lg overflow-hidden group">
+
+                            <div class="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition"></div>
+
+                            <div class="relative text-white py-20 px-6">
+                                <h3 class="font-redwing text-3xl mb-4">Career Development</h3>
+                                <p class="max-w-lg">
+                                    We provide guidance and support for athletes to navigate their careers, 
+                                    helping them achieve long-term success both on and off the field.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Mental Performance -->
+                        <div class="flex-1 min-w-[280px] relative bg-[url('../images/Athletes-TeamTurco/victor-medal.jpeg')] bg-cover bg-center rounded-lg overflow-hidden group">
+
+                            <div class="absolute inset-0 bg-black/60 group-hover:bg-black/40 transition"></div>
+
+                            <div class="relative text-white py-20 px-6">
+                                <h3 class="font-redwing text-3xl mb-4">Mental Performance</h3>
+                                <p class="max-w-lg">
+                                    We offer mental performance coaching to help athletes develop focus, 
+                                    resilience, and a winning mindset.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>        
+    <script type="module" src="../js/athletes.js"></script>
+    <script type="module" src="../js/header.js"></script>
+    </body>
+</html>
