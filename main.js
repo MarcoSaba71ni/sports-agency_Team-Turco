@@ -1,4 +1,3 @@
-
 const images = [
   "images/Trainers-TeamTurco/Diogo-img1.jpeg",
   "images/Trainers-TeamTurco/Diogo-img4-Copy.jpeg",
@@ -45,7 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 const teamSection = document.getElementById("trainers-profiles");
 const showMoreBtn = document.getElementById("show-more-btn_profile");
 const showLessBtn = document.getElementById("show-less-btn_profile");
@@ -61,3 +59,36 @@ showLessBtn.addEventListener("click", () => {
     teamSection.scrollIntoView({behavior:"smooth"}, 2000);
     showMoreBtn.classList.remove("hidden");
 });
+
+
+// Contact dropdowns (all trainers)
+const contactToggles = document.querySelectorAll('[id^="contact-toggle-"]');
+
+contactToggles.forEach((toggle) => {
+  const trainerKey = toggle.id.replace('contact-toggle-', '');
+  const panel = document.getElementById(`contact-panel-${trainerKey}`);
+  const arrow = document.getElementById(`contact-arrow-${trainerKey}`);
+
+  if (!panel || !arrow) return;
+
+  toggle.addEventListener('click', () => {
+    const isOpen = !panel.classList.contains('hidden');
+    panel.classList.toggle('hidden');
+    arrow.classList.toggle('rotate-180');
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+  });
+});
+
+// Reusable mobile details dropdown for all trainers
+const trainerDetailsToggles = document.querySelectorAll('.trainer-details-toggle');
+
+trainerDetailsToggles.forEach((toggle) => {
+  toggle.addEventListener('click', () => {
+    const panel = toggle.nextElementSibling;
+    const arrow = toggle.querySelector('.trainer-details-arrow');
+    const isOpen = !panel.classList.contains('hidden');
+    panel.classList.toggle('hidden');
+    arrow.classList.toggle('rotate-180');
+    toggle.setAttribute('aria-expanded', String(!isOpen));
+  });
+ });
