@@ -1,8 +1,12 @@
 const dropdownBtn = document.getElementById('dropdown-btn');
 const mobileNav = document.getElementById('mobile-nav');
 
+
 const languageBtn = document.getElementById('lang-btn');
 const languageNav = document.getElementById('lang-nav');
+
+const languageBtnDesktop = document.getElementById('lang-btn-desktop');
+const languageNavDesktop = document.getElementById('lang-nav-desktop');
 
 
 // Toggle mobile nav
@@ -19,6 +23,13 @@ languageBtn.addEventListener("click", (e) => {
   mobileNav.classList.add("hidden");
 });
 
+// Toggle desktop language menu
+languageBtnDesktop.addEventListener("click", (e) => {
+  e.stopPropagation();
+  languageNavDesktop.classList.toggle("hidden");
+
+});
+
 // Close when clicking outside
 document.addEventListener("click", (e) => {
   if (
@@ -30,8 +41,11 @@ document.addEventListener("click", (e) => {
 
   if (
     !languageNav.contains(e.target) &&
-    !languageBtn.contains(e.target)
+    !languageNavDesktop.contains(e.target) &&
+    !languageBtn.contains(e.target) &&
+    !languageBtnDesktop.contains(e.target)
   ) {
     languageNav.classList.add("hidden");
+    languageNavDesktop.classList.add("hidden");
   }
 });

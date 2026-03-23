@@ -48,14 +48,27 @@
                         <li><a href="contact.html" class="hover:border-b-2 p-2">Contact</a></li>
                     </ul>
                 </nav>
-                <button class="bg-white text-black px-4 py-1 rounded">
-                    Sign Up
-                </button>
+                <div class="flex items-center justify-between hidden md:block">
+                    <div class="flex items-center justify-between hidden md:block">
+                        <button id="lang-btn-desktop" class="text-3xl cursor-pointer transition-transform duration-300 ease-in-out 
+                        transform hover:scale-110 ">
+                            <i class="fa-solid fa-language"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
 
             <!-- LANGUAGE NAV -->
             <nav class="hidden md:hidden absolute top-full left-4 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
             id="lang-nav">
+                <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
+                <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
+                <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+            </nav>
+
+            <!-- LANGUAGE NAV DESKTOP -->
+            <nav class="hidden absolute top-full right-18 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
+            id="lang-nav-desktop">
                 <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
                 <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
                 <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
@@ -88,25 +101,40 @@
                 <img src="../images/White_Team-Turco-logo.jpeg" class="w-20 h-20 pt-4 flex mx-auto sm:mx-0 object-cover">
             </div>
             <!-- Contact Form -->
-             <form class="w-full mt-4">
+             <form class="w-full mt-4" id="contact-form">
                 <div class="max-w-4xl">
                     <label for="name" class="block text-sm font-medium text-gray-700">Full Name:</label>
-                    <input type="text" id="name" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
+                    <input type="text" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
+                    <span id="name-error" class="text-red-500 text-sm"></span>
                 </div>
                 <div class="max-w-4xl mt-6">
                     <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
-                    <input type="email" id="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
+                    <input type="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
+                    <span id="email-error" class="text-red-500 text-sm"></span>
                 </div>
                 <div class="max-w-4xl mt-6">
                     <label for="subject" class="block text-sm font-medium text-gray-700">Subject:</label>
-                    <input type="text" id="subject" name="subject" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
+                    <input type="text" name="subject" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
+                    <span id="subject-error" class="text-red-500 text-sm"></span>
                 </div>
                 <div class="max-w-4xl mt-6">
                     <label for="message" class="block text-sm font-medium text-gray-700">Message:</label>
                     <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                    <span id="message-error" class="text-red-500 text-sm"></span>
                 </div>
-                <button type="submit" class=" w-full mt-6 bg-black text-white font-redwing px-4 py-2 rounded hover:bg-white hover:text-black cursor-pointer transition-colors duration-300">SEND MESSAGE</button>
+                <button 
+                type="submit"
+                id="submit-btn"
+                 class=" w-full mt-6 bg-black text-white font-redwing px-4 py-2 rounded hover:bg-white hover:text-black cursor-pointer transition-colors duration-300">
+                    SEND MESSAGE</button>
+                <div>
+                    <span id="general-error"
+                    class="text-red-500 text-sm"></span>
+                </div>
              </form>
         </main>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="module" src="../js/header.js"></script>
+    <script type="module" src="../js/contact.js"></script>
     </body>
 </html>
