@@ -16,7 +16,7 @@ export const highPerformanceAthletes = [
     }
   },
   {
-    name: "Jauma",
+    name: "Jaume Aguilo",
     sport: {
       src: "../images/sports-icons/marathon.png",
       alt: "Marathon icon"
@@ -63,36 +63,21 @@ export const highPerformanceAthletes = [
       alt: "Brazil flag"
     }
   },
+  
   {
-    name: "Hamza",
+    name: "Marco Sabatini",
     sport: {
       src: "../images/sports-icons/soccer-player.png",
-      alt: "Football icon"
+      alt: "Soccer icon"
     },
     image: {
-      src: "../images/Players-TeamTurco/hamza_img02.jpeg",
-      alt: "Hamza"
+      src: "../images/Players-TeamTurco/sabatini-märsta.jpeg",
+      alt: "Marco Sabatini"
     },
     age: 27,
     flag: {
-      src: "../images/flags/morroco-flag.png",
-      alt: "Morocco flag"
-    }
-  },
-  {
-    name: "Jaime",
-    sport: {
-      src: "../images/sports-icons/iron-man.png",
-      alt: "Triathlon icon"
-    },
-    image: {
-      src: "../images/Athletes-TeamTurco/jaime-ironman.jpeg",
-      alt: "Jaime"
-    },
-    age: 30,
-    flag: {
-      src: "../images/flags/spain-flag.png",
-      alt: "Spain flag"
+      src: "../images/flags/Flag_of_Brazil.svg",
+      alt: "Brazil flag"
     }
   }
 ];

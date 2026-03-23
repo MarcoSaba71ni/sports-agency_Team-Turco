@@ -17,10 +17,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
-
     </head>
     <body>
-
      <header class="bg-black text-white px-6 py-3 relative">
         <!-- MOBILE HEADER DIV-->
         <div class="flex items-center justify-between md:hidden">
@@ -49,12 +47,15 @@
                     <li><a href="index.html" class="hover:border-b-2 p-2">Home</a></li>
                     <li><a href="pages/about.html" class="hover:border-b-2 p-2">About</a></li>
                     <li><a href="pages/athletes.html" class="hover:border-b-2 p-2">Athletes</a></li>
-                    <li><a href="#" class="hover:border-b-2 p-2">Contact</a></li>
+                    <li><a href="pages/contact.html" class="hover:border-b-2 p-2">Contact</a></li>
                 </ul>
             </nav>
-            <button class="bg-white text-black px-4 py-1 rounded">
-                Sign Up
-            </button>
+            <div class="flex items-center justify-between hidden md:block">
+                <button id="lang-btn-desktop" class="text-3xl cursor-pointer transition-transform duration-300 ease-in-out 
+                transform hover:scale-110 ">
+                    <i class="fa-solid fa-language"></i>
+                </button>
+            </div>
         </div>
 
         <!-- LANGUAGE NAV -->
@@ -65,16 +66,26 @@
             <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
         </nav>
 
+        
+        <!-- LANGUAGE NAV DESKTOP -->
+        <nav class="hidden absolute top-full right-18 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
+        id="lang-nav-desktop">
+            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
+            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
+            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+        </nav>
+
+
         <nav
         id="mobile-nav"
         class="hidden md:hidden absolute top-full right-1 w-30 bg-black text-white z-50 border border-gray-700 rounded flex flex-col">
-            <a href="../index.html"
+            <a href="index.html"
             class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Home</a>
             <a href="pages/about.html"
             class="p-2 pl-2 hover:bg-white hover:text-black text-sm">About</a>
             <a href="pages/athletes.html"
             class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Athletes</a>
-            <a href="#" 
+            <a href="pages/contact.html" 
             class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Contact</a>
         </nav>
     </header>
@@ -678,7 +689,7 @@
             <div class="flex flex-col items-center justify-center my-20 gap-4">
                 <h2 class="font-[Orbitron] text-2xl sm:text-4xl">Join Team Turco</h2>
                 <a
-                href="#"
+                href="pages/contact.html"
                 class="font-redwing uppercase bg-black text-white px-6 py-2 rounded
                         hover:bg-white hover:text-black transition">
                 Contact Us
