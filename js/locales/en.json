@@ -2,5 +2,82 @@
     "nav.home": "Home",
     "nav.about": "About",
     "nav.athletes": "Athletes",
-    "nav.contact": "Contact"
+    "nav.contact": "Contact",
+    
+    "hero.title":"LIMITATION IS A STATE OF MIND",
+    "hero.btn":"ABOUT US",
+
+    "breath.title":"Built for Athletes. Driven by Community.",
+    "breath.text_one":"Our mission is to change life through human development and athletic performance.",
+    "breath.text_two":"We combine performance, mindset, and community to support development both on and off the field.",
+    "breath.btn":"Explore Team Turco",
+
+    "athletes.title":"Our Athletes",
+    "athletes.btn":"MEET OUR ATHLETES",
+
+    "trainers.title":"Meet Our Team",
+    "trainers.text_one":"Dedicated professionals working together to support your growth.",
+    "trainers.text_two":"From fitness to nutrition and mental performance specialist",
+
+    "show-more-btn":"Show More",
+    "show-less-btn":"Show Less",
+    "contact-toggle":"CONTACT",
+    "more-info-toggle":"MORE INFO",
+
+    "trainer-location-barcelona":"Barcelona, Spain",
+    "trainer-location-rio":"Rio de Janeiro, Brazil",
+
+    "diogo-description":"With over 10 years of experience working with clients across different ages, backgrounds, and performance levels, Diogo has developed a distinctive approach to human development and athletic performance. From professional athletes to individuals training in various modalities, he combines technical expertise with a deep understanding of mindset, discipline, and long-term progression.",   
+    "diogo-occupation":"Trainer & Founder",
+    "diogo-bullet-one":"Former Professional Football Player",
+    "diogo-bullet-two":"10+ Years in Elite Competitive Environments",
+    "diogo-bullet-three":"International Fitness Training Experience",
+    "diogo-bullet-four":"Specialist in Athletic Performance Development",
+
+    "marcelo-occupation":"Trainer",
+    "marcelo-description":"Specialized in working with football players, backed by a successful professional career across multiple countries. With over 15 years of elite competitive experience, Marcelo understands the physical and mental demands of high-performance sport. After being mentored by Team Turco during his athletic career, he now brings his expertise and leadership to our professional team.",
+    "marcelo-bullet-one":"Former Professional Football Player",
+    "marcelo-bullet-two":"10+ Years in Elite Competitive Environments",
+    "marcelo-bullet-three":"International Playing Experience",
+    "marcelo-bullet-four":"Specialist in Athletic Performance Development",
+
+    "magno-occupation":"Sports Nutritionist | MSc in Food, Nutrition & Health",
+    "magno-description-one":"Magno is a certified nutritionist with a Master's degree in Food, Nutrition, and Health, specialized in the physiological foundations of personalized training, sports nutrition, and advanced medicine. He combines scientific depth with real-world athletic application, delivering performance-based nutritional strategies tailored to each individual.",
+    "magno-description-two":"His approach integrates clinical knowledge with high-performance sport demands, ensuring every athlete receives a data-driven, individualized strategy.",
+    "magno-bullet-one":"Personalized Consultations",
+    "magno-bullet-two":"Physical & Dietary Assessment",
+    "magno-bullet-three":"Customized Meal Plan Development",
+    "magno-bullet-four":"Performance-Oriented Nutritional Strategy",
+    "magno-bullet-five":"Functional Nutrition Approach",
+    "magno-bullet-six":"Specialist in Athletic Performance Development",
+
+    "jordi-occupation":"Psychologist | Mental Performance Specialist",
+    "jordi-quote":"Strength is not only physical - it is mental.",
+    "jordi-description":"Jordi supports individuals navigating anxiety, stress, emotional challenges, and personal transitions. His mission is to help you rebuild emotional stability, strengthen self-esteem, and regain control over your thoughts and decisions. Through a structured and practical approach, he transforms overwhelm into clarity and instability into strength.",
+    "jordi-bullet-one":"Anxiety & Stress Management",
+    "jordi-bullet-two":"Emotional Dependency & Relationship Challenges",
+    "jordi-bullet-three":"Self-Esteem & Insecurity",
+    "jordi-bullet-four":"Personal Crisis & Life Transitions",
+    "jordi-bullet-five":"Performance Mindset Support",
+
+    "charles-occupation":"Sports Physiotherapist | Specialist",
+    "charles-quote":"High performance is built through science and precision.",
+    "charles-description":"Charles specializes in Health & Performance Management for athletes, integrating physiotherapy, exercise physiology, and performance science into structured systems designed for elite results. With national and international experience, he delivers strategic support focused on injury prevention, recovery optimization, and competitive excellence.",
+    "charles-bullet-one":"Elite Athlete Performance Support",
+    "charles-bullet-two":"Exercise Physiology & Load Monitoring",
+    "charles-bullet-three":"Injury Prevention & Rehabilitation",
+    "charles-bullet-four":"International Sports Consultancy",
+    "charles-bullet-five":"Exclusive Professional Athlete Management",
+
+    "ramon-occupation":"Sports Physiotherapist | Performance Specialist",
+    "ramon-quote":"Peak performance begins with structured health.",
+    "ramon-description":"His method integrates physiotherapy, training, recovery, and wellness into a strategic system designed to prevent injuries and optimize results. Through science-based structure and personalized follow-up, he helps athletes unlock their full physical potential.",
+    "ramon-bullet-one":"Sports Injury Prevention & Rehabilitation",
+    "ramon-bullet-two":"Athletic Performance Optimization",
+    "ramon-bullet-three":"Recovery & Load Management",
+    "ramon-bullet-four":"Integrated Health Strategy",
+    "ramon-bullet-five":"Online & On-Site Follow-Up",
+
+    "join-cta":"Join Team Turco",
+    "join-contact-btn": "CONTACT US"
 }

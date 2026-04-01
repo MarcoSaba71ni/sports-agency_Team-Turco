@@ -2,5 +2,82 @@
     "nav.home": "Inicio",
     "nav.about": "Sobre",
     "nav.athletes": "Atletas",
-    "nav.contact": "Contacto"
+    "nav.contact": "Contacto",
+
+    "hero.title": "LA LIMITACION ES UN ESTADO MENTAL",
+    "hero.btn": "SOBRE NOSOTROS",
+
+    "breath.title": "Construido para Atletas. Impulsado por la Comunidad.",
+    "breath.text_one": "Nuestra mision es cambiar vidas a traves del desarrollo humano y el rendimiento atletico.",
+    "breath.text_two": "Combinamos rendimiento, mentalidad y comunidad para apoyar el desarrollo dentro y fuera del campo.",
+    "breath.btn": "Explora Team Turco",
+
+    "athletes.title": "Nuestros Atletas",
+    "athletes.btn": "CONOCE A NUESTROS ATLETAS",
+
+    "trainers.title": "Conoce a Nuestro Equipo",
+    "trainers.text_one": "Profesionales dedicados trabajando juntos para apoyar tu crecimiento.",
+    "trainers.text_two": "Desde fitness y nutricion hasta especialista en rendimiento mental",
+
+    "show-more-btn": "Ver Mas",
+    "show-less-btn": "Ver Menos",
+    "contact-toggle": "CONTACTO",
+    "more-info-toggle": "MAS INFORMACION",
+
+    "trainer-location-barcelona": "Barcelona, Espana",
+    "trainer-location-rio": "Rio de Janeiro, Brasil",
+
+    "diogo-description": "Con mas de 10 anos de experiencia trabajando con clientes de diferentes edades, contextos y niveles de rendimiento, Diogo ha desarrollado un enfoque distintivo para el desarrollo humano y el rendimiento atletico. Desde atletas profesionales hasta personas que entrenan en diferentes modalidades, combina experiencia tecnica con una comprension profunda de la mentalidad, la disciplina y la progresion a largo plazo.",
+    "diogo-occupation": "Entrenador y Fundador",
+    "diogo-bullet-one": "Ex Futbolista Profesional",
+    "diogo-bullet-two": "Mas de 10 Anos en Entornos de Competencia de Elite",
+    "diogo-bullet-three": "Experiencia Internacional en Entrenamiento Fisico",
+    "diogo-bullet-four": "Especialista en Desarrollo del Rendimiento Atletico",
+
+    "marcelo-occupation": "Entrenador",
+    "marcelo-description": "Especializado en trabajar con futbolistas, respaldado por una carrera profesional exitosa en multiples paises. Con mas de 15 anos de experiencia en competicion de elite, Marcelo comprende las exigencias fisicas y mentales del deporte de alto rendimiento. Despues de ser guiado por Team Turco durante su carrera deportiva, hoy aporta su experiencia y liderazgo a nuestro equipo profesional.",
+    "marcelo-bullet-one": "Ex Futbolista Profesional",
+    "marcelo-bullet-two": "Mas de 10 Anos en Entornos de Competencia de Elite",
+    "marcelo-bullet-three": "Experiencia Internacional como Jugador",
+    "marcelo-bullet-four": "Especialista en Desarrollo del Rendimiento Atletico",
+
+    "magno-occupation": "Nutricionista Deportivo | MSc en Alimentacion, Nutricion y Salud",
+    "magno-description-one": "Magno es nutricionista certificado con Maestria en Alimentacion, Nutricion y Salud, especializado en los fundamentos fisiologicos del entrenamiento personalizado, la nutricion deportiva y la medicina avanzada. Combina profundidad cientifica con aplicacion atletica real, ofreciendo estrategias nutricionales orientadas al rendimiento y adaptadas a cada persona.",
+    "magno-description-two": "Su enfoque integra conocimiento clinico con las exigencias del deporte de alto rendimiento, garantizando que cada atleta reciba una estrategia individualizada y basada en datos.",
+    "magno-bullet-one": "Consultas Personalizadas",
+    "magno-bullet-two": "Evaluacion Fisica y Alimentaria",
+    "magno-bullet-three": "Desarrollo de Plan Alimentario Personalizado",
+    "magno-bullet-four": "Estrategia Nutricional Orientada al Rendimiento",
+    "magno-bullet-five": "Enfoque de Nutricion Funcional",
+    "magno-bullet-six": "Especialista en Desarrollo del Rendimiento Atletico",
+
+    "jordi-occupation": "Psicologo | Especialista en Rendimiento Mental",
+    "jordi-quote": "La fuerza no es solo fisica, es mental.",
+    "jordi-description": "Jordi acompana a personas que atraviesan ansiedad, estres, desafios emocionales y transiciones personales. Su mision es ayudarte a reconstruir la estabilidad emocional, fortalecer la autoestima y recuperar el control sobre tus pensamientos y decisiones. A traves de un enfoque estructurado y practico, transforma el agobio en claridad y la inestabilidad en fortaleza.",
+    "jordi-bullet-one": "Manejo de Ansiedad y Estres",
+    "jordi-bullet-two": "Dependencia Emocional y Desafios de Pareja",
+    "jordi-bullet-three": "Autoestima e Inseguridad",
+    "jordi-bullet-four": "Crisis Personales y Transiciones de Vida",
+    "jordi-bullet-five": "Apoyo de Mentalidad para el Rendimiento",
+
+    "charles-occupation": "Fisioterapeuta Deportivo | Especialista",
+    "charles-quote": "El alto rendimiento se construye con ciencia y precision.",
+    "charles-description": "Charles se especializa en Gestion de Salud y Rendimiento para atletas, integrando fisioterapia, fisiologia del ejercicio y ciencia del rendimiento en sistemas estructurados para resultados de elite. Con experiencia nacional e internacional, brinda apoyo estrategico enfocado en prevencion de lesiones, optimizacion de la recuperacion y excelencia competitiva.",
+    "charles-bullet-one": "Apoyo al Rendimiento de Atletas de Elite",
+    "charles-bullet-two": "Fisiologia del Ejercicio y Monitoreo de Carga",
+    "charles-bullet-three": "Prevencion y Rehabilitacion de Lesiones",
+    "charles-bullet-four": "Consultoria Deportiva Internacional",
+    "charles-bullet-five": "Gestion Exclusiva de Atletas Profesionales",
+
+    "ramon-occupation": "Fisioterapeuta Deportivo | Especialista en Rendimiento",
+    "ramon-quote": "El maximo rendimiento comienza con una salud estructurada.",
+    "ramon-description": "Su metodo integra fisioterapia, entrenamiento, recuperacion y bienestar en un sistema estrategico disenado para prevenir lesiones y optimizar resultados. Mediante una estructura basada en ciencia y seguimiento personalizado, ayuda a los atletas a liberar todo su potencial fisico.",
+    "ramon-bullet-one": "Prevencion y Rehabilitacion de Lesiones Deportivas",
+    "ramon-bullet-two": "Optimizacion del Rendimiento Atletico",
+    "ramon-bullet-three": "Recuperacion y Gestion de Carga",
+    "ramon-bullet-four": "Estrategia Integral de Salud",
+    "ramon-bullet-five": "Seguimiento Online y Presencial",
+
+    "join-cta": "Unete a Team Turco",
+    "join-contact-btn": "CONTACTANOS"
 }
