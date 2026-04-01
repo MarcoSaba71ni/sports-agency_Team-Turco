@@ -1,6 +1,6 @@
 const dropdownBtn = document.getElementById('dropdown-btn');
 const mobileNav = document.getElementById('mobile-nav');
-
+const langBtnOption = document.querySelectorAll('.lang-btn-option');
 
 const languageBtn = document.getElementById('lang-btn');
 const languageNav = document.getElementById('lang-nav');
@@ -49,3 +49,13 @@ document.addEventListener("click", (e) => {
     languageNavDesktop.classList.add("hidden");
   }
 });
+
+const closeLanguageMenus = () => {
+  languageNav.classList.add("hidden");
+  languageNavDesktop.classList.add("hidden");
+};
+
+langBtnOption.forEach((option) => {
+  option.addEventListener('click', closeLanguageMenus);
+});
+

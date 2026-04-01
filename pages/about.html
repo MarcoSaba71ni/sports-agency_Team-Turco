@@ -60,17 +60,17 @@
         <!-- LANGUAGE NAV -->
         <nav class="hidden md:hidden absolute top-full left-4 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
         id="lang-nav">
-            <button data-lang="en" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
-            <button data-lang="es" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
-            <button data-lang="pt" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+            <button data-lang="en" class="lang-btn-option flex items-center gap-1 p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN<img src="../images/flags/england-flag.png" class="w-4 h-4 object-cover align-middle"/></button>
+            <button data-lang="es" class="lang-btn-option flex items-center gap-2 p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES<img src="../images/flags/spain-flag.png" class="w-4 h-4 object-cover align-middle"/></button>
+            <button data-lang="pt" class="lang-btn-option flex items-center gap-2 p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT<img src="../images/flags/Flag_of_Brazil.svg" class="w-4 h-4 object-cover align-middle"/></button>
         </nav>
 
         <!-- LANGUAGE NAV DESKTOP -->
         <nav class="hidden absolute top-full right-18 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
         id="lang-nav-desktop">
-            <button data-lang="en" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
-            <button data-lang="es" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
-            <button data-lang="pt" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+            <button data-lang="en" class="lang-btn-option flex gap-1 p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN<img src="../images/flags/england-flag.png" class="w-4 h-4 object-cover align-middle"/></button>
+            <button data-lang="es" class="lang-btn-option flex gap-2 p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES<img src="../images/flags/spain-flag.png" class="w-4 h-4 object-cover align-middle"/></button>
+            <button data-lang="pt" class="lang-btn-option flex gap-2 p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT<img src="../images/flags/Flag_of_Brazil.svg" class="w-4 h-4 object-cover align-middle"/></button>
         </nav>
 
         <nav
@@ -90,17 +90,15 @@
         <!-- HERO SECTION -->
         <section class="bg-black w-full h-[60vh] md:h-[90vh] flex flex-col justify-center gap-2 border-t-1 border-white">
             <div>
-                <h2 class="font-redwing text-white px-8 md:px-20 w-full">ABOUT US</h2>
+                <h2 class="font-redwing text-white px-8 md:px-20 w-full" data-i18n="about-span">ABOUT US</h2>
             </div>
             <div>
                 <div class="flex flex-col justify-center px-8 md:px-20 w-full font-[Orbitron]">
                     <div class="flex gap-2 text-2xl md:text-3xl md:text-6xl text-center font-bold text-white">
                         <h1 id="dynamic-text">YOUR COMPLEXITY</h1>
-                        <h1 id="text-two" class="hidden">Individuality</h1>
-                        <h1 id="text-three" class="hidden">Performance</h1>
                     </div>
                     <div class="pl-2">
-                        <h1 class="text-2xl md:text-4xl font-bold text-white">IS OUR STRENGTH</h1>
+                        <h1 class="text-2xl md:text-4xl font-bold text-white" data-i18n="about-title-highlight">IS OUR STRENGTH</h1>
                     </div>                
                 </div>
             </div>
@@ -108,11 +106,11 @@
 
         <!-- AGENCY DESCRIPTION-->
         <section class="bg-gray-100 w-full h-auto flex flex-col gap-2 border-t-1 py-24 border-gray-300">
-            <h2 class="text-2xl md:text-4xl text-black mx-12 font-redwing">Team Turco is a high-performance sports agency built to develop complete individuals to perform based on their degree of demand. With our team of expertise professionals, we support our athletes in:</h2>
+            <h2 class="text-2xl md:text-4xl text-black mx-12 font-redwing" data-i18n="about-description">Team Turco is a high-performance sports agency built to develop complete individuals to perform based on their degree of demand. With our team of expertise professionals, we support our athletes in:</h2>
             <ul class="flex flex-col gap-2 text-xl md:text-2xl text-black mx-20 pt-6 font-redwing list-disc">
-                <li>Physically: Strategic training</li>
-                <li>Mentally: Mindset development</li>
-                <li>Strategically: Long-term career management</li>
+                <li data-i18n="about-bullet-one">Physically: Strategic training</li>
+                <li data-i18n="about-bullet-two">Mentally: Mindset development</li>
+                <li data-i18n="about-bullet-three">Strategically: Long-term career management</li>
             </ul>
         </section>
 
@@ -133,14 +131,14 @@
 
                 <!-- Text -->
                 <div class="w-full md:w-5/12 space-y-4">
-                    <h3 class="font-redwing font-bold text-2xl md:text-4xl text-black leading-tight">
+                    <h3 class="font-redwing font-bold text-2xl md:text-4xl text-black leading-tight" data-i18n="agency-history-title_one">
                         "It all started in the tropical city of Rio de Janeiro"
                     </h3>
-                    <p class="leading-relaxed text-base md:text-lg text-gray-700">
-                        Team Turco was founded by Diogo Turco with a clear vision — <span class="font-bold">to build a performance-driven 
+                    <p class="leading-relaxed text-base md:text-lg text-gray-700" data-i18n="agency-history-description_one">
+                        Team Turco was founded by Diogo Turco with a clear vision — <span class="font-bold" data-i18n="agency-history-description_two_span">to build a performance-driven 
                         community.</span></p>
 
-                    <p class="leading-relaxed text-base md:text-lg text-gray-700">
+                    <p class="leading-relaxed text-base md:text-lg text-gray-700" data-i18n="agency-history-description_two">
                         What began as a local initiative in Brazil has grown into a global network of athletes 
                         and elite trainers across Europe and South America.
                     </p>
@@ -162,13 +160,13 @@
 
                 <!-- Text -->
                 <div class="w-full md:w-5/12 space-y-4">
-                    <h3 class="font-redwing font-semibold text-2xl md:text-4xl text-black leading-tight">
+                    <h3 class="font-redwing font-semibold text-2xl md:text-4xl text-black leading-tight" data-i18n="agency-history-title_two">
                         From local roots to international stands...
                     </h3>
-                    <p class="leading-relaxed text-base md:text-lg text-gray-700">
+                    <p class="leading-relaxed text-base md:text-lg text-gray-700" data-i18n="agency-history-description_three">
                         Rooted in discipline, mindset, and long-term development through sport, our approach is built around the human touch and overall well-being.
                     </p>
-                    <p class="leading-relaxed text-base md:text-lg text-gray-700">
+                    <p class="leading-relaxed text-base md:text-lg text-gray-700" data-i18n="agency-history-description_four">
                         Today, Team Turco works with athletes from multiple disciplines — delivering personalized 
                         training built around performance, character development, and long-term success.
                     </p>
@@ -177,11 +175,11 @@
             </div>
         </section>
         <section class="my-20 my-10 md:my-30 text-center w-max-3xl mx-4 md:mx-16 px-2 md:px-6">
-            <h2 class="font-[Orbitron] text-xl md:text-2xl  mx-auto">"Individuality and meaningful relationships are at the heart of everything we do."</h2>
+            <h2 class="font-[Orbitron] text-xl md:text-2xl  mx-auto" data-i18n="breath-about">"Individuality and meaningful relationships are at the heart of everything we do."</h2>
                 <div class="flex flex-col items-center justify-center my-5 gap-4">
                     <a href="contact.html"
                     class="font-redwing uppercase bg-black text-white px-6 py-2 rounded
-                    hover:bg-white hover:text-black transition">
+                    hover:bg-white hover:text-black transition" data-i18n="breath-about-btn">
                     Contact Us
                     </a>
                 <div>
@@ -192,24 +190,24 @@
         <section class="flex flex-col md:flex-row mx-10 justify-evenly gap-2 pt-24">
             <!-- Our Mission -->
             <div class="flex flex-col gap-4 flex-shrink-0 w-full md:w-1/3 bg-zinc-900 p-12 text-white">
-                <h3 class="font-redwing text-2xl sm:text-4xl text-center">OUR MISSION</h3>
-                <p>To develop high-performing individuals through elite training, discipline, and mindset — building stronger bodies, stronger minds, and stronger character.</p>
+                <h3 class="font-redwing text-2xl sm:text-4xl text-center" data-i18n="mission-title">OUR MISSION</h3>
+                <p data-i18n="mission-description">To develop high-performing individuals through elite training, discipline, and mindset — building stronger bodies, stronger minds, and stronger character.</p>
             </div>
             <!-- Our Values -->
             <div class="flex flex-col gap-4 flex-shrink-0 w-full md:w-1/3 bg-zinc-900 p-12 text-white">
-                <h3 class="font-redwing text-2xl sm:text-4xl text-center">OUR VALUES</h3>
+                <h3 class="font-redwing text-2xl sm:text-4xl text-center" data-i18n="values-title">OUR VALUES</h3>
                 <ul class="text-center">
-                    <li>Discipline</li>
-                    <li>Performance</li>
-                    <li>Community</li>
-                    <li>Integrity</li>
-                    <li>Growth</li>
+                    <li data-i18n="value-one">Discipline</li>
+                    <li data-i18n="value-two">Performance</li>
+                    <li data-i18n="value-three">Community</li>
+                    <li data-i18n="value-four">Integrity</li>
+                    <li data-i18n="value-five">Growth</li>
                 </ul>
             </div>
             <!-- Our Goals -->
             <div class="flex flex-col gap-4 flex-shrink-0 w-full md:w-1/3 bg-zinc-900 p-12 text-white">
-                <h3 class="font-redwing text-2xl sm:text-4xl text-center ">OUR GOALS</h3>
-                <p>To expand Team Turco across Brazil, Spain, Sweden, and beyond — building a global network of elite trainers and transform lives through sports.</p>
+                <h3 class="font-redwing text-2xl sm:text-4xl text-center " data-i18n="goals-title">OUR GOALS</h3>
+                <p data-i18n="goal-description">To expand Team Turco across Brazil, Spain, Sweden, and beyond — building a global network of elite trainers and transform lives through sports.</p>
             </div>
         </section>
                 <!-- Coaches Section -->
@@ -219,39 +217,38 @@
                 class="w-full h-[80vh] object-cover object-[30%_65%] sm:object-[center_40%] brightness-50 sm:brightness-100">
             </div>
             <div class="absolute inset-0 flex flex-col items-center justify-center z-20 text-center text-white">
-                <h2 class="font-[Orbitron] text-2xl sm:text-4xl text-center">What makes us different</h2>
-                <p class="font-redwing text-white">Envolve. Overcome. Structure.</p>
+                <h2 class="font-[Orbitron] text-2xl sm:text-4xl text-center" data-i18n="what-makes-us-different-title">What makes us different</h2>
+                <p class="font-redwing text-white" data-i18n="what-makes-description">Envolve. Overcome. Structure.</p>
                 <a href="athletes.html" class="font-redwing w-auto uppercase bg-black px-3 py-2 rounded
-                        hover:bg-white hover:text-black text-sm sm:text-md transition">You as an individual</a>
+                        hover:bg-white hover:text-black text-sm sm:text-md transition" data-i18n="what-makes-btn">You as an individual</a>
             </div>
         </section>
         <div
-            id="athletes-carousel"
             class="flex flex-wrap overflow-x-auto mx-auto justify-center lg:overflow-hidden scroll-smooth
                 no-scrollbar gap-6 py-8">
                 <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
                     <img src="../images/Athletes-TeamTurco/athlete-proception-diogo.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50 shadow-xl shadow-gray-500">
                     <p class="absolute inset-0  flex items-center justify-center pointer-events-none
-              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">High Performance Individuals</p>
+                    text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-one">High Performance Individuals</p>
                 </div>
                 <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
                     shadow-xl shadow-gray-500">
                     <img src="../images/Athletes-TeamTurco/girls-swimmers-medal-fluminense.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition rounded-md duration-300 brightness-50 sm:brightness-100 hover:brightness-50
                     ">
                     <p class="absolute inset-0  flex items-center justify-center pointer-events-none
-              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">Varied target groups</p>
+                    text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-two">Varied target groups</p>
                 </div>
                 <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
                     shadow-xl shadow-gray-500">
                     <img src="../images/Trainers-TeamTurco/Nelson-turco-kids.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50">
                     <p class="absolute inset-0  flex items-center justify-center pointer-events-none
-              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">Integration</p>
+                    text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-three">Integration</p>
                 </div>
                 <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
                     shadow-xl shadow-gray-500">
                     <img src="../images/Trainers-TeamTurco/Marcelo-with-kid.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50">
                     <p class="absolute inset-0  flex items-center justify-center pointer-events-none
-              text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300">Community</p>
+                    text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-four">Community</p>
                 </div>
             </div>
         </div>

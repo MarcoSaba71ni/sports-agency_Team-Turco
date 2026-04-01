@@ -32,6 +32,7 @@ async function loadTranslations(lang) {
     updateText();
     localStorage.setItem(STORAGE_KEY, lang);
     currentLanguage = lang;
+    document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang } }));
 }
 
 /* 3- Updating Text Content */
@@ -64,3 +65,5 @@ document.addEventListener('DOMContentLoaded', () => {
     setupLanguageButtons();
     loadTranslations(currentLanguage);
 });
+
+export { currentLanguage };

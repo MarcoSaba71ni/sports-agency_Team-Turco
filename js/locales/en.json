@@ -79,5 +79,47 @@
     "ramon-bullet-five":"Online & On-Site Follow-Up",
 
     "join-cta":"Join Team Turco",
-    "join-contact-btn": "CONTACT US"
+    "join-contact-btn": "CONTACT US",
+
+    "about-span": "About Us",
+    "about-title": "Your Complexity",
+    "about-title-highlight": "Is Our Strength",
+    "about-description": "Team Turco is a high-performance sports agency built to develop complete individuals to perform based on their degree of demand. With our team of expertise professionals, we support our athletes in:",
+    "about-bullet-one": "Physically: Strategic training",
+    "about-bullet-two": "Mental: Mindset Development",
+    "about-bullet-three": "Strategically: Long-term career management",
+
+    "agency-history-title_one":  "It all started in the tropical city of Rio de Janeiro",
+    "agency-history-description_one": "Team Turco was founded by Diogo Turco with a clear vision —",
+    "agency-history-description_two_span": "to build a performance-driven community.",
+    "agency-history-description_two": "What began as a local initiative in Brazil has grown into a global network of athletes and elite trainers across Europe and South America.",
+
+    "agency-history-title_two": "From local roots to international stands...",
+    "agency-history-description_three": "Rooted in discipline, mindset, and long-term development through sport, our approach is built around the human touch and overall well-being.",
+    "agency-history-description_four": "Today, Team Turco works with athletes from multiple disciplines — delivering personalized training built around performance, character development, and long-term success.",
+
+    "breath-about": "Individuality and meaningful relationships are at the heart of everything we do.",
+    "breath-about-btn": "CONTACT US",
+
+    "mission-title": "Our Mission",
+    "mission-description":"To develop high-performing individuals through elite training, discipline, and mindset — building stronger bodies, stronger minds, and stronger character.",
+
+    "values-title": "Our Values",
+    "value-one": "Discipline",
+    "value-two": "Performance",
+    "value-three": "Community",
+    "value-four": "Integrity",
+    "value-five": "Growth",
+
+    "goals-title": "Our Goals",
+    "goal-description":"To expand Team Turco across Brazil, Spain, Sweden, and beyond — building a global network of elite trainers and transform lives through sports.",
+
+    "what-makes-us-different-title": "What Makes Us Different",
+    "what-makes-description": "Envolve. Transform. Overcome.",
+    "what-makes-btn": "YOU AS AN INDIVIDUAL",
+
+    "grid-text-one": "High Performance Individuals",
+    "grid-text-two": "Varied Target Groups",
+    "grid-text-three": "Integration",
+    "grid-text-four": "Community"
 }
