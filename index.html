@@ -44,10 +44,10 @@
             </a>
             <nav>
                 <ul class="font-redwing flex gap-8">
-                    <li><a href="index.html" class="hover:border-b-2 p-2">Home</a></li>
-                    <li><a href="pages/about.html" class="hover:border-b-2 p-2">About</a></li>
-                    <li><a href="pages/athletes.html" class="hover:border-b-2 p-2">Athletes</a></li>
-                    <li><a href="pages/contact.html" class="hover:border-b-2 p-2">Contact</a></li>
+                    <li><a href="index.html" class="hover:border-b-2 p-2" data-i18n="nav.home"></a></li>
+                    <li><a href="pages/about.html" class="hover:border-b-2 p-2" data-i18n="nav.about"></a></li>
+                    <li><a href="pages/athletes.html" class="hover:border-b-2 p-2" data-i18n="nav.athletes"></a></li>
+                    <li><a href="pages/contact.html" class="hover:border-b-2 p-2" data-i18n="nav.contact"></a></li>
                 </ul>
             </nav>
             <div class="flex items-center justify-between hidden md:block">
@@ -61,18 +61,18 @@
         <!-- LANGUAGE NAV -->
         <nav class="hidden md:hidden absolute top-full left-4 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
         id="lang-nav">
-            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
-            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
-            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+            <button data-lang="en" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
+            <button data-lang="es" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
+            <button data-lang="pt" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
         </nav>
 
         
         <!-- LANGUAGE NAV DESKTOP -->
         <nav class="hidden absolute top-full right-18 w-13 bg-black text-white z-50 border border-gray-700 rounded flex flex-col"
         id="lang-nav-desktop">
-            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
-            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
-            <button class="p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
+            <button data-lang="en" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">EN</button>
+            <button data-lang="es" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer">ES</button>
+            <button data-lang="pt" class="lang-btn-option p-2 pl-2 hover:bg-white hover:text-black text-sm cursor-pointer ">PT</button>
         </nav>
 
 
@@ -80,13 +80,12 @@
         id="mobile-nav"
         class="hidden md:hidden absolute top-full right-1 w-30 bg-black text-white z-50 border border-gray-700 rounded flex flex-col">
             <a href="index.html"
-            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Home</a>
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.home"></a>
             <a href="pages/about.html"
-            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">About</a>
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.about"></a>
             <a href="pages/athletes.html"
-            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Athletes</a>
-            <a href="pages/contact.html" 
-            class="p-2 pl-2 hover:bg-white hover:text-black text-sm">Contact</a>
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.athletes"></a>
+            <a href="pages/contact.html" class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.contact"></a>
         </nav>
     </header>
     <main>
@@ -704,6 +703,7 @@
             <p>Website Development & Digital Services</p>
         </section>
     </main>
+    <script type="module" src="js/i18n.js"></script>
     <script type="module" src="main.js"></script>
     <script type="module" src="js/header.js"></script>
     </body>
