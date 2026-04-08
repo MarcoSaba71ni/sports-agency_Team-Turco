@@ -22,28 +22,6 @@ setInterval(() => {
   }, 300);
 }, 4000);
 
-document.addEventListener("DOMContentLoaded", () => {
-  const carousel = document.getElementById("athletes-carousel");
-  const nextBtn = document.getElementById("next-btn");
-  const prevBtn = document.getElementById("prev-btn");
-
-  const scrollAmount = 300;
-
-  nextBtn.addEventListener("click", () => {
-    carousel.scrollBy({
-      left: scrollAmount,
-      behavior: "smooth"
-    });
-  });
-
-  prevBtn.addEventListener("click", () => {
-    carousel.scrollBy({
-      left: -scrollAmount,
-      behavior: "smooth"
-    });
-  });
-});
-
 const teamSection = document.getElementById("trainers-profiles");
 const showMoreBtn = document.getElementById("show-more-btn_profile");
 const showLessBtn = document.getElementById("show-less-btn_profile");
