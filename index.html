@@ -104,43 +104,60 @@
             <!-- STATIC OVERLAY -->
             <div class="absolute inset-0 z-20 flex flex-col items-center justify-center text-center text-white">
                 <h1 class="font-redwing font-bold text-2xl text-black md:text-3xl uppercase mb-4" data-i18n="hero.title">
-
                 </h1>
                 <a
                 href="pages/about.html"
                 class="font-redwing font-sm uppercase bg-black px-3 py-2 rounded
                         hover:bg-white hover:text-black transition">
-                <span data-i18n="hero.btn">About Us</span>
+                <span data-i18n="hero.btn"></span>
                 </a>
             </div>
         </section>
         
         <!-- Breath Section -->
-        <section class=" bg-[url('images/White_Team-Turco-logo.jpeg')] relative flex items-center justify-center my-20 md:my-30 text-center">
-            <div class="flex flex-col gap-4 items-center max-w-4xl mx-6 md:mx-2">
+        <section class=" flex flex-col items-center justify-center my-10 md:my-30 text-center">
+            <div class="flex flex-col gap-4 items-center w-full mx-6 md:mx-2">
                 
-                <h2 class="font-[Orbitron] text-xl md:text-4xl" data-i18n="breath.title">
-                    Built for Athletes. Driven by Community.
+                <h2 class="font-[Orbitron] text-xl md:text-4xl" data-i18n="breath-title">
                 </h2>
 
                 <div>
-                    <p class="font-redwing text-sm md:text-lg" data-i18n="breath.text_one">
-                    Our mission is to change life through human development and athletic performance.</p>
+                    <p class="font-redwing text-sm md:text-lg" data-i18n="breath.text_one"></p>
                     <p class="font-redwing text-sm md:text-lg opacity-90" data-i18n="breath.text_two">
-                        We combine performance, mindset, and community to support development both on and off the field.
                     </p>                    
                 </div>
-
+                <div
+                    class="flex flex-wrap overflow-x-auto mx-auto justify-center lg:overflow-hidden scroll-smooth
+                        no-scrollbar gap-6 py-8">
+                        <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Athletes-TeamTurco/athlete-proception-diogo.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50 shadow-xl shadow-gray-500">
+                            <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+                            text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-one">High Performance Individuals</p>
+                        </div>
+                        <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
+                            shadow-xl shadow-gray-500">
+                            <img src="../images/Athletes-TeamTurco/girls-swimmers-medal-fluminense.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition rounded-md duration-300 brightness-50 sm:brightness-100 hover:brightness-50
+                            ">
+                            <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+                            text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-two">Varied target groups</p>
+                        </div>
+                        <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
+                            shadow-xl shadow-gray-500">
+                            <img src="../images/Trainers-TeamTurco/Nelson-turco-kids.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50">
+                            <p class="absolute inset-0  flex items-center justify-center pointer-events-none
+                            text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-three">Integration</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
                 <div class="flex flex-col items-center gap-2 mt-2">
-                    <a href="pages/about.html">
+                    <a href="pages/contact.html" class="no-underline">
                         <button class="font-redwing text-white text-sm uppercase bg-black px-4 py-2 rounded
                             hover:bg-white hover:text-black transition cursor-pointer">
                             <span data-i18n="breath.btn">Explore Team Turco</span>
                         </button>                        
                     </a>                   
                 </div>
-
-            </div>
         </section>
 
 
@@ -236,16 +253,20 @@
                 <img src="images/Athletes-TeamTurco/resting-traction-diogo-athlete.jpeg"
                 class="w-full h-[80vh] object-cover object-[30%_65%] sm:object-[center_40%]">
             </div>
-            <div class="absolute inset-0 flex flex-col items-center justify-end z-20 text-center pb-5 text-white">
-                <h2 class="font-[Orbitron] text-2xl sm:text-4xl text-center" data-i18n="trainers.title">Meet Our Team</h2>
-                <p class="font-redwing hidden sm:block text-white" data-i18n="trainers.text_one">Dedicated professionals working together to support your growth.</p>
-                <p class="font-redwing text-sm sm:block text-white" data-i18n="trainers.text_two">From fitness to nutrition and mental performance specialist.</p>
-                <button class=" p-2 rounded-md mx-auto flex flex-col gap-1 text-xs py-2 text-white
-                transform transition-transform duration-300 ease-out hover:scale-110 cursor-pointer"
-                id="show-more-btn_profile">
-                    <p data-i18n="show-more-btn">Show More</p>
-                    <i class="fa-solid fa-chevron-down fa-xl" style="color:white"></i>
-                </button>
+            <div class="overlay-text absolute inset-0 z-20 grid grid-rows-3 text-center text-white px-4 h-full">
+                <div></div>
+                <div class="flex flex-col items-center justify-center">
+                    <h2 class="font-[Orbitron] text-2xl sm:text-4xl text-center" data-i18n="trainers.title">Meet Our Team</h2>
+                    <p class="font-redwing hidden sm:block text-white" data-i18n="trainers.text_one">Dedicated professionals working together to support your growth.</p>
+                </div>
+                <div class="flex items-end justify-center pb-6 md:pb-2">
+                    <button class="p-2 rounded-md mx-auto flex flex-col gap-1 text-xs py-2 text-white
+                    transform transition-transform duration-300 ease-out hover:scale-110 cursor-pointer"
+                    id="show-more-btn_profile">
+                        <p data-i18n="show-more-btn">Show More</p>
+                        <i class="fa-solid fa-chevron-down fa-xl" style="color:white"></i>
+                    </button>
+                </div>
             </div>
 
         </section>
@@ -383,296 +404,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Trainer Card Magno -->
-            <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer flex flex-col md:flex-row gap-6 
-            transition-all duration-300 hover:scale-[1.02] 
-            hover:shadow-2xl hover:shadow-green-500/20 sm:shadow-2xl sm:shadow-green-500/20">
-                <!-- Image -->
-                <img src="images/Trainers-TeamTurco/Magno-Cerqueira_pic.jpeg" class="w-full md:w-55 h-70 object-cover sm:object-[center_60%] rounded-md flex-shrink-0">
-
-                <!-- Text -->
-                <div class="text-white flex flex-col gap-4 pt-4">
-                    <div class="flex flex-row justify-between gap-4">
-                        <div>
-                            <h3 class="font-redwing text-3xl">Magno Cerqueira</h3>
-                            <p class="text-xl text-gray-400">
-                                <i class="pt-1 fa-solid text-md fa-location-dot"></i> <span data-i18n="trainer-location-rio">Rio de Janeiro, Brazil</span>
-                            </p>
-                            <p class="font-redwing text-xl" data-i18n="magno-occupation">Sports Nutritionist | MSc in Food, Nutrition &amp; Health</p>
-                        </div>
-
-                        <div class="mt-2">
-                            <button
-                                id="contact-toggle-magno"
-                                type="button"
-                                aria-expanded="false"
-                                class="flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
-                                <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="contact-toggle">Contact</span>
-                                <i id="contact-arrow-magno" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-                            </button>
-
-                            <div id="contact-panel-magno" class="hidden mt-2 space-y-2">
-                                <a
-                                    href="mailto:magno@example.com"
-                                    class="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
-                                    <i class="fa-solid fa-at"></i>
-                                    <span>Email</span>
-                                </a>
-                                <a
-                                    href="https://instagram.com/teamturco"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
-                                    <i class="fa-brands fa-instagram"></i>
-                                    <span>Instagram</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <button
-                        type="button"
-                        aria-expanded="false"
-                        class="trainer-details-toggle md:hidden w-full flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
-                        <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="more-info-toggle">More Info</span>
-                        <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-                    </button>
-                    <div class="trainer-details-panel hidden md:block">
-                        <p class="font-redwing text-md" data-i18n="magno-description-one">
-                            Magno is a certified nutritionist with a Master’s degree in Food, Nutrition, and Health, specialized in the physiological foundations of personalized training, sports nutrition, and advanced medicine. He combines scientific depth with real-world athletic application, delivering performance-based nutritional strategies tailored to each individual.
-                        </p>
-                        <p class="font-redwing text-md" data-i18n="magno-description-two">
-                            His approach integrates clinical knowledge with high-performance sport demands — ensuring every athlete receives a data-driven, individualized strategy.
-                        </p>
-                        <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
-                            <li data-i18n="magno-bullet-one">Personalized Consultations</li>
-                            <li data-i18n="magno-bullet-two">Physical &amp; Dietary Assessment</li>
-                            <li data-i18n="magno-bullet-three">Customized Meal Plan Development</li>
-                            <li data-i18n="magno-bullet-four">Performance-Oriented Nutritional Strategy</li>
-                            <li data-i18n="magno-bullet-five">Functional Nutrition Approach</li>
-                            <li data-i18n="magno-bullet-six">Specialist in Athletic Performance Development</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trainer Card Jordi -->
-            <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer 
-                flex flex-col md:flex-row gap-6 
-                transition-all duration-300 
-                hover:scale-[1.02] hover:shadow-2xl hover:shadow-green-500/20">
-                    <!-- Image -->
-                    <img src="images/Trainers-TeamTurco/jordi-new-pic2.jpeg" 
-                        class="w-full md:w-55 h-70 flex-shrink-0 object-cover object-[center_50%] rounded-lg">
-                    <!-- Text -->
-                    <div class="text-white flex flex-col gap-4 pt-4">
-                        <div class="flex flex-row justify-between gap-4">
-                            <div>
-                                <h3 class="font-redwing text-2xl md:text-3xl">Jordi Fornós</h3>
-                                <p class="text-gray-400 text-lg">
-                                    <i class="pt-1 fa-solid text-md fa-location-dot"></i> <span data-i18n="trainer-location-barcelona">Barcelona, Spain</span>
-                                </p>
-                                <p class="font-redwing text-xl" data-i18n="jordi-occupation">Psychologist | Mental Performance Specialist</p>
-                            </div>
-
-                            <div class="mt-2">
-                                <button
-                                    id="contact-toggle-jordi"
-                                    type="button"
-                                    aria-expanded="false"
-                                    class="flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
-                                    <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="contact-toggle">Contact</span>
-                                    <i id="contact-arrow-jordi" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-                                </button>
-
-                                <div id="contact-panel-jordi" class="hidden mt-2 space-y-2">
-                                    <a
-                                        href="mailto:jordi@example.com"
-                                        class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
-                                        <i class="fa-solid fa-at"></i>
-                                        <span>Email</span>
-                                    </a>
-                                    <a
-                                        href="https://instagram.com/teamturco"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <button
-                            type="button"
-                            aria-expanded="false"
-                            class="trainer-details-toggle md:hidden w-full flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
-                            <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="more-info-toggle">More Info</span>
-                            <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-                        </button>
-                        <div class="trainer-details-panel hidden md:block">
-                            <p class="font-redwing text-lg tracking-wide" data-i18n="jordi-quote">"Strength is not only physical — it is mental."</p>
-                            <p class="font-redwing text-lg tracking-wide" data-i18n="jordi-description">
-                                Jordi supports individuals navigating anxiety, stress, emotional challenges, and personal transitions.
-                                His mission is to help you rebuild emotional stability, strengthen self-esteem, and regain control over
-                                your thoughts and decisions. Through a structured and practical approach, he transforms overwhelm into
-                                clarity — and instability into strength.
-                            </p>
-                            <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
-                                <li data-i18n="jordi-bullet-one">Anxiety & Stress Management</li>
-                                <li data-i18n="jordi-bullet-two">Emotional Dependency & Relationship Challenges</li>
-                                <li data-i18n="jordi-bullet-three">Self-Esteem & Insecurity</li>
-                                <li data-i18n="jordi-bullet-four">Personal Crisis & Life Transitions</li>
-                                <li data-i18n="jordi-bullet-five">Performance Mindset Support</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Trainer Card Charles -->
-                <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer 
-                flex flex-col md:flex-row gap-6 
-                transition-all duration-300 
-                hover:scale-[1.02] hover:shadow-2xl hover:shadow-green-500/20">
-                    <!-- Image -->
-                    <img src="images/Trainers-TeamTurco/charles-dos-anjos.jpg" 
-                        class="w-full md:w-55 h-70 object-cover object-[center_20%] rounded-lg">
-                    <!-- Text -->
-                    <div class="text-white flex flex-col gap-4 pt-4">
-                        <div class="flex flex-row justify-between gap-4">
-                            <div>
-                                <h3 class="font-redwing text-2xl md:text-3xl">Charles dos Anjos</h3>
-                                <p class="text-gray-400 text-lg">
-                                    <i class="pt-1 fa-solid text-md fa-location-dot"></i> <span data-i18n="trainer-location-rio">Rio de Janeiro, Brazil</span>
-                                </p>
-                                <p class="font-redwing text-xl" data-i18n="charles-occupation">Sports Physiothepist | Specialist</p>
-                            </div>
-
-                            <div class="mt-2">
-                                <button
-                                    id="contact-toggle-charles"
-                                    type="button"
-                                    aria-expanded="false"
-                                    class="flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
-                                    <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="contact-toggle">Contact</span>
-                                    <i id="contact-arrow-charles" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-                                </button>
-
-                                <div id="contact-panel-charles" class="hidden mt-2 space-y-2">
-                                    <a
-                                        href="mailto:charles@example.com"
-                                        class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
-                                        <i class="fa-solid fa-at"></i>
-                                        <span>Email</span>
-                                    </a>
-                                    <a
-                                        href="https://instagram.com/teamturco"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <button
-                            type="button"
-                            aria-expanded="false"
-                            class="trainer-details-toggle md:hidden w-full flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
-                            <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="more-info-toggle">More Info</span>
-                            <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-                        </button>
-                        <div class="trainer-details-panel hidden md:block">
-                            <p class="font-redwing text-lg tracking-wide" data-i18n="charles-quote">"High performance is built through science and precision."</p>
-                            <p class="font-redwing text-lg tracking-wide" data-i18n="charles-description">
-                                Charles specializes in Health & Performance Management for athletes, integrating physiotherapy,
-                                exercise physiology, and performance science into structured systems designed for elite results.
-                                With national and international experience, he delivers strategic support focused on injury prevention,
-                                recovery optimization, and competitive excellence.
-                            </p>
-                            <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
-                                <li data-i18n="charles-bullet-one">Elite Athlete Performance Support</li>
-                                <li data-i18n="charles-bullet-two">Exercise Physiology & Load Monitoring</li>
-                                <li data-i18n="charles-bullet-three">Injury Prevention & Rehabilitation</li>
-                                <li data-i18n="charles-bullet-four">International Sports Consultancy</li>
-                                <li data-i18n="charles-bullet-five">Exclusive Professional Athlete Management</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Trainer Card Ramon -->
-                <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer 
-                flex flex-col md:flex-row gap-6 
-                transition-all duration-300 
-                hover:scale-[1.02] hover:shadow-2xl hover:shadow-green-500/20">
-                    <!-- Image -->
-                    <img src="images/Trainers-TeamTurco/ramon-travassos.jpg" 
-                        class="w-full md:w-55 h-70 object-cover object-[center_20%] rounded-lg">
-                    <!-- Text -->
-                    <div class="text-white flex flex-col gap-4 pt-4">
-                        <div class="flex flex-row justify-between gap-4">
-                            <div>
-                                <h3 class="font-redwing text-2xl md:text-3xl">Ramon Travassos</h3>
-                                <p class="text-gray-400 text-lg">
-                                    <i class="pt-1 fa-solid text-md fa-location-dot"></i> <span data-i18n="trainer-location-rio">Rio de Janeiro, Brazil</span>
-                                </p>
-                                <p class="font-redwing text-xl" data-i18n="ramon-occupation">Sports Physiotherapitst | Performance Specialist</p>
-                            </div>
-
-                            <div class="mt-2">
-                                <button
-                                    id="contact-toggle-ramon"
-                                    type="button"
-                                    aria-expanded="false"
-                                    class="flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
-                                    <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="contact-toggle">Contact</span>
-                                    <i id="contact-arrow-ramon" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-                                </button>
-
-                                <div id="contact-panel-ramon" class="hidden mt-2 space-y-2">
-                                    <a
-                                        href="mailto:ramon@example.com"
-                                        class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
-                                        <i class="fa-solid fa-at"></i>
-                                        <span>Email</span>
-                                    </a>
-                                    <a
-                                        href="https://instagram.com/teamturco"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
-                                        <i class="fa-brands fa-instagram"></i>
-                                        <span>Instagram</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <button
-                            type="button"
-                            aria-expanded="false"
-                            class="trainer-details-toggle md:hidden w-full flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
-                            <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="more-info-toggle">More Info</span>
-                            <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
-                        </button>
-                        <div class="trainer-details-panel hidden md:block">
-                            <p class="font-redwing text-lg tracking-wide" data-i18n="ramon-quote">"Peak performance begins with structured health."</p>
-                            <p class="font-redwing text-lg tracking-wide" data-i18n="ramon-description">
-                                His method integrates physiotherapy, training, recovery, and wellness into a strategic system designed
-                                to prevent injuries and optimize results. Through science-based structure and personalized follow-up,
-                                he helps athletes unlock their full physical potential.
-                            </p>
-                            <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
-                                <li data-i18n="ramon-bullet-one">Sports Injury Prevention & Rehabilitation</li>
-                                <li data-i18n="ramon-bullet-two">Athletic Performance Optimization</li>
-                                <li data-i18n="ramon-bullet-three">Recovery & Load Management</li>
-                                <li data-i18n="ramon-bullet-four">Integrated Health Strategy</li>
-                                <li data-i18n="ramon-bullet-five">Online & On-Site Follow-Up</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
                 <button class=" p-2 rounded-md mx-auto flex flex-col justify-end gap-1 text-xs
                 transform transition-transform duration-300 ease-out hover:scale-110 cursor-pointer"
                 id="show-less-btn_profile">
@@ -682,16 +413,302 @@
             </div>
         </div>
 
-         <!-- Join Team Turco Section -->
+         <!-- Partners Section -->
         <section>
             <div class="flex flex-col items-center justify-center my-20 gap-4">
-            <h2 class="font-[Orbitron] text-2xl sm:text-4xl" data-i18n="join-cta">Join Team Turco</h2>
-                <a
-                href="pages/contact.html"
-                class="font-redwing uppercase bg-black text-white px-6 py-2 rounded
-                        hover:bg-white hover:text-black transition">
-            <span data-i18n="join-contact-btn">Contact Us</span>
-                </a>
+                <h2 class="font-[Orbitron] text-2xl sm:text-4xl" data-i18n="partners-title"></h2>
+                <p class="font-redwing text-sm md:text-lg opacity-90" data-i18n="partner.text_one"></p>
+                <div class="flex flex-col gap-12 mx-12 lg:mx-12">
+                    <!-- Trainer Card Magno -->
+                    <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer flex flex-col md:flex-row gap-6 
+                    transition-all duration-300 hover:scale-[1.02] 
+                    hover:shadow-2xl hover:shadow-green-500/20 sm:shadow-2xl sm:shadow-green-500/20">
+                        <!-- Image -->
+                        <img src="images/Trainers-TeamTurco/Magno-Cerqueira_pic.jpeg" class="w-full md:w-55 h-70 object-cover sm:object-[center_60%] rounded-md flex-shrink-0">
+
+                        <!-- Text -->
+                        <div class="w-full h-full text-white flex flex-col gap-4 pt-4 md:h-full">
+                            <div class="flex flex-row justify-between gap-4">
+                                <div>
+                                    <h3 class="font-redwing text-3xl">Magno Cerqueira</h3>
+                                    <p class="text-xl text-gray-400">
+                                        <i class="pt-1 fa-solid text-md fa-location-dot"></i> <span data-i18n="trainer-location-rio">Rio de Janeiro, Brazil</span>
+                                    </p>
+                                    <p class="font-redwing text-xl" data-i18n="magno-occupation">Sports Nutritionist | MSc in Food, Nutrition &amp; Health</p>
+                                </div>
+
+                                <div class="h-auto mt-2">
+                                    <button
+                                        id="contact-toggle-magno"
+                                        type="button"
+                                        aria-expanded="false"
+                                        class="flex items-center h-auto justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
+                                        <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="contact-toggle">Contact</span>
+                                        <i id="contact-arrow-magno" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                                    </button>
+
+                                    <div id="contact-panel-magno" class="hidden mt-2 space-y-2">
+                                        <a
+                                            href="mailto:nutrimagnocerqueira@gmail.com"
+                                            class="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                            <i class="fa-solid fa-at"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a
+                                            href="https://www.instagram.com/nutrimagnocerqueira/"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            class="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                            <i class="fa-brands fa-instagram"></i>
+                                            <span>Instagram</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                                type="button"
+                                aria-expanded="false"
+                                class="trainer-details-toggle w-full h-auto mt-auto flex items-end justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-1 rounded-md transition cursor-pointer">
+                                <span class="font-redwing text-sm uppercase tracking-wide" id="info-btn" data-i18n="more-info-toggle">More Info</span>
+                                <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                            </button>
+                            <div class="trainer-details-panel hidden">
+                                <p class="font-redwing text-md" data-i18n="magno-description-one">
+                                    Magno is a certified nutritionist with a Master’s degree in Food, Nutrition, and Health, specialized in the physiological foundations of personalized training, sports nutrition, and advanced medicine. He combines scientific depth with real-world athletic application, delivering performance-based nutritional strategies tailored to each individual.
+                                </p>
+                                <p class="font-redwing text-md" data-i18n="magno-description-two">
+                                    His approach integrates clinical knowledge with high-performance sport demands — ensuring every athlete receives a data-driven, individualized strategy.
+                                </p>
+                                <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
+                                    <li data-i18n="magno-bullet-one">Personalized Consultations</li>
+                                    <li data-i18n="magno-bullet-two">Physical &amp; Dietary Assessment</li>
+                                    <li data-i18n="magno-bullet-three">Customized Meal Plan Development</li>
+                                    <li data-i18n="magno-bullet-four">Performance-Oriented Nutritional Strategy</li>
+                                    <li data-i18n="magno-bullet-five">Functional Nutrition Approach</li>
+                                    <li data-i18n="magno-bullet-six">Specialist in Athletic Performance Development</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trainer Card Jordi -->
+                    <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer 
+                        flex flex-col md:flex-row gap-6 
+                        transition-all duration-300 
+                        hover:scale-[1.02] hover:shadow-2xl hover:shadow-green-500/20">
+                            <!-- Image -->
+                            <img src="images/Trainers-TeamTurco/jordi-new-pic2.jpeg" 
+                                class="w-full md:w-55 h-70 flex-shrink-0 object-cover object-[center_50%] rounded-lg">
+                            <!-- Text -->
+                            <div class="w-full h-full text-white flex flex-col gap-4 pt-4 md:h-full">
+                                <div class="flex flex-row justify-between gap-4">
+                                    <div>
+                                        <h3 class="font-redwing text-2xl md:text-3xl">Jordi Fornós</h3>
+                                        <p class="text-gray-400 text-lg">
+                                            <i class="pt-1 fa-solid text-md fa-location-dot"></i> <span data-i18n="trainer-location-barcelona">Barcelona, Spain</span>
+                                        </p>
+                                        <p class="font-redwing text-xl" data-i18n="jordi-occupation">Psychologist | Mental Performance Specialist</p>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <button
+                                            id="contact-toggle-jordi"
+                                            type="button"
+                                            aria-expanded="false"
+                                            class="flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
+                                            <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="contact-toggle">Contact</span>
+                                            <i id="contact-arrow-jordi" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                                        </button>
+
+                                        <div id="contact-panel-jordi" class="hidden mt-2 space-y-2">
+                                            <a
+                                                href="mailto:jordi@example.com"
+                                                class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                                <i class="fa-solid fa-at"></i>
+                                                <span>Email</span>
+                                            </a>
+                                            <a
+                                                href="https://instagram.com/teamturco"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <span>Instagram</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    aria-expanded="false"
+                                    class="trainer-details-toggle w-full h-auto mt-auto flex items-end justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-1 rounded-md transition cursor-pointer">
+                                    <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="more-info-toggle">More Info</span>
+                                    <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                                </button>
+                                <div class="trainer-details-panel hidden">
+                                    <p class="font-redwing text-lg tracking-wide" data-i18n="jordi-quote">"Strength is not only physical — it is mental."</p>
+                                    <p class="font-redwing text-lg tracking-wide" data-i18n="jordi-description">
+                                        Jordi supports individuals navigating anxiety, stress, emotional challenges, and personal transitions.
+                                        His mission is to help you rebuild emotional stability, strengthen self-esteem, and regain control over
+                                        your thoughts and decisions. Through a structured and practical approach, he transforms overwhelm into
+                                        clarity — and instability into strength.
+                                    </p>
+                                    <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
+                                        <li data-i18n="jordi-bullet-one">Anxiety & Stress Management</li>
+                                        <li data-i18n="jordi-bullet-two">Emotional Dependency & Relationship Challenges</li>
+                                        <li data-i18n="jordi-bullet-three">Self-Esteem & Insecurity</li>
+                                        <li data-i18n="jordi-bullet-four">Personal Crisis & Life Transitions</li>
+                                        <li data-i18n="jordi-bullet-five">Performance Mindset Support</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trainer Card Charles -->
+                        <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer 
+                        flex flex-col md:flex-row gap-6 
+                        transition-all duration-300 
+                        hover:scale-[1.02] hover:shadow-2xl hover:shadow-green-500/20">
+                            <!-- Image -->
+                            <img src="images/Trainers-TeamTurco/charles-dos-anjos.jpg" 
+                                class="w-full md:w-55 h-70 object-cover object-[center_20%] rounded-lg">
+                            <!-- Text -->
+                            <div class="w-full h-full text-white flex flex-col gap-4 pt-4 md:h-full">
+                                <div class="flex flex-row justify-between gap-4">
+                                    <div>
+                                        <h3 class="font-redwing text-2xl md:text-3xl">Charles dos Anjos</h3>
+                                        <p class="text-gray-400 text-lg">
+                                            <i class="pt-1 fa-solid text-md fa-location-dot"></i> <span data-i18n="trainer-location-rio">Rio de Janeiro, Brazil</span>
+                                        </p>
+                                        <p class="font-redwing text-xl" data-i18n="charles-occupation">Sports Physiothepist | Specialist</p>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <button
+                                            id="contact-toggle-charles"
+                                            type="button"
+                                            aria-expanded="false"
+                                            class="flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
+                                            <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="contact-toggle">Contact</span>
+                                            <i id="contact-arrow-charles" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                                        </button>
+
+                                        <div id="contact-panel-charles" class="hidden mt-2 space-y-2">
+                                            <a
+                                                href="mailto:charles@example.com"
+                                                class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                                <i class="fa-solid fa-at"></i>
+                                                <span>Email</span>
+                                            </a>
+                                            <a
+                                                href="https://instagram.com/teamturco"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <span>Instagram</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    aria-expanded="false"
+                                    class="trainer-details-toggle w-full h-auto mt-auto flex items-end justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-1 rounded-md transition cursor-pointer">
+                                    <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="more-info-toggle">More Info</span>
+                                    <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                                </button>
+                                <div class="trainer-details-panel hidden">
+                                    <p class="font-redwing text-lg tracking-wide" data-i18n="charles-quote">"High performance is built through science and precision."</p>
+                                    <p class="font-redwing text-lg tracking-wide" data-i18n="charles-description">
+                                        Charles specializes in Health & Performance Management for athletes, integrating physiotherapy,
+                                        exercise physiology, and performance science into structured systems designed for elite results.
+                                        With national and international experience, he delivers strategic support focused on injury prevention,
+                                        recovery optimization, and competitive excellence.
+                                    </p>
+                                    <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
+                                        <li data-i18n="charles-bullet-one">Elite Athlete Performance Support</li>
+                                        <li data-i18n="charles-bullet-two">Exercise Physiology & Load Monitoring</li>
+                                        <li data-i18n="charles-bullet-three">Injury Prevention & Rehabilitation</li>
+                                        <li data-i18n="charles-bullet-four">International Sports Consultancy</li>
+                                        <li data-i18n="charles-bullet-five">Exclusive Professional Athlete Management</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trainer Card Ramon -->
+                        <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer 
+                        flex flex-col md:flex-row gap-6 
+                        transition-all duration-300 
+                        hover:scale-[1.02] hover:shadow-2xl hover:shadow-green-500/20">
+                            <!-- Image -->
+                            <img src="images/Trainers-TeamTurco/ramon-travassos.jpg" 
+                                class="w-full md:w-55 h-70 object-cover object-[center_20%] rounded-lg">
+                            <!-- Text -->
+                            <div class="text-white flex flex-col gap-4 pt-4">
+                                <div class="flex flex-row justify-between gap-4">
+                                    <div>
+                                        <h3 class="font-redwing text-2xl md:text-3xl">Ramon Travassos</h3>
+                                        <p class="text-gray-400 text-lg">
+                                            <i class="pt-1 fa-solid text-md fa-location-dot"></i> <span data-i18n="trainer-location-rio">Rio de Janeiro, Brazil</span>
+                                        </p>
+                                        <p class="font-redwing text-xl" data-i18n="ramon-occupation">Sports Physiotherapitst | Performance Specialist</p>
+                                    </div>
+
+                                    <div class="mt-2">
+                                        <button
+                                            id="contact-toggle-ramon"
+                                            type="button"
+                                            aria-expanded="false"
+                                            class="flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
+                                            <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="contact-toggle">Contact</span>
+                                            <i id="contact-arrow-ramon" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                                        </button>
+
+                                        <div id="contact-panel-ramon" class="hidden mt-2 space-y-2">
+                                            <a
+                                                href="mailto:ramon@example.com"
+                                                class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                                <i class="fa-solid fa-at"></i>
+                                                <span>Email</span>
+                                            </a>
+                                            <a
+                                                href="https://instagram.com/teamturco"
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                                <i class="fa-brands fa-instagram"></i>
+                                                <span>Instagram</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button
+                                    type="button"
+                                    aria-expanded="false"
+                                    class="trainer-details-toggle md:hidden w-full flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
+                                    <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="more-info-toggle">More Info</span>
+                                    <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                                </button>
+                                <div class="trainer-details-panel hidden md:block">
+                                    <p class="font-redwing text-lg tracking-wide" data-i18n="ramon-quote">"Peak performance begins with structured health."</p>
+                                    <p class="font-redwing text-lg tracking-wide" data-i18n="ramon-description">
+                                        His method integrates physiotherapy, training, recovery, and wellness into a strategic system designed
+                                        to prevent injuries and optimize results. Through science-based structure and personalized follow-up,
+                                        he helps athletes unlock their full physical potential.
+                                    </p>
+                                    <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
+                                        <li data-i18n="ramon-bullet-one">Sports Injury Prevention & Rehabilitation</li>
+                                        <li data-i18n="ramon-bullet-two">Athletic Performance Optimization</li>
+                                        <li data-i18n="ramon-bullet-three">Recovery & Load Management</li>
+                                        <li data-i18n="ramon-bullet-four">Integrated Health Strategy</li>
+                                        <li data-i18n="ramon-bullet-five">Online & On-Site Follow-Up</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                    
+                </div>
                 <div>
                     <img src="images/White_Team-Turco-logo.jpeg" class="w-16 opacity-70">
                 </div> 

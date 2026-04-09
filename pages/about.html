@@ -105,13 +105,25 @@
         </section>
 
         <!-- AGENCY DESCRIPTION-->
-        <section class="bg-gray-100 w-full h-auto flex flex-col gap-2 border-t-1 py-24 border-gray-300">
-            <h2 class="text-2xl md:text-4xl text-black mx-12 font-redwing" data-i18n="about-description">Team Turco is a high-performance sports agency built to develop complete individuals to perform based on their degree of demand. With our team of expertise professionals, we support our athletes in:</h2>
-            <ul class="flex flex-col gap-2 text-xl md:text-2xl text-black mx-20 pt-6 font-redwing list-disc">
-                <li data-i18n="about-bullet-one">Physically: Strategic training</li>
-                <li data-i18n="about-bullet-two">Mentally: Mindset development</li>
-                <li data-i18n="about-bullet-three">Strategically: Long-term career management</li>
-            </ul>
+        <section class="relative  overflow-hidden border-t border-gray-300 py-20 md:py-28">
+            <div class="absolute -top-10 -right-10 h-44 w-44 rounded-full bg-black/5 blur-2xl"></div>
+            <div class="absolute -bottom-12 -left-10 h-52 w-52 rounded-full bg-black/5 blur-2xl"></div>
+
+            <div class="relative max-w-6xl mx-auto px-6 md:px-12 grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+                <div class="bg-white/90 lg:col-span-7">
+                    <h2 class="text-3xl md:text-3xl leading-tight text-black font-redwing" data-i18n="about-description_one"></h2>
+                    <h2 class="text-3xl md:text-3xl leading-tight text-black/90 font-redwing mt-2" data-i18n="about-description_two"></h2>
+                    <div class="h-1 w-20 bg-black mt-6"></div>
+                </div>
+
+                <div class="lg:col-span-5 bg-white/90 border border-zinc-200 rounded-xl p-6 md:p-8 shadow-sm">
+                    <ul class="flex flex-col gap-4 text-lg md:text-xl text-black font-redwing list-disc pl-6">
+                        <li data-i18n="about-bullet-one">Physically: Strategic training</li>
+                        <li data-i18n="about-bullet-two">Mentally: Mindset development</li>
+                        <li data-i18n="about-bullet-three">Strategically: Long-term career management</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- AGENCY HISTORY-->
@@ -121,16 +133,16 @@
             <div class="max-w-7xl mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center gap-12">
 
                 <!-- Image -->
-                <div class="w-full md:w-7/12 overflow-hidden rounded-md">
+                <div class="w-full md:w-5/12 overflow-hidden rounded-md">
                     <img 
-                        src="../images/Athletes-TeamTurco/athlete-core-diogo.jpeg" 
-                        class="w-full h-[300px] md:h-[500px] object-cover transition-transform duration-500 hover:scale-105"
+                        src="../images/Athletes-TeamTurco/elastic-band-barcelona.jpeg" 
+                        class="w-full h-80 object-cover transition-transform duration-500 hover:scale-105"
                         alt="Diogo Turco in Rio de Janeiro"
                     >
                 </div>
 
                 <!-- Text -->
-                <div class="w-full md:w-5/12 space-y-4">
+                <div class="w-full md:w-7/12 space-y-4">
                     <h3 class="font-redwing font-bold text-2xl md:text-4xl text-black leading-tight" data-i18n="agency-history-title_one">
                         "It all started in the tropical city of Rio de Janeiro"
                     </h3>
@@ -150,16 +162,16 @@
             <div class="max-w-7xl mx-auto px-6 md:px-16 flex flex-col md:flex-row-reverse items-center gap-12 mt-20">
 
                 <!-- Image -->
-                <div class="w-full md:w-7/12 overflow-hidden rounded-md">
+                <div class="w-full md:w-5/12 overflow-hidden rounded-md">
                     <img 
-                        src="../images/Athletes-TeamTurco/footballer-wall-training-diogo.jpeg" 
-                        class="w-full h-[300px] md:h-[500px] object-cover object-[center_5%] transition-transform duration-500 hover:scale-105"
+                        src="../images/Athletes-TeamTurco/bruno-and-wife-training-two.jpeg" 
+                        class="w-full h-80 object-cover object-[center_60%] transition-transform duration-500 hover:scale-105"
                         alt="Training session"
                     >
                 </div>
 
                 <!-- Text -->
-                <div class="w-full md:w-5/12 space-y-4">
+                <div class="w-full md:w-7/12 space-y-4">
                     <h3 class="font-redwing font-semibold text-2xl md:text-4xl text-black leading-tight" data-i18n="agency-history-title_two">
                         From local roots to international stands...
                     </h3>
@@ -174,17 +186,17 @@
 
             </div>
         </section>
-        <section class="my-20 my-10 md:my-30 text-center w-max-3xl mx-4 md:mx-16 px-2 md:px-6">
-            <h2 class="font-[Orbitron] text-xl md:text-2xl  mx-auto" data-i18n="breath-about">"Individuality and meaningful relationships are at the heart of everything we do."</h2>
-                <div class="flex flex-col items-center justify-center my-5 gap-4">
+        <!-- PHILOSOPHY -->
+        <section class="bg-[url('../images/Athletes-TeamTurco/diogo-and-grandmas-seat.jpeg')] bg-[position:50%_12%] md:bg-[position:50%_8%] transition duration-500 brightness-70 hover:brightness-85 rounded-xl bg-cover bg-no-repeat my-10 text-center mx-4 md:mx-16 min-h-[22rem] md:min-h-[28rem] px-2 md:px-6 flex items-center justify-center">
+            <div class="w-full max-w-3xl text-white">
+                <h2 class="font-[Orbitron] text-xl md:text-2xl p-4 bg-white/70 rounded-md text-black mx-auto" data-i18n="breath-about">"Individuality and meaningful relationships are at the heart of everything we do."</h2>
+                <div class="flex flex-col items-center justify-center mt-5 gap-4">
                     <a href="contact.html"
                     class="font-redwing uppercase bg-black text-white px-6 py-2 rounded
                     hover:bg-white hover:text-black transition" data-i18n="breath-about-btn">
                     Contact Us
                     </a>
-                <div>
-                    <img src="../images/White_Team-Turco-logo.jpeg" class="w-16 opacity-70">
-                </div> 
+                </div>
             </div>
         </section>
         <section class="flex flex-col md:flex-row mx-10 justify-evenly gap-2 pt-24">
@@ -223,34 +235,6 @@
                         hover:bg-white hover:text-black text-sm sm:text-md transition" data-i18n="what-makes-btn">You as an individual</a>
             </div>
         </section>
-        <div
-            class="flex flex-wrap overflow-x-auto mx-auto justify-center lg:overflow-hidden scroll-smooth
-                no-scrollbar gap-6 py-8">
-                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                    <img src="../images/Athletes-TeamTurco/athlete-proception-diogo.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50 shadow-xl shadow-gray-500">
-                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
-                    text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-one">High Performance Individuals</p>
-                </div>
-                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
-                    shadow-xl shadow-gray-500">
-                    <img src="../images/Athletes-TeamTurco/girls-swimmers-medal-fluminense.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition rounded-md duration-300 brightness-50 sm:brightness-100 hover:brightness-50
-                    ">
-                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
-                    text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-two">Varied target groups</p>
-                </div>
-                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
-                    shadow-xl shadow-gray-500">
-                    <img src="../images/Trainers-TeamTurco/Nelson-turco-kids.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50">
-                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
-                    text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-three">Integration</p>
-                </div>
-                <div class=" relative flex flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer
-                    shadow-xl shadow-gray-500">
-                    <img src="../images/Trainers-TeamTurco/Marcelo-with-kid.jpeg" class="w-40 h-50 sm:w-60 sm:h-80 object-cover transition duration-300 rounded-md brightness-50 sm:brightness-100 hover:brightness-50">
-                    <p class="absolute inset-0  flex items-center justify-center pointer-events-none
-                    text-white text-sm md:text-md font-semibold text-center px-2 transition duration-300" data-i18n="grid-text-four">Community</p>
-                </div>
-            </div>
         </div>
     </main>
         <!-- Goals, Values and mission -->
