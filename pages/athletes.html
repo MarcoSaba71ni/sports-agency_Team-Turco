@@ -100,86 +100,92 @@
                 </div>
             </div>
         </section>
+        <!-- Athletes Carousel -->
+        <section class="bg-black w-full flex flex-col py-15 gap-12 justify-center">
+            <div>
+                <h2 class="font-[Orbitron] text-center text-2xl sm:text-4xl text-white" data-i18n="athletes.title">Our Athletes</h2>
+            </div>
+            <!-- Scrollable Carousel-->
+            <div class="flex items-center justify-center gap-6 w-full max-w-6xl mx-auto">
+                <button
+                id="prev-btn"
+                class="hidden sm:block cursor-pointer pl-6">
+                    <i class="fa-solid fa-chevron-left text-xl md:text-3xl text-gray-500 hover:text-white"></i>     
+                </button>
+                
+                <div
+                id="athletes-carousel"
+                class="flex flex-nowrap overflow-x-auto lg:overflow-hidden scroll-smooth mx-6 md:mx-2  no-scrollbar gap-3 py-8">
+                    <div class=" flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
+                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Lucas Straub (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
+                        <img src="../images/Athletes-TeamTurco/jaime-ironman.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Jaime (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Tri-Athlete</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
+                        <img src="../images/Athletes-TeamTurco/lukas-brazilian-nationalteam.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Lukas(27)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
+                        <img src="../images/Athletes-TeamTurco/victor-fluminense-flag.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Victor (20)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Swimming</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
+                        <img src="../images/Players-TeamTurco/gean_img00.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Gean Miller (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
+                        <img src="../images/Athletes-TeamTurco/vinicius-paddlesup (1).jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Vinicius  (60)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Paddle Sup</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
+                        <img src="../images/Athletes-TeamTurco/jaime-cycling.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Jaime (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Cycling</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 ">
+                        <img src="../images/Players-TeamTurco/sabatini_img02.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Marco Sabatini (26)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 ">
+                        <img src="../images/Players-TeamTurco/swimming_img01.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md"> Joao Pierre (24)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Swimming</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col sm:hidden items-center transition-transform duration-300 hover:scale-110">
+                        <img src="../images/Players-TeamTurco/Magdiel_img02.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
+                        <p class="text-white text-sm md:text-md">Magdiel (34)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                    </div>
+                </div>
+                <button
+                id="next-btn"
+                class="hidden sm:block cursor-pointer pr-6">
+                    <i class="fa-solid fa-chevron-right text-xl md:text-3xl text-gray-500 hover:text-white"></i>                        
+                </button>
+            </div>
+
+            <div class="flex justify-center mx-auto">
+                <a
+                href="pages/athletes.html"
+                class="font-redwing font-sm uppercase bg-white px-3 py-2 rounded
+                        hover:bg-black hover:text-white transition">
+                <span data-i18n="athletes.btn">Meet our Athletes</span>
+                </a>
+            </div>
+        </section>
         <!-- Athletes Section -->
         <main 
         class="flex flex-col justify-center py-10 gap-10">
-            <h2 class="font-redwing text-4xl mx-auto mt-6">Athletes</h2>
-            <!-- Search Bar -->
-            <div class="w-full flex justify-center">
-                <input
-                class="border-2 pl-4 py-2 rounded-md flex justify-center w-full mx-16 sm:mx-32"
-                type="text"
-                placeholder="Search for Athletes"/>
-            </div>
-            <!-- Carousel Section -->
-            <div class="py-10">
-                <div
-                class="flex flex-wrap justify-center lg:overflow-hidden py-10 gap-12">
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                </div>
-                <div
-                class="flex flex-wrap justify-center lg:overflow-hidden py-10 gap-12">
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                    <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                        <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                        <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="opacity-70 text-xs md:text-md">Football</p>
-                    </div>
-                </div>             
-            </div>
             <section class="flex flex-col gap-12 px-10 max-w-6xl mx-auto w-full">
 
                 <h2 class="font-redwing text-4xl mx-auto mt-6">Our Approach</h2>
@@ -255,6 +261,88 @@
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section>
+                <div class="flex flex-col gap-10 items-center w-full mx-6 md:mx-2">
+                    <h2 class="font-redwing text-4xl mx-auto mt-6">Find our athletes</h2>
+                    <!-- Search Bar -->
+                    <div class="w-full flex justify-center">
+                        <input
+                        class="border-2 pl-4 py-2 rounded-md flex justify-center w-1/2 mx-16 sm:mx-32"
+                        type="text"
+                        placeholder="Search for Athletes"/>
+                    </div>                    
+                </div>
+                <!-- Carousel Section -->
+                <div class="py-10">
+                    <div
+                    class="flex flex-wrap justify-center lg:overflow-hidden py-10 gap-12">
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                    </div>
+                    <div
+                    class="flex flex-wrap justify-center lg:overflow-hidden py-10 gap-12">
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
+                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
+                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
+                            <p class="opacity-70 text-xs md:text-md">Football</p>
+                        </div>
+                    </div>             
+                </div>                
             </section>
             <section class="relative py-30 mx-10 rounded-2xl px-20 flex flex-col md:flex-row gap-12 justify-between overflow-hidden">
 

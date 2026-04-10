@@ -10,12 +10,16 @@
     "breath-title":"Join Team Turco",
     "breath.text_one":"We help people transform their lives through movement, discipline, and sport.",
     "breath.text_two":"From mental resilience to physical well-being, our team supports every stage of your personal and athletic journey.",    
+    "grid-text-one": "High Performance Individuals",
+    "grid-text-two": "Varied Target Groups",
+    "grid-text-three": "Integration",
+    "grid-text-four": "Community",
     "breath.btn": "JOIN TEAM TURCO",
 
-    "athletes.title":"Our Community",
-    "athletes.btn":"MEET OUR ATHLETES",
+    "community.title":"Our Community",
+    "community.btn":"MEET OUR ATHLETES",
 
-    "trainers.title":"Meet Our Team",
+    "trainers.title":"Meet Our Coaches",
     "trainers.text_one":"Dedicated coaches and trusted specialists working together to support your growth.",
     "trainers.text_two":"From fitness to nutrition and mental performance specialist",
 
@@ -82,6 +86,9 @@
     "partners-title": "Our Partners",
     "partner.text_one": "Beyond our core team, we work alongside highly skilled professionals committed to supporting your journey every step of the way.",
 
+    "join-cta": "Join Team Turco",
+    "join-contact-btn": "CONTACT US",
+
     "about-span": "About Us",
     "about-title": "Your Complexity",
     "about-title-highlight": "IS OUR STRENGTH",
@@ -117,11 +124,7 @@
     "goal-description":"To expand Team Turco across Brazil, Spain, Sweden, and beyond — building a global network of elite trainers and transform lives through sports.",
 
     "what-makes-us-different-title": "What Makes Us Different",
-    "what-makes-description": "Envolve. Transform. Overcome.",
-    "what-makes-btn": "YOU AS AN INDIVIDUAL",
+    "what-makes-description": "Evolve. Transform. Thrive.",
+    "what-makes-btn": "YOU AS AN INDIVIDUAL"
 
-    "grid-text-one": "High Performance Individuals",
-    "grid-text-two": "Varied Target Groups",
-    "grid-text-three": "Integration",
-    "grid-text-four": "Community"
 }
