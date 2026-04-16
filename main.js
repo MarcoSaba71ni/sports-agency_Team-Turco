@@ -1,7 +1,6 @@
 const images = [
   "images/Trainers-TeamTurco/Diogo-img1.jpeg",
   "images/Trainers-TeamTurco/Diogo-img6-Copy.jpeg",
-  "images/Trainers-TeamTurco/Diogo-img4-Copy.jpeg",
 ];
 
 const heroImg = document.getElementById("hero-img");

@@ -19,7 +19,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-     <header class="bg-black text-white px-6 py-3 relative">
+     <header class="bg-zinc-950 text-white px-6 py-3 relative">
         <!-- MOBILE HEADER DIV-->
         <div class="flex items-center justify-between md:hidden">
             <button id="lang-btn" class="text-3xl cursor-pointer transition-transform duration-300 ease-in-out 
@@ -46,7 +46,20 @@
                 <ul class="font-redwing flex gap-8">
                     <li><a href="index.html" class="hover:border-b-2 p-2" data-i18n="nav.home"></a></li>
                     <li><a href="pages/about.html" class="hover:border-b-2 p-2" data-i18n="nav.about"></a></li>
-                    <li><a href="pages/athletes.html" class="hover:border-b-2 p-2" data-i18n="nav.athletes"></a></li>
+                    <li class="border-b-2 border-black hover:border-white relative pb-2" id="athletes-menu">
+                        <button
+                        type="button"
+                        aria-expanded="false"
+                        class="flex gap-2 items-center cursor-pointer"
+                        id="dropdown-athletes-btn">
+                            <p data-i18n="nav.athletes"></p>
+                            <i class="fa-solid fa-chevron-down text-sm transition-transform duration-300" id="athletes-chevron"></i>
+                        </button>
+                        <div class="hidden absolute bg-black z-50 text-white rounded border border-gray-700 flex flex-col gap-2 rounded-md" id="athletes-submenu">
+                            <a href="pages/athletes.html" class="hover:bg-white hover:text-black p-2 duration-300 text-sm" data-i18n="nav.athletes"></a>                            
+                            <a href="pages/high-performance.html" class="hover:bg-white hover:text-black p-2 duration-300 text-sm" data-i18n="nav.high-performance"></a>
+                        </div>
+                    </li>
                     <li><a href="pages/contact.html" class="hover:border-b-2 p-2" data-i18n="nav.contact"></a></li>
                 </ul>
             </nav>
@@ -85,7 +98,10 @@
             class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.about"></a>
             <a href="pages/athletes.html"
             class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.athletes"></a>
-            <a href="pages/contact.html" class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.contact"></a>
+            <a class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.high-performance"
+            href="pages/high-performance.html"></a>
+            <a href="pages/contact.html" 
+            class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.contact"></a>
         </nav>
     </header>
     <main>
@@ -114,7 +130,7 @@
             </div>
         </section>
         <!-- Socials Section -->
-        <section class="grid grid-cols-3 w-full h-12 sm:h-20 bg-zinc-900">
+        <section class="grid grid-cols-2 w-full h-12 sm:h-20 bg-zinc-900">
             <a 
                 href="https://www.instagram.com/7eam7urco/" target="_blank" rel="noopener noreferrer"
                 class="flex items-center flex-col justify-center gap-2 border border-gray-700 cursor-pointer transition-colors duration-300 hover:bg-pink-500/20">
@@ -122,16 +138,6 @@
                     <i class="fa-brands fa-instagram text-white text-md sm:text-xl transition transform hover:scale-110"></i>
                         <span class="text-white font-redwing text-xs sm:text-sm" data-i18n="socials.instagram">Instagram</span>                     
                 </div>                   
-            </a>
-            <a 
-                href="https://wa.me/5521988815999?text=Hi%20Team%20Turco,%20I%20came%20from%20your%20website%20and%20would%20love%20to%20learn%20more."
-                class="flex items-center justify-center gap-2 border border-gray-700 transition-colors duration-300 hover:bg-green-500/20"
-                target="_blank"
-                rel="noopener noreferrer">
-                    <div>
-                        <i class="fa-brands fa-whatsapp text-white text-md sm:text-xl"></i>
-                        <span class="text-white font-redwing text-xs sm:text-sm" data-i18n="socials.whatsapp">WhatsApp</span>                         
-                    </div>
             </a>
             <a class="flex items-center justify-center gap-2 border border-gray-700 transition-colors duration-300 hover:bg-blue-500/20" href="pages/contact.html">
                 <i class="fa-regular fa-envelope text-white text-md sm:text-xl"></i>
@@ -212,52 +218,57 @@
                     <div class=" flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
                         <img src="images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
                         <p class="text-white text-sm md:text-md">Lucas Straub (34)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.football">Football</p>
                     </div>
                     <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
                         <img src="images/Athletes-TeamTurco/jaime-ironman.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
                         <p class="text-white text-sm md:text-md">Jaime (34)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Tri-Athlete</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.triathlon">Tri-Athlete</p>
+                    </div>
+                    <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
+                        <img src="images/Athletes-TeamTurco/bruno-playing-basketball.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
+                        <p class="text-white text-sm md:text-md">Bruno Dal Maso (28)</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.basketball">Basketball</p>
                     </div>
                     <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
                         <img src="images/Athletes-TeamTurco/lukas-brazilian-nationalteam.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
                         <p class="text-white text-sm md:text-md">Lukas(27)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.football">Football</p>
                     </div>
                     <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
                         <img src="images/Athletes-TeamTurco/victor-fluminense-flag.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
                         <p class="text-white text-sm md:text-md">Victor (20)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Swimming</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.swimming">Swimming</p>
                     </div>
                     <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
                         <img src="images/Players-TeamTurco/gean_img00.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
                         <p class="text-white text-sm md:text-md">Gean Miller (34)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.football">Football</p>
                     </div>
                     <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
                         <img src="images/Athletes-TeamTurco/vinicius-paddlesup (1).jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">
                         <p class="text-white text-sm md:text-md">Vinicius  (60)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Paddle Sup</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.paddleboarding">Paddle Sup</p>
                     </div>
                     <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110">
                         <img src="images/Athletes-TeamTurco/jaime-cycling.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
                         <p class="text-white text-sm md:text-md">Jaime (34)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Cycling</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.cycling">Cycling</p>
                     </div>
                     <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 ">
                         <img src="images/Players-TeamTurco/sabatini_img02.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
                         <p class="text-white text-sm md:text-md">Marco Sabatini (26)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.football">Football</p>
                     </div>
                     <div class="flex flex-shrink-0 flex-col items-center transition-transform duration-300 hover:scale-110 ">
                         <img src="images/Players-TeamTurco/swimming_img01.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
                         <p class="text-white text-sm md:text-md"> Joao Pierre (24)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Swimming</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.swimming">Swimming</p>
                     </div>
                     <div class="flex flex-shrink-0 flex-col sm:hidden items-center transition-transform duration-300 hover:scale-110">
                         <img src="images/Players-TeamTurco/Magdiel_img02.jpeg" class="w-40 h-50 md:w-50 md:h-60 object-cover">   
                         <p class="text-white text-sm md:text-md">Magdiel (34)</p>
-                        <p class="text-white opacity-70 text-xs md:text-md">Football</p>
+                        <p class="text-white opacity-70 text-xs md:text-md" data-i18n="athlete.sport.football">Football</p>
                     </div>
                 </div>
                 <button
@@ -377,7 +388,7 @@
                 class="bg-zinc-900 p-6 rounded-xl cursor-pointer flex flex-col md:flex-row gap-6 
                 transition-all duration-300 hover:scale-[1.02] 
                 hover:shadow-2xl hover:shadow-green-500/20 sm:shadow-2xl sm:shadow-green-500/20">
-                <img src="images/Trainers-TeamTurco/Marcelo-running.jpeg" class="w-full md:w-55 h-70 object-cover rounded-md flex-shrink-0">
+                <img src="images/Players-TeamTurco/Marcelo-Cabral_img00.jpeg" class="w-full md:w-55 h-70 object-cover rounded-md flex-shrink-0">
                 <div class="text-white flex flex-col gap-4 pt-4">
                     <div class="flex flex-row justify-between">
                         <div>
@@ -403,7 +414,7 @@
                                     <span>Email</span>
                                 </a>
                                 <a
-                                    href="https://instagram.com/marcelo-instagram"
+                                    href="https://www.instagram.com/mcabral21/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
@@ -436,6 +447,84 @@
                     </div>
                 </div>
             </div>
+            <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer flex flex-col md:flex-row gap-6 
+            transition-all duration-300 hover:scale-[1.02] 
+            hover:shadow-2xl hover:shadow-green-500/20">
+
+                <img src="images/Trainers-TeamTurco/nelson-turco-barcelona-stadium.jpeg" 
+                alt="Nelson Turco"
+                class="w-full md:w-55 h-70 object-cover flex-shrink-0 rounded-md">
+
+                <div class="text-white flex flex-col gap-4 pt-4">
+                    <div class="flex flex-row justify-between">
+                        <div>
+                            <h3 class="font-redwing text-3xl">Nelson Turco</h3>
+                            <p class="text-gray-400 text-xl">
+                                <i class="pt-1 fa-solid text-md fa-location-dot"></i>
+                                <span>Rio de Janeiro, Brazil</span>
+                            </p>
+                            <p class="font-redwing text-xl">Trainer • PhysicalEducator</p>
+                        </div>
+
+                        <!-- Dropdown contact -->
+                        <div class="mt-2">
+                            <button
+                                id="contact-toggle-nelson"
+                                type="button"
+                                aria-expanded="false"
+                                class="flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
+                                <span class="font-redwing text-sm uppercase tracking-wide">Contact</span>
+                                <i id="contact-arrow-nelson" class="fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                            </button>
+
+                            <div id="contact-panel-nelson" class="hidden mt-2 space-y-2">
+                                <a
+                                    href="mailto:nelson@teamturco.com"
+                                    class="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                    <i class="fa-solid fa-at"></i>
+                                    <span>Email</span>
+                                </a>
+                                <a
+                                    href="https://www.instagram.com/antonionelsondiqueturco/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile toggle -->
+                    <button
+                        type="button"
+                        aria-expanded="false"
+                        class="trainer-details-toggle md:hidden w-full flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
+                        <span class="font-redwing text-sm uppercase tracking-wide">More Info</span>
+                        <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
+                    </button>
+
+                    <div class="trainer-details-panel hidden md:block">
+                        <p class="font-redwing text-md">
+                            With over 20 years of experience in physical education and human development, 
+                            Nelson Turco has dedicated his career to supporting people across every stage of life. 
+                            From children's early motor development to strength, autonomy, and wellness for older adults, 
+                            his holistic approach combines football science, personal training, rehabilitation support, 
+                            and long-term healthy lifestyle habits.
+                        </p>
+
+                        <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
+                            <li>20+ Years in Physical Education (UERJ)</li>
+                            <li>Football Science Postgraduate Specialist</li>
+                            <li>13+ Years Supporting Older Adults & Autonomy</li>
+                            <li>Experience in Professional Football Clubs Including Flamengo</li>
+                            <li>Hospital, Retirement Home & Personal Training Expertise</li>
+                            <li>Co-Founder of Team Turco & Mentor in Human Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
                 <button class=" p-2 rounded-md mx-auto flex flex-col justify-end gap-1 text-xs
                 transform transition-transform duration-300 ease-out hover:scale-110 cursor-pointer"
                 id="show-less-btn_profile">
@@ -449,8 +538,8 @@
         <section>
             <div class="flex flex-col items-center justify-center my-20 gap-4">
                 <h2 class="font-[Orbitron] text-2xl sm:text-4xl" data-i18n="partners-title"></h2>
-                <p class="font-redwing text-sm md:text-lg opacity-90" data-i18n="partner.text_one"></p>
-                <div class="flex flex-col gap-12 mx-12 lg:mx-12">
+                <p class="font-redwing text-sm md:text-lg opacity-90 mx-8" data-i18n="partner.text_one"></p>
+                <div class="flex flex-col gap-12 w-full max-w-6xl mx-auto px-12 lg:px-12">
                     <!-- Trainer Card Magno -->
                     <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer flex flex-col md:flex-row gap-6 
                     transition-all duration-300 hover:scale-[1.02] 
@@ -594,7 +683,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </div>
+                    </div>
 
                         <!-- Trainer Card Charles -->
                         <div class="bg-zinc-900 p-6 rounded-xl cursor-pointer 
@@ -678,14 +767,14 @@
                             <img src="images/Trainers-TeamTurco/ramon-travassos.jpg" 
                                 class="w-full md:w-55 h-70 object-cover object-[center_20%] rounded-lg">
                             <!-- Text -->
-                            <div class="text-white flex flex-col gap-4 pt-4">
+                            <div class="w-full h-full text-white flex flex-col gap-4 pt-4 md:h-full">
                                 <div class="flex flex-row justify-between gap-4">
                                     <div>
                                         <h3 class="font-redwing text-2xl md:text-3xl">Ramon Travassos</h3>
                                         <p class="text-gray-400 text-lg">
                                             <i class="pt-1 fa-solid text-md fa-location-dot"></i> <span data-i18n="trainer-location-rio">Rio de Janeiro, Brazil</span>
                                         </p>
-                                        <p class="font-redwing text-xl" data-i18n="ramon-occupation">Sports Physiotherapitst | Performance Specialist</p>
+                                        <p class="font-redwing text-xl" data-i18n="ramon-occupation">Sports Physiotherapist | Specialist</p>
                                     </div>
 
                                     <div class="mt-2">
@@ -706,7 +795,7 @@
                                                 <span>Email</span>
                                             </a>
                                             <a
-                                                href="https://instagram.com/teamturco"
+                                                href="https://www.instagram.com/ramontravassosfisio/"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 class="block bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md text-sm">
@@ -719,27 +808,29 @@
                                 <button
                                     type="button"
                                     aria-expanded="false"
-                                    class="trainer-details-toggle md:hidden w-full flex items-center justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-2 rounded-md transition cursor-pointer">
+                                    class="trainer-details-toggle w-full h-auto mt-auto flex items-end justify-between bg-zinc-800 hover:bg-zinc-700 px-4 py-1 rounded-md transition cursor-pointer">
                                     <span class="font-redwing text-sm uppercase tracking-wide" data-i18n="more-info-toggle">More Info</span>
                                     <i class="trainer-details-arrow fa-solid fa-chevron-down text-xs transition-transform duration-300"></i>
                                 </button>
-                                <div class="trainer-details-panel hidden md:block">
-                                    <p class="font-redwing text-lg tracking-wide" data-i18n="ramon-quote">"Peak performance begins with structured health."</p>
+                                <div class="trainer-details-panel hidden">
+                                    <p class="font-redwing text-lg tracking-wide" data-i18n="ramon-quote">"High performance is built through science and precision."</p>
                                     <p class="font-redwing text-lg tracking-wide" data-i18n="ramon-description">
-                                        His method integrates physiotherapy, training, recovery, and wellness into a strategic system designed
-                                        to prevent injuries and optimize results. Through science-based structure and personalized follow-up,
-                                        he helps athletes unlock their full physical potential.
+                                        Ramon specializes in Health & Performance Management for athletes, integrating physiotherapy,
+                                        exercise physiology, and performance science into structured systems designed for elite results.
+                                        With national and international experience, he delivers strategic support focused on injury prevention,
+                                        recovery optimization, and competitive excellence.
                                     </p>
                                     <ul class="flex flex-col gap-2 text-md mx-6 pt-6 font-redwing list-disc">
-                                        <li data-i18n="ramon-bullet-one">Sports Injury Prevention & Rehabilitation</li>
-                                        <li data-i18n="ramon-bullet-two">Athletic Performance Optimization</li>
-                                        <li data-i18n="ramon-bullet-three">Recovery & Load Management</li>
-                                        <li data-i18n="ramon-bullet-four">Integrated Health Strategy</li>
-                                        <li data-i18n="ramon-bullet-five">Online & On-Site Follow-Up</li>
+                                        <li data-i18n="ramon-bullet-one">Elite Athlete Performance Support</li>
+                                        <li data-i18n="ramon-bullet-two">Exercise Physiology & Load Monitoring</li>
+                                        <li data-i18n="ramon-bullet-three">Injury Prevention & Rehabilitation</li>
+                                        <li data-i18n="ramon-bullet-four">International Sports Consultancy</li>
+                                        <li data-i18n="ramon-bullet-five">Exclusive Professional Athlete Management</li>
                                     </ul>
                                 </div>
                             </div>
-                        </div>                    
+                        </div>
+               
                 </div>
                 <div>
                     <img src="images/White_Team-Turco-logo.jpeg" class="w-16 opacity-70">
@@ -753,7 +844,7 @@
             <div class="relative px-6 py-12 md:px-14 md:py-16 flex flex-col items-center text-center gap-6">
                 <span class="font-redwing uppercase tracking-[0.2em] text-xs text-zinc-300">Team Turco</span>
                 <h2 class="font-[Orbitron] text-2xl sm:text-4xl max-w-3xl" data-i18n="join-cta">Join Team Turco</h2>
-                <p class="font-redwing text-zinc-300 max-w-2xl">Start your journey with a team focused on performance, discipline, and long-term growth.</p>
+                <p class="font-redwing text-zinc-300 max-w-2xl" data-i18n="join-description">Start your journey with a team focused on performance, discipline, and long-term growth.</p>
                 <a
                 href="pages/contact.html"
                 class="font-redwing uppercase bg-white text-black px-7 py-2 rounded

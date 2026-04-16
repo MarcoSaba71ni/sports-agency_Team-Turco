@@ -2,6 +2,7 @@
     "nav.home": "Home",
     "nav.about": "About",
     "nav.athletes": "Athletes",
+    "nav.high-performance": "High Performance",
     "nav.contact": "Contact",
     
     "hero.title":"BUILT FOR PEOPLE. DRIVEN BY COMMUNITY.",
@@ -18,6 +19,13 @@
 
     "community.title":"Our Community",
     "community.btn":"MEET OUR ATHLETES",
+
+    "athlete.sport.football": "Football",
+    "athlete.sport.triathlon": "Tri-Athlete",
+    "athlete.sport.basketball": "Basketball",
+    "athlete.sport.swimming": "Swimming",
+    "athlete.sport.paddleboarding": "Paddle Sup",
+    "athlete.sport.cycling": "Cycling",
 
     "trainers.title":"Meet Our Coaches",
     "trainers.text_one":"Dedicated coaches and trusted specialists working together to support your growth.",
@@ -87,6 +95,7 @@
     "partner.text_one": "Beyond our core team, we work alongside highly skilled professionals committed to supporting your journey every step of the way.",
 
     "join-cta": "Join Team Turco",
+    "join-description":"Start your journey with a team focused on performance, discipline, and long-term growth.",
     "join-contact-btn": "CONTACT US",
 
     "about-span": "About Us",
