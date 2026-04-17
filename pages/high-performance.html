@@ -115,52 +115,90 @@
                 <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 lg:px-16 pt-20 sm:pt-40 flex flex-row flex-wrap items-start gap-12">
                     <!-- TEXT -->
                     <div class="flex flex-col gap-6 max-w-xl text-white">
-                        <h1 class="font-[Orbitron] text-4xl sm:text-5xl md:text-6xl leading-tight">
-                            HIGH <span class="text-blue-400">PERFORMANCE</span>
-                        </h1>
-                        <p class="font-redwing text-lg md:text-xl">
+                        <div>
+                            <h1 class="font-[Orbitron] text-4xl sm:text-xl md:text-6xl leading-tight" data-i18n="high-performance.hero.title_one"></h1>
+                            <h2 class="font-[Orbitron] text-4xl sm:text-5xl md:text-6xl leading-tight text-blue-400" data-i18n="high-performance.hero.title_two"></h2>
+                        </div>
+                        <p class="font-redwing text-lg md:text-xl" data-i18n="high-performance.hero.subtitle">
                             ELITE SUPPORT, ELITE ATHLETES
                         </p>
                         <a href="#elite-athletes-list">
                             <button id="explore-btn"
                             class="px-6 md:px-8 py-3 cursor-pointer md:py-4 bg-blue-500 text-white md:bg-white md:text-black sm:bg-white text-black font-[Orbitron] rounded-lg font-bold tracking-wide
-                                    hover:scale-105 hover:bg-blue-500 hover:text-white transition duration-300 shadow-lg">
+                                    hover:scale-105 hover:bg-blue-500 hover:text-white transition duration-300 shadow-lg"
+                            data-i18n="high-performance.hero.btn">
                             MEET OUR ELITE
                             </button>
                         </a>
                     </div>
-                    <!-- IMAGES (flex row) -->
-                    <div class="flex flex-col gap-6">
-                        <!-- BIG IMAGE -->
-                        <img src="../images/Athletes-TeamTurco/straub-champion (3).jpeg"
-                            class="w-70 sm:w-96 h-80 sm:h-96 object-cover rounded-lg shadow-xl transition-transform duration-500 hover:scale-105"/>
-
-                        <!-- SMALL IMAGES ROW -->
-                        <div class="flex gap-4 flex-wrap justify-start">
-                            <div class="flex gap-2">
-                                <img src="../images/Athletes-TeamTurco/jauma-maratona.jpeg"
-                                    class="w-20 sm:w-24 h-32 sm:h-40 object-cover rounded-md shadow-md transition hover:-translate-y-1"/>
-                                <img src="../images/Athletes-TeamTurco/joao-pierre (7).jpeg"
-                                    class="w-20 sm:w-24 h-32 sm:h-40 object-cover rounded-md shadow-md transition hover:-translate-y-1"/>
-                                <img src="../images/Athletes-TeamTurco/joao-gomes (2).jpeg"
-                                    class="w-20 sm:w-24 h-32 sm:h-40 object-cover rounded-md shadow-md transition hover:-translate-y-1"/>                        
-                            </div>
-                            <!-- ATHLETE NAMES -->
-                            <div class="flex flex-col gap-2 text-white font-redwing text-sm sm:text-base mt-2">
-                                <p>Jauma</p>
-                                <p>Joao Pierre</p>
-                                <p>Joao Gomes</p>
-                            </div>                  
+                </div>
+            </section>
+            <section class="py-24 px-6 md:px-20 border-t border-white/20 bg-black">
+                <div class="max-w-6xl mx-auto">
+                    <div class="flex flex-col lg:flex-row items-start justify-between gap-8 mb-12">
+                        <div class="max-w-2xl">
+                            <p class="text-sm uppercase tracking-[0.35em] text-blue-400 mb-4">Athlete Showcase</p>
+                            <h2 class="font-[Orbitron] text-white text-4xl md:text-5xl leading-tight">
+                                Elite competitors, strategic preparation.
+                            </h2>
+                            <p class="mt-6 text-gray-300 text-lg leading-relaxed">
+                                Team Turco puts world-class athletes in an optimized environment — combining movement, recovery and performance support for every stage of their career.
+                            </p>
                         </div>
+                        <a href="#elite-athletes-list" class="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 px-6 py-3 text-sm uppercase tracking-[0.2em] text-white transition hover:border-blue-400 hover:bg-blue-500 hover:text-black">
+                            Explore Athletes
+                        </a>
+                    </div>
+
+                    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                        <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/10">
+                            <div class="relative overflow-hidden">
+                                <img src="../images/Athletes-TeamTurco/straub-champion (3).jpeg" alt="Straub Champion" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                            </div>
+                            <div class="p-6 text-white">
+                                <p class="text-xl font-semibold">Straub Champion</p>
+                                <p class="mt-2 text-sm uppercase tracking-[0.25em] text-blue-400">Football</p>
+                            </div>
+                        </article>
+                        <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/10">
+                            <div class="relative overflow-hidden">
+                                <img src="../images/Athletes-TeamTurco/jauma-maratona.jpeg" alt="Jauma" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                            </div>
+                            <div class="p-6 text-white">
+                                <p class="text-xl font-semibold">Jauma</p>
+                                <p class="mt-2 text-sm uppercase tracking-[0.25em] text-blue-400">Marathon</p>
+                            </div>
+                        </article>
+                        <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/10">
+                            <div class="relative overflow-hidden">
+                                <img src="../images/Athletes-TeamTurco/joao-pierre (7).jpeg" alt="Joao Pierre" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                            </div>
+                            <div class="p-6 text-white">
+                                <p class="text-xl font-semibold">Joao Pierre</p>
+                                <p class="mt-2 text-sm uppercase tracking-[0.25em] text-blue-400">Swimming</p>
+                            </div>
+                        </article>
+                        <article class="group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/10">
+                            <div class="relative overflow-hidden">
+                                <img src="../images/Athletes-TeamTurco/joao-gomes (2).jpeg" alt="Joao Gomes" class="w-full h-80 object-cover transition duration-500 group-hover:scale-105" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent"></div>
+                            </div>
+                            <div class="p-6 text-white">
+                                <p class="text-xl font-semibold">Joao Gomes</p>
+                                <p class="mt-2 text-sm uppercase tracking-[0.25em] text-blue-400">Track</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </section>
-
             <section class="py-24 px-6 md:px-20 border-t border-white/20 flex flex-col">
 
                 <!-- Title -->
                 <div class="max-w-4xl mb-12">
-                    <h2 class="font-[Orbitron] text-white text-4xl md:text-5xl leading-tight">
+                    <h2 class="font-[Orbitron] text-white text-4xl md:text-5xl leading-tight" data-i18n="high-performance.elite.title">
                         Elite Performance Environment
                     </h2>
                     <div class="w-24 h-[3px] bg-blue-600 mt-4"></div>
@@ -171,17 +209,17 @@
                     <div class="flex flex-col md:flex-row gap-12 items-center">
                         <!-- Text -->
                         <div class="md:w-1/2 text-gray-300 leading-relaxed text-lg space-y-4">
-                            <p>
+                            <p data-i18n="high-performance.elite.description1">
                                 At <span class="text-white font-semibold">Team Turco</span>, we understand that elite athletes require more than physical training to reach their full potential.
                             </p>
 
-                            <p>
+                            <p data-i18n="high-performance.elite.description2">
                                 Our environment combines <span class="text-white">world-class facilities</span>, 
                                 advanced performance analytics, and a multidisciplinary team of experts 
                                 dedicated to maximizing athletic output.
                             </p>
 
-                            <p>
+                            <p data-i18n="high-performance.elite.description3">
                                 From <span class="text-white">state-of-the-art training centers</span> to 
                                 individualized nutrition strategies and mental conditioning programs, 
                                 we create the conditions where athletes can consistently perform 
@@ -210,17 +248,17 @@
                         </div> 
                         <!-- Text -->
                         <div class="md:w-1/2 text-gray-300 leading-relaxed text-lg space-y-4">
-                            <p>
+                            <p data-i18n="high-performance.elite.description1">
                                 At <span class="text-white font-semibold">Team Turco</span>, we understand that elite athletes require more than physical training to reach their full potential.
                             </p>
 
-                            <p>
+                            <p data-i18n="high-performance.elite.description2">
                                 Our environment combines <span class="text-white">world-class facilities</span>, 
                                 advanced performance analytics, and a multidisciplinary team of experts 
                                 dedicated to maximizing athletic output.
                             </p>
 
-                            <p>
+                            <p data-i18n="high-performance.elite.description3">
                                 From <span class="text-white">state-of-the-art training centers</span> to 
                                 individualized nutrition strategies and mental conditioning programs, 
                                 we create the conditions where athletes can consistently perform 
@@ -234,7 +272,7 @@
             </section>
             <section class="py-24 px-6 md:px-20 border-t border-white/20 flex flex-col">
                 <div id="elite-athletes-list" class="max-w-4xl mb-12">
-                    <h2 class="font-[Orbitron] text-white text-4xl md:text-5xl leading-tight">
+                    <h2 class="font-[Orbitron] text-white text-4xl md:text-5xl leading-tight" data-i18n="high-performance.athletes.title">
                         Elite Athletes
                     </h2>
                     <div class="w-24 h-[3px] bg-blue-600 mt-4"></div>

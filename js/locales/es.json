@@ -71,5 +71,87 @@
   "jordi-bullet-two": "Dependencia emocional y desafíos en relaciones",
   "jordi-bullet-three": "Autoestima e inseguridad",
   "jordi-bullet-four": "Crisis personales y transiciones de vida",
-  "jordi-bullet-five": "Apoyo en mentalidad para el rendimiento"
+  "jordi-bullet-five": "Apoyo en mentalidad para el rendimiento", 
+
+
+  "about-span": "Sobre nosotros",
+  "dynamic-text": "TU complejidad",
+  "about-title-highlight": "ES NUESTRA FORTALEZA",
+  "about-description_one": "En Team Turco adoptamos un enfoque holístico, entendiendo que cada persona es compleja, con diferentes necesidades, objetivos y desafíos.",
+  "about-description_two": "Desde el alto rendimiento hasta el bienestar, nuestro equipo multidisciplinar está comprometido en apoyar tu camino único, enfocándose en tres pilares clave:",
+  "about-bullet-one": "Físico: Entrenamiento personalizado, prevención estratégica de lesiones y optimización de la recuperación",
+  "about-bullet-two": "Mental: Desarrollo de hábitos, resiliencia mental y una base sólida de mentalidad",
+  "about-bullet-three": "Estratégico: Gestión a largo plazo de carrera y bienestar",
+
+  "agency-history-title_one": "Todo comenzó en la ciudad tropical de Río de Janeiro",
+  "agency-history-description_one": "Team Turco fue fundada por Diogo Turco con una visión clara —",
+  "agency-history-description_two_span": "ayudar a las personas y transformar vidas construyendo una comunidad centrada en el bienestar.",
+  "agency-history-description_two": "Dirigido a todos los públicos y a todos los niveles de rendimiento, lo que comenzó como una iniciativa local en Brasil se ha convertido en una red global de atletas y entrenadores de élite en Europa y América del Sur.",
+
+  "agency-history-title_two": "De raíces locales a escenarios internacionales...",
+  "agency-history-description_three": "Basados en la disciplina, la mentalidad y el desarrollo a largo plazo a través del deporte, nuestro enfoque se construye en torno al trato humano y el bienestar integral.",
+  "agency-history-description_four": "Hoy, Team Turco trabaja con atletas de múltiples disciplinas, ofreciendo entrenamiento personalizado enfocado en el rendimiento, el desarrollo del carácter y el éxito a largo plazo.",
+
+  "breath-about": "Individualidad y las relaciones humanas están en el centro de todo lo que hacemos.",
+  "breath-about-btn": "CONTÁCTANOS",
+
+  "mission-title": "Nuestra Misión",
+  "mission-description": "Ayudar a las personas a transformar sus vidas a través del deporte, la disciplina y el desarrollo humano — construyendo cuerpos más fuertes, mentes resilientes y estilos de vida sostenibles.",
+
+  "athletes.title": "Nuestros Atletas",
+  "athletes.hero.deliver": "ENTREGAMOS",
+  "athletes.hero.results": "RESULTADOS",
+  "athletes.hero.trust": "CONFÍA EN EL PROCESO",
+  "athletes.btn": "CONOZCA NUESTROS ATLETAS",
+  "athletes.approachTitle": "Nuestro Enfoque",
+  "athletes.approachDescription": "Creemos que cada individuo es único, por lo que apoyamos a cada atleta a través de un enfoque holístico y personalizado. Al comprender sus necesidades específicas, objetivos y estilo de vida, nos enfocamos en construir hábitos duraderos que promuevan el bienestar, el rendimiento a largo plazo y el desarrollo de carrera sostenible.",
+  "athletes.performance.title": "Entrenamiento de Rendimiento",
+  "athletes.performance.description": "Nuestros programas de entrenamiento de rendimiento están diseñados para mejorar las habilidades atléticas, enfocándose en la fuerza, velocidad, agilidad y resistencia.",
+  "athletes.injury.title": "Prevención de Lesiones",
+  "athletes.injury.description": "Implementamos estrategias y ejercicios para minimizar el riesgo de lesiones, asegurando que los atletas mantengan niveles máximos de rendimiento.",
+  "athletes.career.title": "Desarrollo de Carrera",
+  "athletes.career.description": "Brindamos orientación y apoyo a los atletas para navegar sus carreras, ayudándoles a lograr el éxito a largo plazo tanto dentro como fuera del campo.",
+  "athletes.mental.title": "Rendimiento Mental",
+  "athletes.mental.description": "Ofrecemos entrenamiento de rendimiento mental para ayudar a los atletas a desarrollar enfoque, resiliencia y una mentalidad ganadora.",
+  "athletes.find.title": "Encuentra nuestros atletas",
+  "athletes.search.placeholder": "Buscar Atletas",
+  "athletes.high-performance.label": "Atletas de Alto Rendimiento ⚡",
+  "athletes.high-performance.title": "DONDE EL RENDIMIENTO ES LO PRIMERO",
+  "athletes.high-performance.description": "Nuestra división de alto rendimiento con atletas de todo el mundo donde proporcionamos entrenamiento, prevención y gestión de carrera para competidores del más alto nivel",
+  "athletes.high-performance.btn": "Explorar Más",
+
+  "values-title": "Nuestros Valores",
+  "value-one": "Disciplina",
+  "value-two": "Apoyo",
+  "value-three": "Comunidad",
+  "value-four": "Integridad",
+  "value-five": "Crecimiento",
+
+  "goals-title": "Nuestros Objetivos",
+  "goal-description": "Acompañar a cada persona en su evolución diaria, ayudándole a construir hábitos saludables y sostenibles — mientras expandimos el impacto de Team Turco para inspirar a más personas en todo el mundo.",
+  
+  "what-makes-us-different-title": "Qué nos hace diferentes",
+  "what-makes-description": "Evoluciona. Transforma. Supera.",
+  "what-makes-btn": "TÚ COMO INDIVIDUO",
+
+  "contact.title": "Contáctanos",
+  "contact.description": "Contáctanos para obtener más información sobre nuestros programas de entrenamiento y cómo podemos ayudarte a lograr tus objetivos atléticos.",
+  "contact.responseTime": "Las respuestas pueden tardar 1-2 días en que te respondamos por correo electrónico.",
+  "contact.form.name": "Nombre completo:",
+  "contact.form.email": "Correo electrónico:",
+  "contact.form.subject": "Asunto:",
+  "contact.form.message": "Mensaje:",
+  "contact.form.send": "ENVIAR MENSAJE",
+
+  "high-performance.hero.title_one": "ALTO",
+  "high-performance.hero.title_two": "RENDIMIENTO",
+  "high-performance.hero.subtitle": "SOPORTE DE ÉLITE, ATLETAS DE ÉLITE",
+  "high-performance.hero.btn": "CONOCE A NUESTRA ÉLITE",
+
+  "high-performance.elite.title": "Entorno de Alto Rendimiento",
+  "high-performance.elite.description1": "En Team Turco entendemos que los atletas de alto nivel necesitan mucho más que entrenamiento físico para alcanzar su máximo potencial.",
+  "high-performance.elite.description2": "Nuestro entorno combina instalaciones de primer nivel, análisis avanzados de rendimiento y un equipo multidisciplinario de expertos enfocados en maximizar el desempeño.",
+  "high-performance.elite.description3": "Desde centros de entrenamiento de última generación hasta estrategias de nutrición personalizadas y programas de preparación mental, creamos las condiciones ideales para rendir al más alto nivel de forma constante.",
+
+  "high-performance.athletes.title": "Atletas de Alto Nivel"
 }

@@ -103,42 +103,43 @@
         <main class="py-12 px-6 flex flex-col md:flex-row gap-6 md:px-20 border-t border-white/20">
             <!-- Title -->
             <div class="w-full mb-4 sm:mb-12">
-                <h2 class="font-[Orbitron] text-black text-3xl md:text-5xl leading-tight">
+                <h2 class="font-[Orbitron] text-black text-3xl md:text-5xl leading-tight" data-i18n="contact.title">
                     Contact Us
                 </h2>
                 <div class="w-24 h-[3px] bg-blue-600 mt-4"></div>
-                <p class="text-black font-redwing mt-4 text-lg">
+                <p class="text-black font-redwing mt-4 text-lg" data-i18n="contact.description">
                     Contact us to learn more about our training programs and how we can help you achieve your athletic goals.
                 </p>
-                <p class="text-black font-redwing text-lg">Responses might take 1-2 days from us to email you back.</p>
+                <p class="text-black font-redwing text-lg" data-i18n="contact.responseTime">Responses might take 1-2 days from us to email you back.</p>
                 <img src="../images/White_Team-Turco-logo.jpeg" class="w-20 h-20 pt-4 flex mx-auto sm:mx-0 object-cover">
             </div>
             <!-- Contact Form -->
              <form class="w-full mt-4" id="contact-form">
                 <div class="max-w-4xl">
-                    <label for="name" class="block text-sm font-medium text-gray-700">Full Name:</label>
+                    <label for="name" class="block text-sm font-medium text-gray-700" data-i18n="contact.form.name">Full Name:</label>
                     <input type="text" name="name" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
                     <span id="name-error" class="text-red-500 text-sm"></span>
                 </div>
                 <div class="max-w-4xl mt-6">
-                    <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+                    <label for="email" class="block text-sm font-medium text-gray-700" data-i18n="contact.form.email">Email:</label>
                     <input type="email" name="email" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
                     <span id="email-error" class="text-red-500 text-sm"></span>
                 </div>
                 <div class="max-w-4xl mt-6">
-                    <label for="subject" class="block text-sm font-medium text-gray-700">Subject:</label>
+                    <label for="subject" class="block text-sm font-medium text-gray-700" data-i18n="contact.form.subject">Subject:</label>
                     <input type="text" name="subject" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500">
                     <span id="subject-error" class="text-red-500 text-sm"></span>
                 </div>
                 <div class="max-w-4xl mt-6">
-                    <label for="message" class="block text-sm font-medium text-gray-700">Message:</label>
+                    <label for="message" class="block text-sm font-medium text-gray-700" data-i18n="contact.form.message">Message:</label>
                     <textarea id="message" name="message" rows="4" class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
                     <span id="message-error" class="text-red-500 text-sm"></span>
                 </div>
                 <button 
                 type="submit"
                 id="submit-btn"
-                 class=" w-full mt-6 bg-black text-white font-redwing px-4 py-2 rounded hover:bg-white hover:text-black cursor-pointer transition-colors duration-300">
+                 class=" w-full mt-6 bg-black text-white font-redwing px-4 py-2 rounded hover:bg-white hover:text-black cursor-pointer transition-colors duration-300"
+                 data-i18n="contact.form.send">
                     SEND MESSAGE</button>
                 <div>
                     <span id="general-error"

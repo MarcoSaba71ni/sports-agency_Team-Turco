@@ -99,7 +99,7 @@
     "join-contact-btn": "CONTACT US",
 
     "about-span": "About Us",
-    "about-title": "Your Complexity",
+    "dynamic-text": "YOUR Complexity",
     "about-title-highlight": "IS OUR STRENGTH",
     "about-description_one": "At Team Turco we take a holistic approach understanding that every individual is complex with different needs, goals, and challenges.",
     "about-description_two": "From peak performance to wellness, our multidisciplinary team is dedicated to support your unique journey by focusing on three key pillars:",
@@ -109,8 +109,8 @@
 
     "agency-history-title_one":  "It all started in the tropical city of Rio de Janeiro",
     "agency-history-description_one": "Team Turco was founded by Diogo Turco with a clear vision —",
-    "agency-history-description_two_span": "to build a performance-driven community.",
-    "agency-history-description_two": "What began as a local initiative in Brazil has grown into a global network of athletes and elite trainers across Europe and South America.",
+    "agency-history-description_two_span": "to help people and transform lives building a wellness-driven community.",
+    "agency-history-description_two": " To all target groups, across all levels of performance, what began as a local initiative in Brazil has grown into a global network of athletes and elite trainers across Europe and South America.",
 
     "agency-history-title_two": "From local roots to international stands...",
     "agency-history-description_three": "Rooted in discipline, mindset, and long-term development through sport, our approach is built around the human touch and overall well-being.",
@@ -120,20 +120,61 @@
     "breath-about-btn": "CONTACT US",
 
     "mission-title": "Our Mission",
-    "mission-description":"To develop high-performing individuals through elite training, discipline, and mindset — building stronger bodies, stronger minds, and stronger character.",
+    "mission-description": "To help people transform their lives through sport, discipline, and human development — building stronger bodies, resilient minds, and sustainable lifestyles.",
 
     "values-title": "Our Values",
     "value-one": "Discipline",
-    "value-two": "Performance",
+    "value-two": "Support",
     "value-three": "Community",
     "value-four": "Integrity",
     "value-five": "Growth",
 
     "goals-title": "Our Goals",
-    "goal-description":"To expand Team Turco across Brazil, Spain, Sweden, and beyond — building a global network of elite trainers and transform lives through sports.",
-
+    "goal-description": "To support individuals in their daily evolution, helping them build healthy, sustainable lifestyles — while expanding Team Turco’s impact to reach and inspire more people around the world.",
+    
     "what-makes-us-different-title": "What Makes Us Different",
     "what-makes-description": "Evolve. Transform. Thrive.",
-    "what-makes-btn": "YOU AS AN INDIVIDUAL"
+    "what-makes-btn": "YOU AS AN INDIVIDUAL",
+
+    "athletes.title": "Our Athletes",
+    "athletes.hero.deliver": "WE DELIVER",
+    "athletes.hero.results": "RESULTS",
+    "athletes.hero.trust": "YOU TRUST THE PROCESS",
+    "athletes.btn": "MEET OUR ATHLETES",
+    "athletes.approachTitle": "Our Approach",
+    "athletes.approachDescription": "We believe every individual is unique, which is why we support each athlete through a holistic and personalized approach. By understanding their specific needs, goals, and lifestyle, we focus on building lasting habits that promote wellness, long-term performance, and sustainable career development.",
+    "athletes.performance.title": "Performance Training",
+    "athletes.performance.description": "Our performance training programs are designed to enhance athletic abilities, focusing on strength, speed, agility, and endurance.",
+    "athletes.injury.title": "Injury Prevention",
+    "athletes.injury.description": "We implement strategies and exercises to minimize the risk of injuries, ensuring athletes maintain peak performance levels.",
+    "athletes.career.title": "Career Development",
+    "athletes.career.description": "We provide guidance and support for athletes to navigate their careers, helping them achieve long-term success both on and off the field.",
+    "athletes.mental.title": "Mental Performance",
+    "athletes.mental.description": "We offer mental performance coaching to help athletes develop focus, resilience, and a winning mindset.",
+    "athletes.find.title": "Find our athletes",
+    "athletes.search.placeholder": "Search for Athletes",
+    "athletes.high-performance.label": "High Performance Athletes ⚡",
+    "athletes.high-performance.title": "WHERE PERFORMANCE COMES FIRST",
+    "athletes.high-performance.description": "Our high-performance division with world wide athletes where we provide training, prevention, and career management for highest level competitors",
+    "athletes.high-performance.btn": "Explore More",
+
+    "contact.title": "Contact Us",
+    "contact.description": "Contact us to learn more about our training programs and how we can help you achieve your athletic goals.",
+    "contact.responseTime": "Responses might take 1-2 days from us to email you back.",
+    "contact.form.name": "Full Name:",
+    "contact.form.email": "Email:",
+    "contact.form.subject": "Subject:",
+    "contact.form.message": "Message:",
+    "contact.form.send": "SEND MESSAGE",
+
+    "high-performance.hero.title_one": "HIGH",
+    "high-performance.hero.title_two": "PERFORMANCE",
+    "high-performance.hero.subtitle": "ELITE SUPPORT, ELITE ATHLETES",
+    "high-performance.hero.btn": "MEET OUR ELITE",
+    "high-performance.elite.title": "Elite Performance Environment",
+    "high-performance.elite.description1": "At Team Turco, we understand that elite athletes require more than physical training to reach their full potential.",
+    "high-performance.elite.description2": "Our environment combines world-class facilities, advanced performance analytics, and a multidisciplinary team of experts dedicated to maximizing athletic output.",
+    "high-performance.elite.description3": "From state-of-the-art training centers to individualized nutrition strategies and mental conditioning programs, we create the conditions where athletes can consistently perform at the highest level.",
+    "high-performance.athletes.title": "Elite Athletes"
 
 }
