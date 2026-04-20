@@ -20,7 +20,12 @@
     "community.title":"Our Community",
     "community.btn":"MEET OUR ATHLETES",
 
+    "athlete.name.straub": "Straub Champion",
+    "athlete.name.jauma": "Jauma",
+    "athlete.name.joao": "Joao Pierre",
+    "athlete.name.gean": "Joao Gomes",
     "athlete.sport.football": "Football",
+    "athlete.sport.marathon": "Marathon",
     "athlete.sport.triathlon": "Tri-Athlete",
     "athlete.sport.basketball": "Basketball",
     "athlete.sport.swimming": "Swimming",
@@ -143,6 +148,15 @@
     "athletes.btn": "MEET OUR ATHLETES",
     "athletes.approachTitle": "Our Approach",
     "athletes.approachDescription": "We believe every individual is unique, which is why we support each athlete through a holistic and personalized approach. By understanding their specific needs, goals, and lifestyle, we focus on building lasting habits that promote wellness, long-term performance, and sustainable career development.",
+
+    "footer.description": "Empowering athletes and individuals to reach their highest potential through professional training, nutrition, and mental performance support.",
+    "footer.quick-links": "Quick Links",
+    "footer.contact": "Contact",
+    "footer.location": "Barcelona, Spain & Rio de Janeiro, Brazil",
+    "footer.copyright": "© 2024 Team Turco. All rights reserved.",
+    "footer.privacy": "Privacy Policy",
+    "footer.terms": "Terms of Service"
+}
     "athletes.performance.title": "Performance Training",
     "athletes.performance.description": "Our performance training programs are designed to enhance athletic abilities, focusing on strength, speed, agility, and endurance.",
     "athletes.injury.title": "Injury Prevention",
@@ -166,15 +180,32 @@
     "contact.form.subject": "Subject:",
     "contact.form.message": "Message:",
     "contact.form.send": "SEND MESSAGE",
+    "contact.form.sending": "SENDING...",
+    "contact.form.sent": "MESSAGE SENT!",
+    "contact.form.failed": "FAILED TO SEND",
+    "contact.error.name": "Please enter your name",
+    "contact.error.email": "Please enter your email",
+    "contact.error.subject": "Please enter a subject",
+    "contact.error.message": "Please enter a message",
+    "contact.error.general": "Please fill in all inputs",
+    "contact.error.emailInvalid": "Please enter a valid email address",
+    "contact.error.nameShort": "Name must be at least 3 characters long",
+    "contact.error.messageShort": "Message must be at least 5 characters long",
 
     "high-performance.hero.title_one": "HIGH",
     "high-performance.hero.title_two": "PERFORMANCE",
     "high-performance.hero.subtitle": "ELITE SUPPORT, ELITE ATHLETES",
     "high-performance.hero.btn": "MEET OUR ELITE",
-    "high-performance.elite.title": "Elite Performance Environment",
-    "high-performance.elite.description1": "At Team Turco, we understand that elite athletes require more than physical training to reach their full potential.",
-    "high-performance.elite.description2": "Our environment combines world-class facilities, advanced performance analytics, and a multidisciplinary team of experts dedicated to maximizing athletic output.",
-    "high-performance.elite.description3": "From state-of-the-art training centers to individualized nutrition strategies and mental conditioning programs, we create the conditions where athletes can consistently perform at the highest level.",
-    "high-performance.athletes.title": "Elite Athletes"
+
+    "high-performance-showcase.title": "Athlete Showcase",
+    "high-performance-showcase.description": "Elite competitors, strategic preparation.",
+    "high-performance-showcase.description2": "Team Turco works with high-level athletes across the globe, providing close and personalized support — from additional physical preparation and injury prevention to long-term career strategies, ensuring consistent performance and sustainable development.",
+    "showcase-cta": "Explore Athletes",
+
+    "high-performance.elite.title": "High Performance Environment",
+    "high-performance.elite.description1": "At Team Turco, we understand that high-level athletes require more than physical training to reach their full potential.",
+    "high-performance.elite.description2": "We provide a personalized and multidisciplinary support system, combining physical preparation, injury prevention, recovery, and strategic career guidance tailored to each athlete.",
+    "high-performance.elite.description3": "By understanding individual needs, goals, and competitive demands, we build sustainable structures that allow athletes to perform consistently at the highest level while maintaining long-term health and development.",
+    "high-performance.athletes.title": "High Performance Athletes"
 
 }

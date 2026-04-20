@@ -72,4 +72,4 @@ document.addEventListener('DOMContentLoaded', () => {
     loadTranslations(currentLanguage);
 });
 
-export { currentLanguage };
+export { currentLanguage, updateText };

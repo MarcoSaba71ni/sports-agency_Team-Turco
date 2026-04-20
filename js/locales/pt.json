@@ -20,7 +20,12 @@
   "community.title": "Nossa comunidade",
   "community.btn": "CONHEÇA NOSSOS ATLETAS",
 
+  "athlete.name.straub": "Straub Champion",
+  "athlete.name.jauma": "Jauma",
+  "athlete.name.joao": "Joao Pierre",
+  "athlete.name.gean": "Joao Gomes",
   "athlete.sport.football": "Futebol",
+  "athlete.sport.marathon": "Maratona",
   "athlete.sport.triathlon": "Triatleta",
   "athlete.sport.basketball": "Basquete",
   "athlete.sport.swimming": "Natação",
@@ -64,6 +69,8 @@
   "magno-bullet-five": "Abordagem de nutrição funcional",
   "magno-bullet-six": "Especialista em desenvolvimento de performance atlética",
 
+  "partners-title": "Nossos Parceiros",
+  "partner.text_one": "Além do nosso time principal, trabalhamos ao lado de profissionais altamente qualificados comprometidos em apoiar sua jornada em cada passo do caminho.",
 
   "about-span": "Sobre nós",
   "dynamic-text": "TUA complexidade",
@@ -133,16 +140,41 @@
   "contact.form.subject": "Assunto:",
   "contact.form.message": "Mensagem:",
   "contact.form.send": "ENVIAR MENSAGEM",
+  "contact.form.sending": "ENVIANDO...",
+  "contact.form.sent": "MENSAGEM ENVIADA!",
+  "contact.form.failed": "FALHA AO ENVIAR",
+  "contact.error.name": "Por favor insira seu nome",
+  "contact.error.email": "Por favor insira seu e-mail",
+  "contact.error.subject": "Por favor insira um assunto",
+  "contact.error.message": "Por favor insira uma mensagem",
+  "contact.error.general": "Por favor preencha todos os campos",
+  "contact.error.emailInvalid": "Por favor insira um endereço de e-mail válido",
+  "contact.error.nameShort": "O nome deve ter pelo menos 3 caracteres",
+  "contact.error.messageShort": "A mensagem deve ter pelo menos 5 caracteres",
 
   "high-performance.hero.title_one": "ALTA",
   "high-performance.hero.title_two": "PERFORMANCE",
   "high-performance.hero.subtitle": "SUPORTE DE ELITE, ATLETAS DE ELITE",
   "high-performance.hero.btn": "CONHEÇA NOSSA ELITE",
 
-  "high-performance.elite.title": "Ambiente de Alta Performance",
-  "high-performance.elite.description1": "No Team Turco, entendemos que atletas de alto nível precisam de muito mais do que treinamento físico para alcançar seu máximo potencial.",
-  "high-performance.elite.description2": "Nosso ambiente combina infraestrutura de excelência, análise avançada de performance e uma equipe multidisciplinar dedicada a maximizar o desempenho.",
-  "high-performance.elite.description3": "Desde centros de treinamento modernos até estratégias nutricionais personalizadas e programas de preparação mental, criamos as condições ideais para que os atletas performem no mais alto nível de forma consistente.",
+  "high-performance-showcase.title": "Destaque de Atletas",
+  "high-performance-showcase.description": "Competidores de elite, preparação estratégica.",
+  "high-performance-showcase.description2": "A Team Turco trabalha com atletas de alto nível em todo o mundo, oferecendo um acompanhamento próximo e personalizado — desde a preparação física complementar e prevenção de lesões até estratégias de carreira a longo prazo, garantindo desempenho consistente e desenvolvimento sustentável.",
+  "showcase-cta": "Explorar atletas",
 
-  "high-performance.athletes.title": "Atletas de Alto Nível"
+  "high-performance.elite.title": "Ambiente de Alta Performance",
+  "high-performance.elite.description1": "Na Team Turco, entendemos que atletas de alto nível precisam de muito mais do que treinamento físico para alcançar seu máximo potencial.",
+  "high-performance.elite.description2": "Oferecemos um sistema de suporte personalizado e multidisciplinar que integra preparação física, prevenção de lesões, recuperação e orientação estratégica de carreira para cada atleta.",
+  "high-performance.elite.description3": "Ao compreender as necessidades, objetivos e exigências competitivas de cada indivíduo, construímos estruturas sustentáveis que permitem um desempenho consistente no mais alto nível, preservando a saúde e o desenvolvimento a longo prazo.",
+
+
+  "high-performance.athletes.title": "Atletas de Alto Nível",
+
+  "footer.description": "Capacitando atletas e indivíduos a alcançar seu máximo potencial através de treinamento profissional, nutrição e suporte ao desempenho mental.",
+  "footer.quick-links": "Links Rápidos",
+  "footer.contact": "Contato",
+  "footer.location": "Barcelona, Espanha e Rio de Janeiro, Brasil",
+  "footer.copyright": "© 2024 Team Turco. Todos os direitos reservados.",
+  "footer.privacy": "Política de Privacidade",
+  "footer.terms": "Termos de Serviço"
 }

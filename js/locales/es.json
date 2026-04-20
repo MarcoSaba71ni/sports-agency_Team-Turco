@@ -20,7 +20,12 @@
   "community.title": "Nuestra comunidad",
   "community.btn": "CONOCE A NUESTROS ATLETAS",
 
+  "athlete.name.straub": "Straub Champion",
+  "athlete.name.jauma": "Jauma",
+  "athlete.name.joao": "Joao Pierre",
+  "athlete.name.gean": "Joao Gomes",
   "athlete.sport.football": "Fútbol",
+  "athlete.sport.marathon": "Maratón",
   "athlete.sport.triathlon": "Triatleta",
   "athlete.sport.basketball": "Baloncesto",
   "athlete.sport.swimming": "Natación",
@@ -73,6 +78,8 @@
   "jordi-bullet-four": "Crisis personales y transiciones de vida",
   "jordi-bullet-five": "Apoyo en mentalidad para el rendimiento", 
 
+  "partners-title": "Nuestros Partners",
+  "partner.text_one": "Más allá de nuestro equipo principal, trabajamos junto a profesionales altamente calificados comprometidos con apoyar tu desarrollo en cada paso de tu evolución.",
 
   "about-span": "Sobre nosotros",
   "dynamic-text": "TU complejidad",
@@ -142,16 +149,41 @@
   "contact.form.subject": "Asunto:",
   "contact.form.message": "Mensaje:",
   "contact.form.send": "ENVIAR MENSAJE",
+  "contact.form.sending": "ENVIANDO...",
+  "contact.form.sent": "¡MENSAJE ENVIADO!",
+  "contact.form.failed": "FALLO AL ENVIAR",
+  "contact.error.name": "Por favor ingresa tu nombre",
+  "contact.error.email": "Por favor ingresa tu correo electrónico",
+  "contact.error.subject": "Por favor ingresa un asunto",
+  "contact.error.message": "Por favor ingresa un mensaje",
+  "contact.error.general": "Por favor completa todos los campos",
+  "contact.error.emailInvalid": "Por favor ingresa una dirección de correo electrónico válida",
+  "contact.error.nameShort": "El nombre debe tener al menos 3 caracteres",
+  "contact.error.messageShort": "El mensaje debe tener al menos 5 caracteres",
 
   "high-performance.hero.title_one": "ALTO",
   "high-performance.hero.title_two": "RENDIMIENTO",
   "high-performance.hero.subtitle": "SOPORTE DE ÉLITE, ATLETAS DE ÉLITE",
   "high-performance.hero.btn": "CONOCE A NUESTRA ÉLITE",
 
+  "high-performance-showcase.title": "Showcase de Atletas",
+  "high-performance-showcase.description": "Competidores de élite, preparación estratégica.",
+  "high-performance-showcase.description2": "Team Turco trabaja con atletas de alto nivel en todo el mundo, ofreciendo un acompañamiento cercano y personalizado — desde la preparación física complementaria y la prevención de lesiones hasta estrategias de carrera a largo plazo, garantizando un rendimiento constante y un desarrollo sostenible.",
+  "showcase-cta": "Explorar atletas",
+
   "high-performance.elite.title": "Entorno de Alto Rendimiento",
   "high-performance.elite.description1": "En Team Turco entendemos que los atletas de alto nivel necesitan mucho más que entrenamiento físico para alcanzar su máximo potencial.",
-  "high-performance.elite.description2": "Nuestro entorno combina instalaciones de primer nivel, análisis avanzados de rendimiento y un equipo multidisciplinario de expertos enfocados en maximizar el desempeño.",
-  "high-performance.elite.description3": "Desde centros de entrenamiento de última generación hasta estrategias de nutrición personalizadas y programas de preparación mental, creamos las condiciones ideales para rendir al más alto nivel de forma constante.",
+  "high-performance.elite.description2": "Ofrecemos un sistema de apoyo personalizado y multidisciplinario que integra preparación física, prevención de lesiones, recuperación y orientación estratégica en la carrera de cada atleta.",
+  "high-performance.elite.description3": "Al comprender las necesidades, objetivos y exigencias competitivas de cada individuo, construimos estructuras sostenibles que permiten rendir al más alto nivel de forma constante, manteniendo la salud y el desarrollo a largo plazo.",
 
-  "high-performance.athletes.title": "Atletas de Alto Nivel"
+
+  "high-performance.athletes.title": "Atletas de Alto Nivel",
+
+  "footer.description": "Empoderando atletas e individuos para alcanzar su máximo potencial a través de entrenamiento profesional, nutrición y apoyo al rendimiento mental.",
+  "footer.quick-links": "Enlaces Rápidos",
+  "footer.contact": "Contacto",
+  "footer.location": "Barcelona, España y Río de Janeiro, Brasil",
+  "footer.copyright": "© 2024 Team Turco. Todos los derechos reservados.",
+  "footer.privacy": "Política de Privacidad",
+  "footer.terms": "Términos de Servicio"
 }

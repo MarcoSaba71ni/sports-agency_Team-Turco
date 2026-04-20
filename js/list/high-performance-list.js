@@ -1,10 +1,7 @@
 export const highPerformanceAthletes = [
   {
     name: "Lucas Straub",
-    sport: {
-      src: "../images/sports-icons/soccer-player.png",
-      alt: "Football icon"
-    },
+    sport: "Football",
     image: {
       src: "../images/Athletes-TeamTurco/straub-champion (5)-second.jpeg",
       alt: "Lucas Straub"
@@ -17,10 +14,7 @@ export const highPerformanceAthletes = [
   },
   {
     name: "Jaume Aguilo",
-    sport: {
-      src: "../images/sports-icons/marathon.png",
-      alt: "Marathon icon"
-    },
+    sport: "Marathon",
     image: {
       src: "../images/Athletes-TeamTurco/jauma-legtraining-copy.jpeg",
       alt: "Jauma"
@@ -33,10 +27,7 @@ export const highPerformanceAthletes = [
   },
   {
     name: "Joao Pierre",
-    sport: {
-      src: "../images/sports-icons/swimming.png",
-      alt: "Swimming icon"
-    },
+    sport: "Swimming",
     image: {
       src: "../images/Athletes-TeamTurco/joao-pierre (8).jpeg",
       alt: "Joao Pierre"
@@ -49,10 +40,7 @@ export const highPerformanceAthletes = [
   },
   {
     name: "Gean Miller",
-    sport: {
-      src: "../images/sports-icons/soccer-player.png",
-      alt: "Football icon"
-    },
+    sport: "Football",
     image: {
       src: "../images/Athletes-TeamTurco/gean-miller.jpeg",
       alt: "Gean Miller"
@@ -66,10 +54,7 @@ export const highPerformanceAthletes = [
   
   {
     name: "Marco Sabatini",
-    sport: {
-      src: "../images/sports-icons/soccer-player.png",
-      alt: "Soccer icon"
-    },
+    sport: "Football",
     image: {
       src: "../images/Players-TeamTurco/sabatini-märsta.jpeg",
       alt: "Marco Sabatini"
