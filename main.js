@@ -21,6 +21,30 @@ setInterval(() => {
   }, 300);
 }, 4000);
 
+const imagesCommunity = [
+  "images/Athletes-TeamTurco/core-at-the-beach.jpeg",
+  "images/Athletes-TeamTurco/lads-after-training.jpeg",
+  "images/Athletes-TeamTurco/kids-celebrating.jpeg",
+  "images/Athletes-TeamTurco/diogo-smiling-sicilian-and-friends.jpeg",
+
+];
+
+const communityImg = document.getElementById("community-img");
+let currentCommunityIndex = 0;
+
+setInterval(() => {
+  // fade out
+  communityImg.classList.remove("opacity-100");
+  communityImg.classList.add("opacity-0");
+  setTimeout(() => {
+    currentCommunityIndex = (currentCommunityIndex + 1) % imagesCommunity.length;
+    communityImg.src = imagesCommunity[currentCommunityIndex];
+    // fade in
+    communityImg.classList.remove("opacity-0");
+    communityImg.classList.add("opacity-100");
+  }, 0);
+}, 3000);
+
 document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.getElementById("athletes-carousel");
   const nextBtn = document.getElementById("next-btn");
