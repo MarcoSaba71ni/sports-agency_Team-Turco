@@ -1,33 +1,35 @@
 const dynamicText = document.getElementById("dynamic-text");
-let words = ['COMPLEXITY', 'INDIVIDUALITY', 'EXCELLENCE'];
+const phrasesByLanguage = {
+  en: ['YOUR COMPLEXITY', 'YOUR INDIVIDUALITY', 'YOUR EXCELLENCE'],
+  es: ['TU COMPLEJIDAD', 'TU INDIVIDUALIDAD', 'TU EXCELENCIA'],
+  pt: ['TUA COMPLEXIDADE', 'TUA INDIVIDUALIDADE', 'TUA EXCELENCIA']
+};
+
+let phrases = phrasesByLanguage.en;
+let index = 0;
 
 function updateAnimatedWords(lang) {
-    if (lang === 'es') {
-        words = ['COMPLEJIDAD', 'INDIVIDUALIDAD', 'EXCELENCIA'];
-    } else if (lang === 'pt') {
-        words = ['COMPLEXIDADE', 'INDIVIDUALIDADE', 'EXCELÊNCIA'];
-    } else {
-        words = ['COMPLEXITY', 'INDIVIDUALITY', 'EXCELLENCE'];
-    }
+  phrases = phrasesByLanguage[lang] || phrasesByLanguage.en;
+}
+
+function renderDynamicPhrase() {
+  if (!dynamicText || phrases.length === 0) return;
+  dynamicText.textContent = phrases[index];
 }
 
 updateAnimatedWords(localStorage.getItem('language') || 'en');
+renderDynamicPhrase();
 
 document.addEventListener('languageChanged', (e) => {
-    updateAnimatedWords(e.detail.lang);
+  updateAnimatedWords(e.detail.lang);
+  index = 0;
+  renderDynamicPhrase();
 });
-
-let index = 0;
 
 if (dynamicText) {
   setInterval(() => {
-    index++;
-
-    if(index >= words.length) {
-      index = 0;
-    }
-
-    dynamicText.textContent = "YOUR " + words[index];
+    index = (index + 1) % phrases.length;
+    renderDynamicPhrase();
   }, 1000);
 }
 

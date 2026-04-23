@@ -22,7 +22,7 @@ setInterval(() => {
 }, 4000);
 
 const imagesCommunity = [
-  
+  "images/Athletes-TeamTurco/older-people-coordination.jpeg",
   "images/Athletes-TeamTurco/core-at-the-beach.jpeg",
   "images/Athletes-TeamTurco/lads-after-training.jpeg",
   "images/Athletes-TeamTurco/kids-celebrating.jpeg",
