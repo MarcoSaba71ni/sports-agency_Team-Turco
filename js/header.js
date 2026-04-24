@@ -1,6 +1,8 @@
 const dropdownBtn = document.getElementById('dropdown-btn');
 const mobileNav = document.getElementById('mobile-nav');
 const langBtnOption = document.querySelectorAll('.lang-btn-option');
+const dropdownAthletesBtn = document.getElementById('dropdown-athletes-btn');
+const athletesSubmenu = document.getElementById('athletes-submenu');
 
 const languageBtn = document.getElementById('lang-btn');
 const languageNav = document.getElementById('lang-nav');
@@ -59,3 +61,28 @@ langBtnOption.forEach((option) => {
   option.addEventListener('click', closeLanguageMenus);
 });
 
+// Toggle athletes submenu on hover
+const athletesMenu = document.getElementById('athletes-menu');
+athletesMenu.addEventListener('mouseenter', () => {
+  athletesSubmenu.classList.remove('hidden');
+  athletesChevron.classList.add('rotate-180');
+  dropdownAthletesBtn.setAttribute('aria-expanded', 'true');
+});
+
+athletesMenu.addEventListener('mouseleave', () => {
+  athletesSubmenu.classList.add('hidden');
+  athletesChevron.classList.remove('rotate-180');
+  dropdownAthletesBtn.setAttribute('aria-expanded', 'false');
+});
+
+// Close athletes submenu when clicking outside
+document.addEventListener("click", (e) => {
+  if (
+    !athletesSubmenu.contains(e.target) &&
+    !dropdownAthletesBtn.contains(e.target)
+  ) {
+    athletesSubmenu.classList.add("hidden");
+    athletesChevron.classList.remove("rotate-180");
+    dropdownAthletesBtn.setAttribute('aria-expanded', 'false');
+  }
+});

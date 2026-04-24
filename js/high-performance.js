@@ -5,49 +5,40 @@ const highPerformanceList = document.getElementById("high-performance-list");
 highPerformanceAthletes.forEach((athlete) => {
 
   // Wrapper
-  const athleteWrapper = document.createElement("div");
-  athleteWrapper.className = "flex flex-col items-center";
+  const athleteWrapper = document.createElement("article");
+  athleteWrapper.className = "group overflow-hidden rounded-3xl border border-white/10 bg-white/5 shadow-2xl transition duration-500 hover:-translate-y-2 hover:bg-white/10";
 
-  // Card
-  const athleteCard = document.createElement("div");
+  // Image container
+  const imageContainer = document.createElement("div");
+  imageContainer.className = "relative overflow-hidden";
 
-  athleteCard.className =
-    "relative w-full h-80 rounded-lg shadow-2xl overflow-hidden mb-3 transition sm:bg-blue-500/10 sm:shadow-blue-500/40 hover:shadow-blue-500/40"
+  const athleteImage = document.createElement("img");
+  athleteImage.src = athlete.image.src;
+  athleteImage.alt = athlete.image.alt;
+  athleteImage.className = "w-full h-80 object-cover transition duration-500 group-hover:scale-105";
 
+  const overlay = document.createElement("div");
+  overlay.className = "absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent";
 
-  athleteCard.innerHTML = `
-        <div class="relative">
-            <img
-                src="${athlete.image.src}"
-                alt="${athlete.image.alt}"
-                class="object-cover w-full h-full transition-transform duration-500 scale-100 hover:scale-110"
-            >
-        </div>
+  imageContainer.appendChild(athleteImage);
+  imageContainer.appendChild(overlay);
 
-        <div class="absolute font-redwing shadow top-1 left-3 text-white text-sm px-2 py-1 rounded-xl">
-            <img 
-                src="${athlete.flag.src}" 
-                alt="${athlete.flag.alt}" 
-                class="w-14 h-14 rounded-lg inline-block mr-1 opacity-80"
-            >
-        </div>
+  // Content container
+  const contentContainer = document.createElement("div");
+  contentContainer.className = "p-6 text-white";
 
-        <div class="absolute font-redwing top-3 right-3 text-white font-bold text-2xl px-2 py-1 rounded-full bg-blue-500/20 backdrop-blur-md shadow-md shadow-blue-500/30">
-            <img src="${athlete.sport.src}" alt="${athlete.sport.alt}" class="w-10 h-10">
-        </div>
-
-    `;
-
-  // Athlete name (below card)
-  const athleteName = document.createElement("div");
-  athleteName.className =
-    "font-redwing text-white text-xl text-center mt-2 tracking-wide";
-
+  const athleteName = document.createElement("p");
+  athleteName.className = "text-xl font-semibold";
   athleteName.textContent = athlete.name;
 
-  // Append
-  athleteWrapper.appendChild(athleteCard);
-  athleteWrapper.appendChild(athleteName);
+  const athleteSport = document.createElement("p");
+  athleteSport.className = "mt-2 text-sm uppercase tracking-[0.25em] text-blue-400";
+  athleteSport.textContent = athlete.sport.alt;  athleteSport.setAttribute("data-i18n", `athlete.sport.${athlete.sport.toLowerCase()}`);
+  contentContainer.appendChild(athleteName);
+  contentContainer.appendChild(athleteSport);
+
+  athleteWrapper.appendChild(imageContainer);
+  athleteWrapper.appendChild(contentContainer);
 
   highPerformanceList.appendChild(athleteWrapper);
 

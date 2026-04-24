@@ -2,80 +2,142 @@
     emailjs.init("_t8k_EMLBEpNYyfsg");
 })();
 
+import { updateText } from './i18n.js';
+
 const contactForm = document.getElementById("contact-form");
 const submitBtn = document.getElementById("submit-btn");
 
-// input validation
-contactForm.addEventListener("input", function () {
-    // get input values and trim whitespace
-    const name = this.name.value.trim();
-    const email = this.email.value.trim();
-    const subject = this.subject.value.trim();
-    const message = this.message.value.trim();
+//  getting input
+const nameInput = document.getElementById("name");
+const emailInput = document.getElementById("email");
+const subjectInput = document.getElementById("subject");
+const messageInput = document.getElementById("message");
 
-    // get span values for error messages
-    const nameError = this.name.nextElementSibling;
-    const emailError = this.email.nextElementSibling;
-    const subjectError = this.subject.nextElementSibling;
-    const messageError = this.message.nextElementSibling;
-    
-    submitBtn.disabled = !(name && email && subject && message);
-    // general error displaying
-    // span creationg for general error message
-    const generalError = document.getElementById("general-error");
+// getting span texts
+const nameError = document.getElementById('name-error');
+const emailError = document.getElementById('email-error');
+const subjectError = document.getElementById('subject-error');
+const messageError = document.getElementById('message-error');
+const generalError = document.getElementById('general-error');
+
+function cleanUI() {
+    const inputs = [nameInput, emailInput, subjectInput, messageInput];
+
+    inputs.forEach(input => input.classList.remove("border-red-500"));
+
+    [nameError, emailError, subjectError, messageError, generalError].forEach(error => {
+        error.textContent = '';
+        error.removeAttribute('data-i18n');
+    });
+    submitBtn.classList.remove("bg-red-500", "hover:bg-red-600");
+}
+
+function formValidation() {
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+    const subject = subjectInput.value.trim();
+    const message = messageInput.value.trim();
+
+    const inputs = [nameInput, emailInput, subjectInput, messageInput];
+
+    cleanUI();
+
     if (!name || !email || !subject || !message) {
-        generalError.textContent = "Please fill in all fields";
-    } else {
-        generalError.textContent = "";
-    }
+        
+        submitBtn.dataset.i18n = 'contact.form.failed';
+        submitBtn.classList.add("bg-red-500", "hover:bg-red-600");
+        submitBtn.disabled = true;
+        generalError.dataset.i18n = 'contact.error.general';
 
-    // validate name
-    if (name.length < 3) {
-        nameError.textContent = "Name must be at least 3 characters";
-        this.name.classList.add("border-red-500");
-    } else {
-        nameError.textContent = "";
-        this.name.classList.remove("border-red-500");
-        this.name.classList.add("border-green-500");
-    }
+        inputs.forEach(input => {
+            if (!input.value.trim()) {
+                input.classList.add("border-red-500");
+            }
+        });
 
-    // validate email
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-        emailError.textContent = "Please enter a valid email";
-        this.email.classList.add("border-red-500");
-    } else {
-        emailError.textContent = "";
-        this.email.classList.remove("border-red-500");
-        this.email.classList.add("border-green-500");
-    }
+        updateText();
 
-    // validate subject
-    if (subject.length < 5) {
-        subjectError.textContent = "Subject must be at least 5 characters";
-        this.subject.classList.add("border-red-500");
-    } else {
-        subjectError.textContent = "";
-        this.subject.classList.remove("border-red-500");
-        this.subject.classList.add("border-green-500");
-    }
+        setTimeout(() => {
+            cleanUI();
+            submitBtn.dataset.i18n = 'contact.form.send';
+            updateText();
+            submitBtn.disabled = false;
+        }, 2000);
 
-    // validate message
-    if (message.length < 10) {
-        messageError.textContent = "Message must be at least 10 characters";
-        this.message.classList.add("border-red-500");
-    } else {
-        messageError.textContent = "";
-        this.message.classList.remove("border-red-500");
-        this.message.classList.add("border-green-500");
+        return false;
+    };
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        emailInput.classList.add("border-red-500");
+        emailError.dataset.i18n = 'contact.error.emailInvalid';
+
+        submitBtn.dataset.i18n = 'contact.form.failed';
+        submitBtn.classList.add("bg-red-500", "hover:bg-red-600");
+        submitBtn.disabled = true;
+        updateText();
+        setTimeout(() => {
+            emailInput.classList.remove("border-red-500");
+            emailError.removeAttribute('data-i18n');
+            emailError.textContent = '';
+            submitBtn.disabled = false;
+            submitBtn.dataset.i18n = 'contact.form.send';
+            updateText();
+            submitBtn.classList.remove("bg-red-500", "hover:bg-red-600");
+        }, 2000);
+
+        return false;
+    };
+
+    if(name.length < 3) {
+        nameInput.classList.add("border-red-500");
+        nameError.dataset.i18n = 'contact.error.nameShort';
+        submitBtn.dataset.i18n = 'contact.form.failed';
+        submitBtn.classList.add("bg-red-500", "hover:bg-red-600");
+        submitBtn.disabled = true;
+        updateText();
+        setTimeout(() => {
+            nameInput.classList.remove("border-red-500");
+            nameError.removeAttribute('data-i18n');
+            nameError.textContent = '';
+            submitBtn.disabled = false;
+            submitBtn.dataset.i18n = 'contact.form.send';
+            updateText();
+            submitBtn.classList.remove("bg-red-500", "hover:bg-red-600");
+        }, 2000);
+
+        return false;
+    };
+
+    if (message.length < 5) {
+        messageInput.classList.add("border-red-500");
+        messageError.dataset.i18n = 'contact.error.messageShort';
+        submitBtn.dataset.i18n = 'contact.form.failed';
+        submitBtn.classList.add("bg-red-500", "hover:bg-red-600"); 
+        submitBtn.disabled = true;
+        updateText();
+        setTimeout(() => {
+            messageInput.classList.remove("border-red-500");
+            messageError.removeAttribute('data-i18n');
+            messageError.textContent = '';
+            submitBtn.disabled = false;
+            submitBtn.dataset.i18n = 'contact.form.send';
+            updateText();
+            submitBtn.classList.remove("bg-red-500", "hover:bg-red-600");
+        }, 2000);
+        return false;
     }
-});
+    return true;
+}
 
 // Handle form submission
 contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
+    if (!formValidation()) return; // 🔥 FIXED
+
     submitBtn.disabled = true;
-    submitBtn.textContent = "SENDING...";
+    submitBtn.dataset.i18n = 'contact.form.sending';
+    updateText();
 
     emailjs.sendForm(
         "service_bt5syud", 
@@ -83,24 +145,30 @@ contactForm.addEventListener("submit", function (event) {
         this
     )
     .then(()=> {
-        submitBtn.textContent = "MESSAGE SENT!";
+        submitBtn.dataset.i18n = 'contact.form.sent';
         submitBtn.classList.add("bg-green-500", "hover:bg-green-600");
+        updateText();
+
         setTimeout(() => {
             submitBtn.disabled = false;
-            submitBtn.textContent = "SEND MESSAGE";
+            submitBtn.dataset.i18n = 'contact.form.send';
+            updateText();
             submitBtn.classList.remove("bg-green-500", "hover:bg-green-600");
             contactForm.reset();
         }, 2000);
     })
     .catch((error) => {
         console.error("FAILED...", error);
-        submitBtn.textContent = "FAILED TO SEND";
+
+        submitBtn.dataset.i18n = 'contact.form.failed';
         submitBtn.classList.add("bg-red-500", "hover:bg-red-600");
-        this.classList.remove("border-green-500");
+        updateText();
+
         setTimeout(() => {
             submitBtn.disabled = false;
-            submitBtn.textContent = "SEND MESSAGE";
+            submitBtn.dataset.i18n = 'contact.form.send';
+            updateText();
             submitBtn.classList.remove("bg-red-500", "hover:bg-red-600");
         }, 3000);
-    })
-}); 
+    });
+});

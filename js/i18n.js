@@ -41,7 +41,13 @@ function updateText() {
     document.querySelectorAll('[data-i18n]').forEach((element) => {
         const key = element.dataset.i18n;
         if (translations[key] !== undefined) {
-            element.textContent = translations[key];
+            // Check if this element has a data-i18n-attr attribute for attribute translation
+            const attrName = element.dataset.i18nAttr;
+            if (attrName) {
+                element.setAttribute(attrName, translations[key]);
+            } else {
+                element.textContent = translations[key];
+            }
         }
     });
 }
@@ -66,4 +72,4 @@ document.addEventListener('DOMContentLoaded', () => {
     loadTranslations(currentLanguage);
 });
 
-export { currentLanguage };
+export { currentLanguage, updateText };
