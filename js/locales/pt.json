@@ -19,6 +19,23 @@
   "grid-text-four": "Comunidade",
   "breath.btn": "JUNTE-SE À TEAM TURCO",
 
+
+  "services.title": "Nossos serviços",
+  "services.subtitle": "Serviços personalizados focados em elevar a performance, otimizar resultados e garantir evolução contínua em todos os níveis.",
+
+  "services.card1.title": "Avaliação individualizada",
+  "services.card1.description": "Mapeamento personalizado e planeamento estruturado, alinhados aos objetivos e ao estágio de desenvolvimento de cada atleta.",
+
+  "services.card2.title": "Preparação física",
+  "services.card2.description": "Programas de força, resistência e treino específico por modalidade, desenvolvidos para maximizar a performance e a longevidade física. Supervisão técnica durante a execução para evitar lesões e potenciar resultados.",
+
+  "services.card3.title": "Serviços especializados",
+  "services.card3.description": "Programas direcionados para preparação de provas e competições, recuperação de lesões e atividades para grupos especiais (diabéticos, hipertensos).",
+
+  "services.card4.title": "Consultoria presencial ou à distância",
+  "services.card4.description": "Suporte contínuo para manter níveis de foco e motivação estáveis e crescentes. Consultoria à distância com revisão e feedback periódicos, com o objetivo de gerir níveis de fadiga, desconfortos e, se necessário, adaptar o planeamento — ideal para alunos que necessitam de flexibilidade.",
+  
+
   "community.title": "Nossa comunidade",
   "community.btn": "CONHEÇA NOSSOS ATLETAS",
 
