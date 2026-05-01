@@ -1,5 +1,6 @@
 {
   "nav.home": "Inicio",
+  "nav.coaches": "Entrenadores",
   "nav.about": "Sobre nosotros",
   "nav.athletes": "Atletas",
   "nav.high-performance": "Alto rendimiento",
@@ -49,9 +50,16 @@
   "athlete.sport.paddleboarding": "Paddle Sup",
   "athlete.sport.cycling": "Ciclismo",
 
+  "coaches.hero.title": "Nuestro equipo y socios",
+  "coaches.hero.subtitle": "Entrenadores dedicados y especialistas de confianza trabajando juntos para ayudarte a alcanzar tu máximo potencial.",
+
   "trainers.title": "Conoce a nuestros entrenadores",
   "trainers.text_one": "Entrenadores dedicados y especialistas de confianza trabajando juntos para impulsar tu crecimiento.",
   "trainers.text_two": "Desde el entrenamiento físico hasta la nutrición y el rendimiento mental.",
+  "trainers.cta": "CONOCE NUESTRO EQUIPO",
+  "partners.title": "Nuestros socios",
+  "partners.text_one": "Especialistas de confianza que impulsan el rendimiento, la salud y el crecimiento atlético a largo plazo.",
+  "partners.cta": "CONOCE NUESTROS SOCIOS",
 
   "show-more-btn": "Ver más",
   "show-less-btn": "Ver menos",

@@ -2,6 +2,7 @@
   "nav.home": "Início",
   "community.subtitle": "Conectados por proposito, crescimento e apoio mutuo",
   "community.description": "Nossos atletas fazem parte de uma comunidade vibrante que se apoia e se inspira mutuamente - um ambiente onde todos inspiram, crescem e evoluem juntos.",
+  "nav.coaches": "Treinadores",
   "nav.about": "Sobre",
   "nav.athletes": "Atletas",
   "nav.high-performance": "Alta performance",
@@ -51,9 +52,16 @@
   "athlete.sport.paddleboarding": "Paddle Sup",
   "athlete.sport.cycling": "Ciclismo",
 
+  "coaches.hero.title": "Nossa equipe e parceiros",
+  "coaches.hero.subtitle": "Treinadores dedicados e especialistas de confiança trabalhando lado a lado para ajudá-lo a atingir seu pleno potencial.",
+
   "trainers.title": "Conheça nossos treinadores",
   "trainers.text_one": "Treinadores dedicados e especialistas de confiança trabalhando juntos para apoiar seu crescimento.",
   "trainers.text_two": "Do treinamento físico à nutrição e à performance mental.",
+  "trainers.cta": "CONHEÇA NOSSA EQUIPE",
+  "partners.title": "Nossos parceiros",
+  "partners.text_one": "Especialistas de confiança que apoiam performance, saúde e crescimento atlético de longo prazo.",
+  "partners.cta": "CONHEÇA NOSSOS PARCEIROS",
 
   "show-more-btn": "Mostrar mais",
   "show-less-btn": "Mostrar menos",

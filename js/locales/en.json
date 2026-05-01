@@ -3,6 +3,7 @@
     "nav.about": "About",
     "nav.athletes": "Athletes",
     "nav.high-performance": "High Performance",
+    "nav.coaches": "Coaches",
     "nav.contact": "Contact",
     
     "hero.title":"BUILT FOR PEOPLE. DRIVEN BY COMMUNITY.",
@@ -51,9 +52,16 @@
     "athlete.sport.paddleboarding": "Paddle Sup",
     "athlete.sport.cycling": "Cycling",
 
+    "coaches.hero.title": "Our Team & Partners",
+    "coaches.hero.subtitle": "Dedicated coaches and trusted specialists working side by side to help you reach your full potential.",
+
     "trainers.title":"Meet Our Coaches",
     "trainers.text_one":"Dedicated coaches and trusted specialists working together to support your growth.",
     "trainers.text_two":"From fitness to nutrition and mental performance specialist",
+    "trainers.cta":"MEET OUR TEAM",
+    "partners.title":"Our Partners",
+    "partners.text_one":"Trusted specialists who support performance, health, and long-term athletic growth.",
+    "partners.cta":"MEET OUR PARTNERS",
 
     "show-more-btn":"Show More",
     "show-less-btn":"Show Less",
