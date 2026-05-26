@@ -76,17 +76,21 @@ const teamSection = document.getElementById("trainers-profiles");
 const showMoreBtn = document.getElementById("show-more-btn_profile");
 const showLessBtn = document.getElementById("show-less-btn_profile");
 
-showMoreBtn.addEventListener("click", () => {
-    teamSection.classList.remove("hidden");
-    teamSection.scrollIntoView({ behavior: "smooth" },2000);
-    showMoreBtn.classList.add("hidden");
-});
+if (showMoreBtn) {
+    showMoreBtn.addEventListener("click", () => {
+        teamSection.classList.remove("hidden");
+        teamSection.scrollIntoView({ behavior: "smooth" },2000);
+        showMoreBtn.classList.add("hidden");
+    });
+}
 
-showLessBtn.addEventListener("click", () => {
-    teamSection.classList.add("hidden");
-    teamSection.scrollIntoView({behavior:"smooth"}, 2000);
-    showMoreBtn.classList.remove("hidden");
-});
+if (showLessBtn) {
+    showLessBtn.addEventListener("click", () => {
+        teamSection.classList.add("hidden");
+        teamSection.scrollIntoView({behavior:"smooth"}, 2000);
+        showMoreBtn.classList.remove("hidden");
+    });
+}
 
 
 // Contact dropdowns (all trainers)

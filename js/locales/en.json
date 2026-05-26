@@ -3,6 +3,7 @@
     "nav.about": "About",
     "nav.athletes": "Athletes",
     "nav.high-performance": "High Performance",
+    "nav.coaches": "Coaches",
     "nav.contact": "Contact",
     
     "hero.title":"BUILT FOR PEOPLE. DRIVEN BY COMMUNITY.",
@@ -16,6 +17,23 @@
     "grid-text-three": "Integration",
     "grid-text-four": "Community",
     "breath.btn": "JOIN TEAM TURCO",
+
+   
+    
+  "services.title": "Our Services",
+  "services.subtitle": "Comprehensive support designed to enhance performance at every level.",
+
+  "services.card1.title": "Personalized Assessment",
+  "services.card1.description": "A tailored evaluation and structured planning process aligned with each athlete’s goals and stage of development.",
+
+  "services.card2.title": "Physical Conditioning",
+  "services.card2.description": "Strength, endurance, and sport-specific training programs designed to maximize performance and long-term physical health. Technical supervision ensures proper execution, injury prevention, and optimal results.",
+
+  "services.card3.title": "Specialized Services",
+  "services.card3.description": "Targeted programs for competition preparation, injury recovery, and training for special groups (such as diabetics and hypertensive individuals).",
+
+  "services.card4.title": "In-person & Online Coaching",
+  "services.card4.description": "Continuous support to maintain and improve focus and motivation. Remote coaching includes regular reviews and feedback to manage fatigue, discomfort, and adjust training plans when needed — ideal for those who require flexibility.",
 
     "community.title":"Our Community",
     "community.subtitle":"Connected by purpose, growth, and mutual support",
@@ -34,9 +52,16 @@
     "athlete.sport.paddleboarding": "Paddle Sup",
     "athlete.sport.cycling": "Cycling",
 
+    "coaches.hero.title": "Our Team & Partners",
+    "coaches.hero.subtitle": "Dedicated coaches and trusted specialists working side by side to help you reach your full potential.",
+
     "trainers.title":"Meet Our Coaches",
     "trainers.text_one":"Dedicated coaches and trusted specialists working together to support your growth.",
     "trainers.text_two":"From fitness to nutrition and mental performance specialist",
+    "trainers.cta":"MEET OUR TEAM",
+    "partners.title":"Our Partners",
+    "partners.text_one":"Trusted specialists who support performance, health, and long-term athletic growth.",
+    "partners.cta":"MEET OUR PARTNERS",
 
     "show-more-btn":"Show More",
     "show-less-btn":"Show Less",
@@ -158,6 +183,8 @@
     "footer.copyright": "© 2024 Team Turco. All rights reserved.",
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Service",
+
+    "services.flow.label": "PROCESS FLOW",
     
     "athletes.performance.title": "Performance Training",
     "athletes.performance.description": "Our performance training programs are designed to enhance athletic abilities, focusing on strength, speed, agility, and endurance.",

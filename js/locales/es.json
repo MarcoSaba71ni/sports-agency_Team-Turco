@@ -1,5 +1,6 @@
 {
   "nav.home": "Inicio",
+  "nav.coaches": "Entrenadores",
   "nav.about": "Sobre nosotros",
   "nav.athletes": "Atletas",
   "nav.high-performance": "Alto rendimiento",
@@ -16,6 +17,21 @@
   "grid-text-three": "Integración",
   "grid-text-four": "Comunidad",
   "breath.btn": "ÚNETE A TEAM TURCO",
+
+  "services.title": "Nuestros servicios",
+  "services.subtitle": "Soporte integral diseñado para mejorar el rendimiento en todos los niveles.",
+
+  "services.card1.title": "Evaluación personalizada",
+  "services.card1.description": "Evaluación adaptada y planificación estructurada alineadas con los objetivos y el nivel de desarrollo de cada atleta.",
+
+  "services.card2.title": "Acondicionamiento físico",
+  "services.card2.description": "Programas de fuerza, resistencia y entrenamiento específico por disciplina, diseñados para maximizar el rendimiento y la longevidad física. Supervisión técnica durante la ejecución para prevenir lesiones y optimizar resultados.",
+
+  "services.card3.title": "Servicios especializados",
+  "services.card3.description": "Programas enfocados en la preparación para competiciones, recuperación de lesiones y entrenamiento para grupos especiales (diabéticos, hipertensos).",
+
+  "services.card4.title": "Consultoría presencial u online",
+  "services.card4.description": "Apoyo continuo para mantener niveles de motivación y enfoque estables y en crecimiento. La consultoría online incluye revisiones y feedback periódicos para gestionar la fatiga, molestias y adaptar el plan si es necesario — ideal para quienes necesitan flexibilidad.",
 
   "community.title": "Nuestra comunidad",
   "community.subtitle": "Conectados por propósito, crecimiento y apoyo mutuo",
@@ -34,9 +50,16 @@
   "athlete.sport.paddleboarding": "Paddle Sup",
   "athlete.sport.cycling": "Ciclismo",
 
+  "coaches.hero.title": "Nuestro equipo y socios",
+  "coaches.hero.subtitle": "Entrenadores dedicados y especialistas de confianza trabajando juntos para ayudarte a alcanzar tu máximo potencial.",
+
   "trainers.title": "Conoce a nuestros entrenadores",
   "trainers.text_one": "Entrenadores dedicados y especialistas de confianza trabajando juntos para impulsar tu crecimiento.",
   "trainers.text_two": "Desde el entrenamiento físico hasta la nutrición y el rendimiento mental.",
+  "trainers.cta": "CONOCE NUESTRO EQUIPO",
+  "partners.title": "Nuestros socios",
+  "partners.text_one": "Especialistas de confianza que impulsan el rendimiento, la salud y el crecimiento atlético a largo plazo.",
+  "partners.cta": "CONOCE NUESTROS SOCIOS",
 
   "show-more-btn": "Ver más",
   "show-less-btn": "Ver menos",

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -30,7 +30,7 @@
                     class="w-12 h-12 object-cover transition-transform duration-300 ease-in-out 
                 transform hover:scale-110" />
                 </a>
-                <button id="dropdown-btn" class="text-3xl cursor-pointer">☰</button>
+                <button id="dropdown-btn" class="text-3xl cursor-pointer">â˜°</button>
             </div>
 
             <!-- DESKTOP HEADER DIV-->
@@ -59,6 +59,7 @@
                                 <a href="high-performance.html" class="hover:bg-white hover:text-black p-2 duration-300 text-sm" data-i18n="nav.high-performance"></a>
                             </div>
                         </li>
+                        <li><a href="coaches.html" class="hover:border-b-2 p-2" data-i18n="nav.coaches"></a></li>
                         <li><a href="contact.html" class="hover:border-b-2 p-2" data-i18n="nav.contact"></a></li>
                     </ul>
                 </nav>
@@ -97,6 +98,7 @@
                 class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.athletes"></a>
                 <a class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.high-performance"
                 href="high-performance.html"></a>
+                <a href="coaches.html" class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.coaches"></a>
                 <a href="contact.html" 
                 class="p-2 pl-2 hover:bg-white hover:text-black text-sm" data-i18n="nav.contact"></a>
             </nav>
@@ -271,89 +273,55 @@
                 </div>
             </section>
 
-            <section>
-                <div class="flex flex-col gap-10 items-center w-full mx-6 md:mx-2">
-                    <h2 class="font-redwing text-4xl mx-auto mt-6" data-i18n="athletes.find.title">Find our athletes</h2>
-                    <!-- Search Bar -->
-                    <div class="w-full flex justify-center">
-                        <input
-                        class="border-2 pl-4 py-2 rounded-md flex justify-center w-1/2 mx-16 sm:mx-32"
-                        type="text"
-                        placeholder="Search for Athletes"
-                        data-i18n="athletes.search.placeholder"
-                        data-i18n-attr="placeholder"/>
-                    </div>                    
-                </div>
-                <!-- Carousel Section -->
-                <div class="py-10">
-                    <div
-                    class="flex flex-wrap justify-center lg:overflow-hidden py-10 gap-12">
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
+        <!-- Process Flow Diagram -->
+        <section class="bg-zinc-900 border border-zinc-800 rounded-xl px-6 py-8 mx-6 md:mx-10 lg:mx-24 flex flex-col items-center gap-8">
+            <p class="font-[Orbitron] text-lg text-white text-center uppercase tracking-widest mb-8" data-i18n="services.flow.label">PROCESS FLOW</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
+
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center gap-2 text-center px-4">
+                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
                     </div>
-                    <div
-                    class="flex flex-wrap justify-center lg:overflow-hidden py-10 gap-12">
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                        <div class=" flex flex-shrink-0 flex-col flex-shrink-0 items-center transition-transform duration-300 hover:scale-110 cursor-pointer">
-                            <img src="../images/Players-TeamTurco/Lucas-Straub_img02.jpeg" class="w-30 h-30 md:w-30 md:h-30 rounded-full flex-shrink-0 object-cover">   
-                            <p class="text-sm md:text-md">Lucas Straub (34)</p>
-                            <p class="opacity-70 text-xs md:text-md">Football</p>
-                        </div>
-                    </div>             
-                </div>                
-            </section>
+                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step1">Evaluation</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
+                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center gap-2 text-center px-4">
+                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
+                        <i class="fa-solid fa-gears text-white text-base"></i>
+                    </div>
+                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step2">Specialized Service</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
+                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center gap-2 text-center px-4">
+                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
+                        <i class="fa-solid fa-person-running text-white text-base"></i>
+                    </div>
+                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step3">Physical Condition</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
+                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center gap-2 text-center px-4">
+                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center gap-1">
+                        <i class="fa-solid fa-user text-white text-xs"></i>
+                        <i class="fa-solid fa-laptop text-white text-xs"></i>
+                    </div>
+                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step4">In Person or Online</span>
+                </div>
+
+            </div>
+        </section>
 
             <!-- Moments Section -->
             <section class="py-20 px-6 md:px-12 flex flex-col gap-12 justify-center bg-gradient-to-b from-white to-gray-100">
@@ -439,7 +407,7 @@
                 <div class="relative z-10 text-white w-full md:w-1/2 flex-1">
                     <div class="w-full flex flex-col gap-6">
                         <p class="self-start inline-block p-2 text-sm md:text-md bg-blue-700/70 rounded-lg" data-i18n="athletes.high-performance.label">
-                            High Performance Athletes ⚡
+                            High Performance Athletes âš¡
                         </p>
 
                         <h3 class="font-redwing text-4xl sm:text-5xl leading-tight" data-i18n="athletes.high-performance.title">
@@ -494,6 +462,7 @@
                         <li><a href="about.html" class="font-redwing text-zinc-300 hover:text-white transition text-sm" data-i18n="nav.about">About</a></li>
                         <li><a href="athletes.html" class="font-redwing text-zinc-300 hover:text-white transition text-sm" data-i18n="nav.athletes">Athletes</a></li>
                         <li><a href="high-performance.html" class="font-redwing text-zinc-300 hover:text-white transition text-sm" data-i18n="nav.high-performance">High Performance</a></li>
+                        <li><a href="coaches.html" class="font-redwing text-zinc-300 hover:text-white transition text-sm" data-i18n="nav.coaches">Coaches</a></li>
                         <li><a href="contact.html" class="font-redwing text-zinc-300 hover:text-white transition text-sm" data-i18n="nav.contact">Contact</a></li>
                     </ul>
                 </div>
@@ -521,7 +490,7 @@
             <!-- Bottom Bar -->
             <div class="border-t border-zinc-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
                 <p class="font-redwing text-zinc-400 text-sm" data-i18n="footer.copyright">
-                    © 2024 Team Turco. All rights reserved.
+                    Â© 2024 Team Turco. All rights reserved.
                 </p>
             </div>
         </div>
