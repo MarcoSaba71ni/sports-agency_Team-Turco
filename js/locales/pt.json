@@ -9,16 +9,16 @@
   "nav.contact": "Contato",
 
   "hero.title": "CRIADO PARA PESSOAS. MOVIDO PELA COMUNIDADE.",
-  "hero.btn": "EXPLORE A TEAM TURCO",
+  "hero.btn": "EXPLORE TEAM TURCO",
 
   "breath-title": "Junte-se à Team Turco",
-  "breath.text_one": "Ajudamos pessoas a transformar suas vidas por meio do movimento, da disciplina e do esporte.",
+  "breath.text_one": "Acreditamos no poder transformador do esporte por meio da disciplina e movimento.",
   "breath.text_two": "Da resiliência mental ao bem-estar físico, nossa equipe apoia cada etapa da sua jornada pessoal e esportiva.",
   "grid-text-one": "Indivíduos de alta performance",
   "grid-text-two": "Públicos diversos",
   "grid-text-three": "Integração",
   "grid-text-four": "Comunidade",
-  "breath.btn": "JUNTE-SE À TEAM TURCO",
+  "breath.btn": "JUNTE-SE À NOSSA EQUIPE",
 
 
   "services.title": "Nossos serviços",
@@ -225,6 +225,11 @@
   "high-performance.athletes.title": "Atletas de Alto Nível",
 
   "footer.description": "Capacitando atletas e indivíduos a alcançar seu máximo potencial através de treinamento profissional, nutrição e suporte ao desempenho mental.",
+  "services.flow.label": "FLUXO DO PROCESSO",
+  "services.flow.step1": "Avaliação",
+  "services.flow.step2": "Serviço especializado",
+  "services.flow.step3": "Condicionamento físico",
+  "services.flow.step4": "Presencial ou online",
   "footer.quick-links": "Links Rápidos",
   "footer.contact": "Contato",
   "footer.location": "Barcelona, Espanha e Rio de Janeiro, Brasil",

@@ -223,6 +223,11 @@
   "high-performance.athletes.title": "Atletas de Alto Nivel",
 
   "footer.description": "Empoderando atletas e individuos para alcanzar su máximo potencial a través de entrenamiento profesional, nutrición y apoyo al rendimiento mental.",
+  "services.flow.label": "FLUJO DEL PROCESO",
+  "services.flow.step1": "Evaluación",
+  "services.flow.step2": "Servicio especializado",
+  "services.flow.step3": "Condición física",
+  "services.flow.step4": "Presencial/online",
   "footer.quick-links": "Enlaces Rápidos",
   "footer.contact": "Contacto",
   "footer.location": "Barcelona, España y Río de Janeiro, Brasil",

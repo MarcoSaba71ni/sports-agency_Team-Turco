@@ -104,15 +104,18 @@
             </nav>
         </header>
         <!-- Hero Section -->
-        <section class="bg-black w-full h-[60vh] md:h-[90vh] flex flex-col gap-6 justify-center gap-2 border-t-1 border-white">
+        <section id="hero-section" class="bg-black w-full h-[60vh] md:h-[90vh] pb-20 flex flex-col gap-6 justify-center gap-2 border-t-1 border-white">
             <div>
-                <div class="flex flex-col justify-center px-8 gap-4 md:px-20 w-full font-[Orbitron]">
-                    <div class=" flex flex-col text-2xl md:text-3xl md:text-6xl text-center font-bold text-white">
+                <div class="flex flex-col justify-center px-8 md:px-20 w-full font-[Orbitron]">
+                    <div id="hero-logo" class="flex justify-center">
+                        <img src="../images/team-turco-logo-no_bg 1.svg" class="w-100 h-100 object-cover">
+                    </div>
+                    <div id="hero-text" class="-mt-8 md:-mt-10 flex flex-col text-lg md:text-2xl md:text-5xl text-center font-bold text-white">
                         <h1 id="dynamic-text" data-i18n="athletes.hero.deliver">WE DELIVER</h1>
                         <h1 data-i18n="athletes.hero.results">RESULTS</h1>
                     </div>
-                    <div class="flex justify-center pl-2">
-                        <h1 class="text-2xl md:text-3xl font-bold text-center text-white" data-i18n="athletes.hero.trust">YOU TRUST THE PROCESS</h1>
+                    <div id="hero-subtext" class="flex justify-center pl-2">
+                        <h1 class="text-2xl md:text-3xl mt-4 font-bold text-center text-white" data-i18n="athletes.hero.trust">YOU TRUST THE PROCESS</h1>
                     </div>                
                 </div>
             </div>
@@ -192,6 +195,57 @@
             </div>
 
 
+
+            
+        </section>
+        <!-- Process Flow Diagram -->
+        <section class="bg-zinc-900 border border-zinc-800 mt-16 rounded-xl px-6 py-8 mx-6 md:mx-10 lg:mx-24 flex flex-col items-center gap-8">
+            <p class="font-[Orbitron] text-lg text-white text-center uppercase tracking-widest mb-8" data-i18n="services.flow.label">PROCESS FLOW</p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
+
+                <!-- Step 1 -->
+                <div class="flex flex-col items-center gap-2 text-center px-4">
+                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
+                        <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
+                    </div>
+                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step1">Evaluation</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
+                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
+
+                <!-- Step 2 -->
+                <div class="flex flex-col items-center gap-2 text-center px-4">
+                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
+                        <i class="fa-solid fa-gears text-white text-base"></i>
+                    </div>
+                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step2">Specialized Service</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
+                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
+
+                <!-- Step 3 -->
+                <div class="flex flex-col items-center gap-2 text-center px-4">
+                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
+                        <i class="fa-solid fa-person-running text-white text-base"></i>
+                    </div>
+                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step3">Physical Condition</span>
+                </div>
+
+                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
+                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
+
+                <!-- Step 4 -->
+                <div class="flex flex-col items-center gap-2 text-center px-4">
+                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center gap-1">
+                        <i class="fa-solid fa-user text-white text-xs"></i>
+                        <i class="fa-solid fa-laptop text-white text-xs"></i>
+                    </div>
+                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step4">In Person or Online</span>
+                </div>
+
+            </div>
         </section>
         <!-- Athletes Section -->
         <main 
@@ -273,125 +327,6 @@
                 </div>
             </section>
 
-        <!-- Process Flow Diagram -->
-        <section class="bg-zinc-900 border border-zinc-800 rounded-xl px-6 py-8 mx-6 md:mx-10 lg:mx-24 flex flex-col items-center gap-8">
-            <p class="font-[Orbitron] text-lg text-white text-center uppercase tracking-widest mb-8" data-i18n="services.flow.label">PROCESS FLOW</p>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
-
-                <!-- Step 1 -->
-                <div class="flex flex-col items-center gap-2 text-center px-4">
-                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
-                        <i class="fa-solid fa-magnifying-glass text-white text-base"></i>
-                    </div>
-                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step1">Evaluation</span>
-                </div>
-
-                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
-                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
-
-                <!-- Step 2 -->
-                <div class="flex flex-col items-center gap-2 text-center px-4">
-                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
-                        <i class="fa-solid fa-gears text-white text-base"></i>
-                    </div>
-                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step2">Specialized Service</span>
-                </div>
-
-                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
-                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
-
-                <!-- Step 3 -->
-                <div class="flex flex-col items-center gap-2 text-center px-4">
-                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
-                        <i class="fa-solid fa-person-running text-white text-base"></i>
-                    </div>
-                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step3">Physical Condition</span>
-                </div>
-
-                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
-                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
-
-                <!-- Step 4 -->
-                <div class="flex flex-col items-center gap-2 text-center px-4">
-                    <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center gap-1">
-                        <i class="fa-solid fa-user text-white text-xs"></i>
-                        <i class="fa-solid fa-laptop text-white text-xs"></i>
-                    </div>
-                    <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step4">In Person or Online</span>
-                </div>
-
-            </div>
-        </section>
-
-            <!-- Moments Section -->
-            <section class="py-20 px-6 md:px-12 flex flex-col gap-12 justify-center bg-gradient-to-b from-white to-gray-100">
-                <div class="flex flex-col gap-4 items-center max-w-6xl mx-auto w-full">
-                    <h2 class="font-[Orbitron] text-center text-2xl sm:text-4xl text-black" data-i18n="athletes.moments.title">Team Moments</h2>
-                    <p class="font-redwing text-center text-gray-700 max-w-2xl" data-i18n="athletes.moments.subtitle">
-                        Celebrating the dedication, achievements, and unforgettable moments of Team Turco athletes in training and competition.
-                    </p>
-                </div>
-
-                <!-- Moments Grid -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto w-full">
-                    
-                    <!-- Training Moment 1 -->
-                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
-                        <img src="../images/Athletes-TeamTurco/elastic-band-football-players.jpeg" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <p class="text-white font-redwing text-lg font-semibold text-center" data-i18n="athletes.moments.training">Training Excellence</p>
-                        </div>
-                    </div>
-
-                    <!-- Medal Moment 1 -->
-                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
-                        <img src="../images/Athletes-TeamTurco/girls-swimmers-medal-fluminense.jpeg" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <p class="text-white font-redwing text-lg font-semibold text-center" data-i18n="athletes.moments.medals">Winning Moments</p>
-                        </div>
-                    </div>
-
-                    <!-- Training Moment 2 -->
-                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
-                        <img src="../images/Athletes-TeamTurco/bruno-and-wife-training.jpeg" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <p class="text-white font-redwing text-lg font-semibold text-center" data-i18n="athletes.moments.dedication">Dedication & Support</p>
-                        </div>
-                    </div>
-
-                    <!-- Medal Moment 2 -->
-                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
-                        <img src="../images/Athletes-TeamTurco/victor-medal.jpeg" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <p class="text-white font-redwing text-lg font-semibold text-center" data-i18n="athletes.moments.victory">Champions</p>
-                        </div>
-                    </div>
-
-                    <!-- Training Moment 3 -->
-                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
-                        <img src="../images/Trainers-TeamTurco/Nelson-turco-kids.jpeg" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <p class="text-white font-redwing text-lg font-semibold text-center" data-i18n="athletes.moments.growth">Development & Growth</p>
-                        </div>
-                    </div>
-
-                    <!-- Team Moment -->
-                    <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
-                        <img src="../images/Athletes-TeamTurco/lads-with-sticky-logo.jpeg" class="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-colors duration-300"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <p class="text-white font-redwing text-lg font-semibold text-center" data-i18n="athletes.moments.unity">Team Unity</p>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
             <section class="relative py-16 md:py-30 mx-4 sm:mx-6 md:mx-10 rounded-2xl px-5 sm:px-8 md:px-20 flex flex-col md:flex-row gap-8 md:gap-12 justify-between overflow-hidden">
 
                 <!-- Background Image -->
@@ -446,7 +381,7 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <!-- Logo and Description -->
                 <div class="md:col-span-2">
-                    <img src="../images/Team-Turco-Logo-Header.jpg" alt="Team Turco Logo" class="w-12 h-12 mb-4">
+                    <img src="../images/team-turco-logo-no_bg 1.svg" alt="Team Turco Logo" class="w-32 h-32 mb-4">
                     <h3 class="font-[Orbitron] text-xl mb-4">Team Turco</h3>
                     <p class="font-redwing text-zinc-300 text-sm leading-relaxed" data-i18n="footer.description">
                         Empowering athletes and individuals to reach their highest potential through professional training,
@@ -495,9 +430,11 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script type="module" src="../js/i18n.js"></script>
     <script type="module" src="../js/athletes.js"></script>
     <script type="module" src="../js/header.js"></script>
+    <script type="module" src="../animations/athletes/heroSection.js"></script>
     </body>
 </html>

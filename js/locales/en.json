@@ -185,6 +185,10 @@
     "footer.terms": "Terms of Service",
 
     "services.flow.label": "PROCESS FLOW",
+    "services.flow.step1": "Evaluation",
+    "services.flow.step2": "Specialized Service",
+    "services.flow.step3": "Physical Condition",
+    "services.flow.step4": "In Person or Online",
     
     "athletes.performance.title": "Performance Training",
     "athletes.performance.description": "Our performance training programs are designed to enhance athletic abilities, focusing on strength, speed, agility, and endurance.",
