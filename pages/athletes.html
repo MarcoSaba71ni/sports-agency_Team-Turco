@@ -30,7 +30,7 @@
                     class="w-12 h-12 object-cover transition-transform duration-300 ease-in-out 
                 transform hover:scale-110" />
                 </a>
-                <button id="dropdown-btn" class="text-3xl cursor-pointer">â˜°</button>
+                <button id="dropdown-btn" class="text-3xl cursor-pointer">☰</button>
             </div>
 
             <!-- DESKTOP HEADER DIV-->
@@ -110,12 +110,12 @@
                     <div id="hero-logo" class="flex justify-center">
                         <img src="../images/team-turco-logo-no_bg 1.svg" class="w-100 h-100 object-cover">
                     </div>
-                    <div id="hero-text" class="-mt-8 md:-mt-10 flex flex-col text-lg md:text-2xl md:text-5xl text-center font-bold text-white">
+                    <div id="hero-text" class="-mt-8 md:-mt-10 flex flex-col text-2xl md:text-2xl md:text-5xl text-center font-bold text-white">
                         <h1 id="dynamic-text" data-i18n="athletes.hero.deliver">WE DELIVER</h1>
                         <h1 data-i18n="athletes.hero.results">RESULTS</h1>
                     </div>
                     <div id="hero-subtext" class="flex justify-center pl-2">
-                        <h1 class="text-2xl md:text-3xl mt-4 font-bold text-center text-white" data-i18n="athletes.hero.trust">YOU TRUST THE PROCESS</h1>
+                        <h1 class="text-md md:text-3xl mt-4 font-bold text-center text-white" data-i18n="athletes.hero.trust">YOU TRUST THE PROCESS</h1>
                     </div>                
                 </div>
             </div>
@@ -201,7 +201,7 @@
         <!-- Process Flow Diagram -->
         <section class="bg-zinc-900 border border-zinc-800 mt-16 rounded-xl px-6 py-8 mx-6 md:mx-10 lg:mx-24 flex flex-col items-center gap-8">
             <p class="font-[Orbitron] text-lg text-white text-center uppercase tracking-widest mb-8" data-i18n="services.flow.label">PROCESS FLOW</p>
-            <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
+            <div id="process-flow" class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-2">
 
                 <!-- Step 1 -->
                 <div class="flex flex-col items-center gap-2 text-center px-4">
@@ -436,5 +436,7 @@
     <script type="module" src="../js/athletes.js"></script>
     <script type="module" src="../js/header.js"></script>
     <script type="module" src="../animations/athletes/heroSection.js"></script>
-    </body>
+    <script type="module" src="../animations/athletes/processFlow.js"></script>
+    <script type="module" src="../animations/athletes/athletesCarousel.js"></script>    
+</body>
 </html>
