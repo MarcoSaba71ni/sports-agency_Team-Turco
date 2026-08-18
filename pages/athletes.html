@@ -210,10 +210,12 @@
                     </div>
                     <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step1">Evaluation</span>
                 </div>
-
-                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
-                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
-
+                <div class="hidden md:block">
+                    <i class="fa-solid fa-chevron-right text-zinc-600 text-xs "></i>
+                </div>
+                <div class="block md:hidden">
+                    <i class="fa-solid fa-chevron-down text-zinc-600 text-xs "></i>
+                </div>
                 <!-- Step 2 -->
                 <div class="flex flex-col items-center gap-2 text-center px-4">
                     <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
@@ -221,10 +223,12 @@
                     </div>
                     <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step2">Specialized Service</span>
                 </div>
-
-                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
-                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
-
+                <div class="hidden md:block">
+                    <i class="fa-solid fa-chevron-right text-zinc-600 text-xs "></i>
+                </div>
+                <div class="block md:hidden">
+                    <i class="fa-solid fa-chevron-down text-zinc-600 text-xs "></i>
+                </div>
                 <!-- Step 3 -->
                 <div class="flex flex-col items-center gap-2 text-center px-4">
                     <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center">
@@ -232,10 +236,12 @@
                     </div>
                     <span class="font-redwing text-zinc-400 text-lg" data-i18n="services.flow.step3">Physical Condition</span>
                 </div>
-
-                <i class="fa-solid fa-chevron-right text-zinc-600 text-xs hidden md:block"></i>
-                <i class="fa-solid fa-chevron-down text-zinc-600 text-xs block md:hidden"></i>
-
+                <div class="hidden md:block">
+                    <i class="fa-solid fa-chevron-right text-zinc-600 text-xs "></i>
+                </div>
+                <div class="block md:hidden">
+                    <i class="fa-solid fa-chevron-down text-zinc-600 text-xs "></i>
+                </div>
                 <!-- Step 4 -->
                 <div class="flex flex-col items-center gap-2 text-center px-4">
                     <div class="w-11 h-11 rounded-full border border-zinc-600 flex items-center justify-center gap-1">
@@ -250,16 +256,17 @@
         <!-- Athletes Section -->
         <main 
         class="flex flex-col justify-center py-10 gap-10">
-            <section class="flex flex-col gap-12 px-10 max-w-6xl mx-auto w-full">
+            <section id="approach-section" class="flex flex-col gap-12 px-10 max-w-6xl mx-auto w-full">
 
                 <h2 class="font-redwing text-4xl mx-auto mt-6" data-i18n="athletes.approachTitle">Our Approach</h2>
 
                 <!-- Athlete Representation -->
                 <div class="text-center mx-auto max-w-2xl">
-                    <p data-i18n="athletes.approachDescription"> We believe every individual is unique, which is why we support each athlete through a holistic and personalized approach. By understanding their specific needs, goals, and lifestyle, we focus on building lasting habits that promote wellness, long-term performance, and sustainable career development.
+                    <p data-i18n="athletes.approachDescription"
+                    id="approach-description"> We believe every individual is unique, which is why we support each athlete through a holistic and personalized approach. By understanding their specific needs, goals, and lifestyle, we focus on building lasting habits that promote wellness, long-term performance, and sustainable career development.
                     </p>
                 </div>
-                <div class="flex flex-col gap-10 w-full">
+                <div id="approach-row-img" class="flex flex-col gap-10 w-full">
                     <!-- Row 1 -->
                     <div class="flex flex-row gap-6 flex-wrap">
                         <!-- Performance Training -->
@@ -327,7 +334,7 @@
                 </div>
             </section>
 
-            <section class="relative py-16 md:py-30 mx-4 sm:mx-6 md:mx-10 rounded-2xl px-5 sm:px-8 md:px-20 flex flex-col md:flex-row gap-8 md:gap-12 justify-between overflow-hidden">
+            <section id="high-performance-section" class="relative py-16 md:py-30 mx-4 sm:mx-6 md:mx-10 rounded-2xl px-5 sm:px-8 md:px-20 flex flex-col md:flex-row gap-8 md:gap-12 justify-between overflow-hidden">
 
                 <!-- Background Image -->
                 <div class="absolute inset-0 
@@ -341,7 +348,7 @@
                 <!-- Content -->
                 <div class="relative z-10 text-white w-full md:w-1/2 flex-1">
                     <div class="w-full flex flex-col gap-6">
-                        <p class="self-start inline-block p-2 text-sm md:text-md bg-blue-700/70 rounded-lg" data-i18n="athletes.high-performance.label">
+                        <p class="self-start font-redwing font-semibold inline-block p-2 text-sm md:text-md bg-blue-700/70 rounded-lg" data-i18n="athletes.high-performance.label">
                             High Performance Athletes âš¡
                         </p>
 
@@ -438,5 +445,7 @@
     <script type="module" src="../animations/athletes/heroSection.js"></script>
     <script type="module" src="../animations/athletes/processFlow.js"></script>
     <script type="module" src="../animations/athletes/athletesCarousel.js"></script>    
+    <script type="module" src="../animations/athletes/approachSection.js"></script>
+    <script type="module" src="../animations/athletes/highPerformanceSection.js"></script>
 </body>
 </html>
