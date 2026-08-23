@@ -1,6 +1,11 @@
 const images = [
   "images/Trainers-TeamTurco/Diogo-img1.jpeg",
   "images/Trainers-TeamTurco/Diogo-img6-Copy.jpeg",
+  "images/Athletes-TeamTurco/diogo-training-outside-beach.jpeg",
+  "images/Athletes-TeamTurco/team-turco-logo_white.jpeg",
+  "images/Athletes-TeamTurco/hero-section-holding-sticks.jpeg",
+  "images/Athletes-TeamTurco/hero-section-girls-training-outside - Copy.jpeg",
+  "images/Athletes-TeamTurco/logo-stick-on-the-post.jpeg",
 ];
 
 const heroImg = document.getElementById("hero-img");
