@@ -2,7 +2,7 @@ const dynamicText = document.getElementById("dynamic-text");
 const phrasesByLanguage = {
   en: ['YOUR COMPLEXITY', 'YOUR INDIVIDUALITY', 'YOUR EXCELLENCE'],
   es: ['TU COMPLEJIDAD', 'TU INDIVIDUALIDAD', 'TU EXCELENCIA'],
-  pt: ['TUA COMPLEXIDADE', 'TUA INDIVIDUALIDADE', 'TUA EXCELENCIA']
+  pt: ['SUA COMPLEXIDADE', 'SUA INDIVIDUALIDADE', 'SUA EXCELÊNCIA']
 };
 
 let phrases = phrasesByLanguage.en;
