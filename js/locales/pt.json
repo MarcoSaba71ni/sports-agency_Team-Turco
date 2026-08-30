@@ -151,8 +151,7 @@
   "mission-description": "Ajudar pessoas a transformarem suas vidas através do esporte, da disciplina e do desenvolvimento humano — construindo corpos mais fortes, mentes resilientes e estilos de vida sustentáveis.",
 
   "athletes.title": "Nossos Atletas",
-  "athletes.hero.deliver": "ENTREGAMOS",
-  "athletes.hero.results": "RESULTADOS",
+  "athletes.hero.deliver": "ENTREGAMOS RESULTADOS",
   "athletes.hero.trust": "CONFIE NO PROCESSO",
   "athletes.btn": "CONHEÇA NOSSOS ATLETAS",
   "athletes.approachTitle": "Nossa Abordagem",
@@ -173,6 +172,7 @@
   "athletes.high-performance.btn": "Explorar Mais",
 
   "values-title": "Nossos Valores",
+  "athletes.subtitle": "Conheça alguns de nossos atletas",
   "value-one": "Disciplina",
   "value-two": "Inclusividade",
   "value-three": "Comunidade",
